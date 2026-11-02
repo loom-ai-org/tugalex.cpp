@@ -67,8 +67,11 @@ the message of each `ValueError`.
 A gzip data file can have two faults: one in its gzip stream and one in its
 content. Python decompresses, decodes and parses the file while it reads it.
 Thus Python raises the fault that it reads first. The C++ library decompresses
-the whole file before it decodes it, so the gzip fault always wins. Two
-examples:
+the whole file before it decodes it, so the gzip fault always wins. In the
+same way, C++ checks the UTF-8 of the whole text before it parses it, so a
+byte that is not UTF-8 wins over a fault in the csv content, such as a missing
+column. Python decodes about 8 KB at a time, so it raises the content fault
+when the bad byte comes later. Two examples:
 
 - A truncated file with a byte that is not UTF-8 near its start. Python raises
   `UnicodeDecodeError`. C++ raises `DataError` with `python_type()`
