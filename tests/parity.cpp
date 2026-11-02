@@ -68,6 +68,10 @@ std::string guarded(const std::function<std::string()>& run) {
         return "{\"error\":\"ValueError\",\"message\":" + quote(e.what()) + "}";
     } catch (const std::out_of_range&) {
         return "{\"error\":\"KeyError\"}";
+    } catch (const std::runtime_error& e) {
+        // No golden records this type, so a fault such as a csv reader error
+        // counts as a mismatch and the run goes on.
+        return "{\"error\":\"runtime_error\",\"message\":" + quote(e.what()) + "}";
     }
 }
 
@@ -251,7 +255,7 @@ int main(int argc, char** argv) {
         }
         std::string got = "[" + quote(name) + "," + quote(method) + ",[";
         for (size_t k = 0; k < args.size(); ++k) got += (k ? "," : "") + quote(args[k]);
-        got += "]," + runner.run(name, method, args) + "]";
+        got += "]," + guarded([&] { return runner.run(name, method, args); }) + "]";
         ++checked;
         if (got != line) ++by_source[name.empty() ? "(shipped data)" : name];
         if (got != line && ++mismatches <= 20) {
