@@ -24,7 +24,7 @@
 namespace tugalex {
 
 // The Python release this port is held at byte parity with.
-inline constexpr const char* kPythonReference = "2.2.0a1";
+inline constexpr const char* kPythonReference = "2.2.2a1";
 
 // A string-keyed map that iterates in insertion order, as a Python dict does.
 // Assigning to a key that exists keeps its position.
@@ -102,10 +102,25 @@ public:
     using std::runtime_error::runtime_error;
 };
 
+// A data file that Python cannot read either. python_type() names the
+// exception Python raises: "UnicodeDecodeError" for bytes that are not strict
+// UTF-8, "EOFError" for a truncated gzip file, "BadGzipFile" for a file that
+// is not gzip or has other bytes after a member, "zlib.error" for corrupt
+// compressed data.
+class DataError : public std::runtime_error {
+public:
+    DataError(std::string python_type, const std::string& message)
+        : std::runtime_error(message), python_type_(std::move(python_type)) {}
+    const std::string& python_type() const { return python_type_; }
+
+private:
+    std::string python_type_;
+};
+
 // The directory that holds the data files. The first of these that is set
 // wins: set_data_dir(), the TUGALEX_DATA_DIR environment variable, the
-// install location compiled into the library. Set it before the first lookup:
-// the noun-gender and given-name tables load once per process.
+// install location compiled into the library. The noun-gender and given-name
+// tables load once for each path.
 std::string data_dir();
 void set_data_dir(std::string path);
 
@@ -144,7 +159,8 @@ struct LexiconEntry {
 
 // The lexicon handler. Construction reads the four small tables. The regional
 // dictionary loads on the first call that needs it, once per object.
-// Python's KeyError is std::out_of_range, ValueError is std::invalid_argument.
+// Python's KeyError is std::out_of_range, ValueError is std::invalid_argument,
+// and an unknown region is a ValueError in every method.
 class TugaLexicon {
 public:
     // An empty `dictionary_path` selects data_dir()/regional_dict.csv.gz.
@@ -175,7 +191,7 @@ public:
 
     std::optional<std::string> get_phonemes(std::string_view word, std::string_view pos = "NOUN",
                                             std::string_view region = "lbx") const;
-    // The word is used as given: no stripping, no lowercasing.
+    // The word is stripped and lowercased, as in get_phonemes.
     std::vector<std::string> get_syllables(std::string_view word, std::string_view region = "lbx") const;
     LexiconEntry get(std::string_view word, std::string_view pos = "NOUN",
                      std::string_view region = "lbx") const;

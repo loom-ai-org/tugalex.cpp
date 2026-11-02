@@ -28,7 +28,7 @@ The constructor reads the four small tables: AO1990 for Portugal and Brazil,
 the homographs and the archaisms. The regional dictionary loads on the first
 call that needs it, once for each `TugaLexicon`. `get_ipa_map` builds each
 (POS, region) map once and then returns the same reference. The noun-gender and
-given-name tables load once per process. All const methods are safe to call
+given-name tables load once for each data path. All const methods are safe to call
 from more than one thread.
 
 The maps are `tugalex::OrderedMap`. This type iterates in the same order as the
@@ -42,7 +42,8 @@ The library finds its data in the first of these locations that is set:
 2. The `TUGALEX_DATA_DIR` environment variable.
 3. The install location, `<prefix>/share/tugalex`.
 
-Set the location before the first lookup. A `TugaLexicon` can also read another
+A `TugaLexicon` reads its tables when it is made, so set the location before
+you make one. A `TugaLexicon` can also read another
 dictionary: give its path to the constructor. A path that ends in `.gz` is read
 as gzip.
 

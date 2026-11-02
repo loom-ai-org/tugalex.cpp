@@ -37,16 +37,20 @@ void load_three_columns(const std::string& path, Store store) {
     }
 }
 
-// _load_ao: no header skip, so the header row "old_form,new_form" is an entry.
+// _load_ao: csv.reader over the file (newline=""), header row skipped. A row
+// with other than two fields is skipped. Either field may list spellings
+// separated by commas; each old spelling maps to all the new ones.
 WordReplacementMap load_ao(const std::string& path) {
     if (!detail::file_exists(path)) throw FileNotFoundError(path);
+    const std::string text = detail::read_text(path, false);
+    const auto rows = detail::csv_rows(detail::lines_of(text, true));
     WordReplacementMap ao;
-    for (const auto& line : table_lines(path)) {
-        if (!contains(line, ",")) continue;
-        const auto parts = detail::split_on(detail::replace_all(line, "\"", ""), ',', 1);
-        std::vector<std::string> news;
-        for (const auto& word : detail::split_on(parts[1], ',')) news.push_back(detail::py_strip(word));
-        ao.assign(detail::py_strip(parts[0]), std::move(news));
+    for (size_t r = 1; r < rows.size(); ++r) {
+        const auto& row = rows[r];
+        if (row.size() != 2) continue;
+        std::vector<std::string> new_words;
+        for (const auto& word : detail::split_on(row[1], ',')) new_words.push_back(detail::py_strip(word));
+        for (const auto& old_word : detail::split_on(row[0], ',')) ao.assign(detail::py_strip(old_word), new_words);
     }
     return ao;
 }
@@ -142,6 +146,9 @@ std::string TugaLexicon::lang_to_region(std::string_view raw_lang) const {
 std::optional<std::string> TugaLexicon::get_phonemes(std::string_view word, std::string_view raw_pos,
                                                      std::string_view raw_region) const {
     const std::string pos = detail::clean(raw_pos), region = detail::clean(raw_region);
+    const auto* entries = ipa().find(region);
+    if (entries == nullptr) throw std::invalid_argument("Unsupported dialect: " + region);
+
     std::string key = detail::py_lower(detail::py_strip(word));
     if (const auto* modern = archaic_words_.find(key)) key = *modern;
 
@@ -149,9 +156,7 @@ std::optional<std::string> TugaLexicon::get_phonemes(std::string_view word, std:
         if (const auto* reading = readings->find(pos)) return *reading;
     }
 
-    // `self.ipa[region]` raises KeyError for an unknown region.
-    const auto& entries = ipa().at(region);
-    const auto* entry = entries.find(key);
+    const auto* entry = entries->find(key);
     if (entry == nullptr) return std::nullopt;
     // entry.get(pos) or entry.get("")
     if (const auto* reading = entry->find(pos); reading != nullptr && !reading->empty()) return *reading;
@@ -163,7 +168,7 @@ std::vector<std::string> TugaLexicon::get_syllables(std::string_view word, std::
     const std::string region = detail::clean(raw_region);
     const auto* words = syllables().find(region);
     if (words == nullptr) throw std::invalid_argument("Unsupported dialect: " + region);
-    const auto* found = words->find(detail::clean(word));
+    const auto* found = words->find(detail::py_lower(detail::py_strip(word)));
     return found == nullptr ? std::vector<std::string>{} : *found;
 }
 

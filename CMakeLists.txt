@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(tugalex VERSION 2.2.0 LANGUAGES CXX)
+project(tugalex VERSION 2.2.2 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

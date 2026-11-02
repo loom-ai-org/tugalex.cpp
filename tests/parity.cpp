@@ -62,11 +62,20 @@ std::string guarded(const std::function<std::string()>& run) {
         return run();
     } catch (const tl::FileNotFoundError&) {
         return "{\"error\":\"FileNotFoundError\"}";
+    } catch (const tl::DataError& e) {
+        return "{\"error\":" + quote(e.python_type()) + "}";
     } catch (const std::invalid_argument& e) {
         return "{\"error\":\"ValueError\",\"message\":" + quote(e.what()) + "}";
     } catch (const std::out_of_range&) {
         return "{\"error\":\"KeyError\"}";
     }
+}
+
+// A value written in full when its JSON is short, else as a digest.
+template <class T>
+std::string sized(const T& value) {
+    std::string text = js(value);
+    return text.size() < 20000 ? text : digest(value);
 }
 
 std::string basename(const std::string& path) { return path.substr(path.rfind('/') + 1); }
@@ -105,6 +114,17 @@ public:
             }
             return run(name, method.substr(4), bytes);
         }
+        // "datadir:<dir>" reads the gender tables from tests/fixtures/<dir>.
+        if (name.rfind("datadir:", 0) == 0) {
+            tl::set_data_dir(tests_dir_ + "/fixtures/" + name.substr(8));
+            std::string out = guarded([&] {
+                if (method == "get_noun_gender") return js(tl::TugaLexicon::get_noun_gender(a.at(0)));
+                if (method == "get_given_name_gender") return js(tl::TugaLexicon::get_given_name_gender(a.at(0)));
+                throw std::runtime_error("unknown datadir method " + method);
+            });
+            tl::set_data_dir("");
+            return out;
+        }
         const tl::TugaLexicon& lex = lexicon(name);
         using L = tl::TugaLexicon;
         if (method == "paths") {
@@ -142,8 +162,8 @@ public:
         if (method == "possible_postags") return guarded([&] { return digest(lex.possible_postags()); });
         if (method == "ipa") return guarded([&] { return digest(lex.ipa().at(a.at(0))); });
         if (method == "syllables") return guarded([&] { return digest(lex.syllables().at(a.at(0))); });
-        if (method == "ipa_full") return guarded([&] { return js(lex.ipa()); });
-        if (method == "syllables_full") return guarded([&] { return js(lex.syllables()); });
+        if (method == "ipa_full") return guarded([&] { return sized(lex.ipa()); });
+        if (method == "syllables_full") return guarded([&] { return sized(lex.syllables()); });
         if (method == "get_wordlist") return guarded([&] { return digest(lex.get_wordlist(a.at(0))); });
         if (method == "get_ipa_map") return guarded([&] { return digest(lex.get_ipa_map(a.at(0), a.at(1))); });
         if (method == "lang_to_region") return guarded([&] { return js(lex.lang_to_region(a.at(0))); });
@@ -216,6 +236,7 @@ int main(int argc, char** argv) {
     const long expected = json_line::header_count(lines[0]);
     Runner runner(dir);
     long checked = 0, mismatches = 0;
+    std::map<std::string, long> by_source;
     for (size_t i = 1; i < lines.size(); ++i) {
         const std::string& line = lines[i];
         size_t pos = 1;  // past the opening '['
@@ -232,11 +253,13 @@ int main(int argc, char** argv) {
         for (size_t k = 0; k < args.size(); ++k) got += (k ? "," : "") + quote(args[k]);
         got += "]," + runner.run(name, method, args) + "]";
         ++checked;
+        if (got != line) ++by_source[name.empty() ? "(shipped data)" : name];
         if (got != line && ++mismatches <= 20) {
             std::cerr << "MISMATCH\n  python: " << line.substr(0, 600) << "\n  c++:    " << got.substr(0, 600)
                       << "\n";
         }
     }
+    for (const auto& [source, count] : by_source) std::cout << "mismatches in " << quote(source) << ": " << count << "\n";
     std::cout << "goldens: " << expected << " in, " << checked << " checked, " << mismatches << " mismatches\n";
     return (checked == expected && mismatches == 0) ? 0 : 1;
 }

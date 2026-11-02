@@ -3,7 +3,7 @@
 This library is held at byte parity with the Python `tugalex` release named in
 `kPythonReference` (`include/tugalex/tugalex.hpp`). The test `parity` checks that
 claim. It repeats every call recorded in `tests/goldens/lexicon.jsonl.gz` and
-compares the bytes of each result. The file holds 369,796 calls.
+compares the bytes of each result. The file holds 374,034 calls.
 
 ## Public surface
 
@@ -44,16 +44,25 @@ No public function takes an index or returns the length of a string.
 
 The C++ library also has `data_dir()` and `set_data_dir()`. The Python package
 finds its data next to its source file. The C++ library uses an install
-location, and you can override it.
+location, and you can override it. The noun-gender and given-name tables are
+cached for each path. Python caches them once, with `lru_cache`, and reads the
+module path only on the first call. In C++, a change of the data directory
+takes effect at the next call.
 
 Python's exceptions map as follows:
 
 - `KeyError` becomes `std::out_of_range`.
 - `ValueError` becomes `std::invalid_argument`, with the same message.
 - `FileNotFoundError` becomes `tugalex::FileNotFoundError`.
+- An error in a data file becomes `tugalex::DataError`. Its `python_type()`
+  gives the name of the Python exception: `UnicodeDecodeError` for a byte that
+  is not UTF-8, `EOFError` for a truncated gzip file, `BadGzipFile` for a file
+  that is not gzip or has bytes after the last member, and `zlib.error` for
+  deflate data that is not valid.
 
-The golden checks the type of each exception, and it checks the message of each
-`ValueError`.
+A path that contains a NUL character is a missing file, as in Python's
+`os.path.exists`. The golden checks the type of each exception, and it checks
+the message of each `ValueError`.
 
 These parts are not ported:
 
@@ -62,6 +71,9 @@ These parts are not ported:
 - The `__main__` demonstration block.
 - The csv module's field size limit (131,072 characters). Python raises
   `csv.Error` for a longer field. The C++ reader accepts the field.
+- Two checks of the gzip header. Python ignores the reserved flag bits and does
+  not verify the header CRC (`FHCRC`). zlib rejects both, and the C++ library
+  raises `BadGzipFile` for them.
 
 ## Behaviour kept on purpose
 
@@ -71,17 +83,23 @@ The port copies these behaviours of the Python code. The goldens check each one.
   quoting rules. Universal-newline translation and the `#` line filter come
   first, so a quoted field can hide a `#` line. An open quote swallows the rest
   of the file.
-- The four small tables use a plain `split(",")` after all quotes are deleted.
-  The AO1990 loaders do not skip the header, so `old_form` maps to
-  `["new_form"]`.
+- The homograph and archaism tables use a plain `split(",")` after all quotes
+  are deleted.
+- The AO1990 tables are read through the `csv` reader with no line-end
+  translation, and the first row is skipped. A row that does not have two
+  fields is skipped. Each old spelling in the first field maps to all the new
+  spellings of the second field.
 - A `|` in the phones becomes `·`. The syllables are split on a space or a `|`.
 - Words and regions are stripped and lowercased with the full Unicode rules,
   and the Greek final-sigma rule is included. A repeated word keeps its first
   position and takes its last value.
-- `get_syllables` does not strip or lowercase the word. `get_phonemes` does.
-- `get_phonemes` resolves an archaism, then a homograph, and only then reads
-  the region. Thus an unknown region raises `KeyError` only when no homograph
-  matches.
+- `get_syllables` and `get_phonemes` strip and lowercase the word. An unknown
+  region raises `ValueError` before any lookup.
+- The two gender tables are read through `csv.DictReader`. A missing column
+  raises `KeyError` only when the file has a data row, because the columns are
+  read from each row. A row too short to hold the key cannot be found, and a
+  row too short to hold the value gives `None`. When the header has the same
+  name twice, the last column wins.
 - `get_ipa_map` replaces each word's reading with the homograph table's reading
   for the POS. This occurs in every region, the Brazilian regions too.
 - The suffix rules keep the lookbehind `(?<!ã)os?$`. Python's `$` also matches
@@ -116,14 +134,15 @@ sample alone is not sufficient.
 | --- | ---: | --- |
 | tables | 114 | each small table, the region orders, `ipa`, `syllables`, `get_wordlist` and `get_ipa_map` for every region and every POS, hashed |
 | sweeps | 78 | `get_phonemes` and `get_syllables` for all 59,335 sweep words in each region and POS, hashed, and the gender and AO1990 functions over the same words |
-| tests | 7,783 | every string literal in tugalex `tests/` |
-| homographs | 37,502 | every homograph, archaism and AO1990 entry through each method, and the dictionary words written with capitals |
-| genders | 235,986 | every noun-gender exception and given name as written, lowercased and uppercased, and each suffix rule in context |
-| sample | 33,984 | seeded random lookups, case and whitespace variants, and sentences |
+| tests | 8,714 | every string literal in tugalex `tests/` |
+| homographs | 37,439 | every homograph, archaism and AO1990 entry through each method, and the dictionary words written with capitals |
+| genders | 235,974 | every noun-gender exception and given name as written, lowercased and uppercased, and each suffix rule in context |
+| sample | 34,098 | seeded random lookups, case and whitespace variants, and sentences |
 | unicode | 31,110 | every code point with a lowercase mapping, whitespace status or category Mn/Lt, in context |
-| edge | 13,313 | hand-built arguments for each method: empty and whitespace strings, unknown words, regions, POS tags and dialect codes, and odd letter cases |
+| edge | 13,226 | hand-built arguments for each method: empty and whitespace strings, unknown words, regions, POS tags and dialect codes, and odd letter cases |
 | raw | 7,140 | 34 byte sequences, valid and invalid UTF-8, in 7 contexts, given as hex to each method that takes a string, against the shipped dictionary and against a fixture whose keys hold U+FFFD |
-| fixtures | 2,786 | the dictionaries in `tests/fixtures/`, which exercise the csv and loader quirks |
+| fixtures | 5,571 | the dictionaries in `tests/fixtures/`, which exercise the csv and loader quirks, and gzip and UTF-8 files that are not valid |
+| datadirs | 570 | the gender lookups against each data directory in `tests/fixtures/`: other line ends, missing and duplicate columns, short rows, damaged gzip and a NUL in the path |
 
 The sweep words are the sorted union of the wordlist of each region, the
 homographs, the archaisms and both sides of AO1990. The C++ test builds the same

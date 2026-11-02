@@ -42,6 +42,7 @@ import pathlib
 import random
 import sys
 import unicodedata
+import zlib
 
 import tugalex
 from tugalex import TugaLexicon
@@ -66,16 +67,31 @@ class Raised(dict):
 def call(fn, *args):
     try:
         return fn(*args)
+    except UnicodeDecodeError:  # a ValueError, so it goes first
+        return Raised(error="UnicodeDecodeError")
     except ValueError as e:
         return Raised(error="ValueError", message=str(e))
     except KeyError:
         return Raised(error="KeyError")
     except FileNotFoundError:
         return Raised(error="FileNotFoundError")
+    except EOFError:
+        return Raised(error="EOFError")
+    except gzip.BadGzipFile:
+        return Raised(error="BadGzipFile")
+    except zlib.error:
+        return Raised(error="zlib.error")
 
 
 def is_error(value):
     return isinstance(value, Raised)
+
+
+def sized(value):
+    """The value when its JSON is short, else its digest; errors pass through."""
+    if is_error(value) or len(dumps(value).encode("utf-8")) < 20000:
+        return value
+    return digest(value)
 
 
 def hashed(fn, *args):
@@ -340,13 +356,116 @@ FIXTURES = {
         "\ufffda,r3,a,lb\ufffd\n"
         "casa,k,ca|sa,lbx\n"
     ),
+    "eof_open_quote.csv": 'word,phones,syllables,region_code\ncasa,k,ca,"',
+    "hash_inside.csv": (
+        "word,phones,syllables,region_code\n"
+        "ca#sa,k#1,c#a,lbx\n"
+        "casa, #x,y,lbx\n"
+        "#lead,x,x,lbx\n"
+        '"#quoted",q,q,lbx\n'
+        "mesa,m,m,#rjx\n"
+    ),
     "open_quote_end.csv": 'word,phones,syllables,region_code\ncasa,k,c,lbx\n"dangling,x,x,lbx',
 }
 MISSING_FIXTURE = "missing.csv"
+# A NUL byte in the path: Python's os.path.exists is False for it.
+NUL_FIXTURES = ["plain.csv.gz\x00.csv", "quoting.csv\x00x.gz"]
+
+
+def gz(data):
+    return gzip.compress(data, compresslevel=9, mtime=0)
+
+
+def ignorable(c):
+    return ("A" + c + "Σ").lower()[-1] == "ς" and ("AΣ" + c).lower()[1] == "ς"
+
+
+def cased(c):
+    return (c + "Σ").lower()[-1] == "ς"
+
+
+def sigma_rows():
+    # The final-sigma rule in context: Σ after a case-ignorable run that
+    # follows a cased letter, Σ before one, and Σ after each cased letter.
+    rows = ["word,phones,syllables,region_code"]
+    for cp in range(0x110000):
+        if 0xD800 <= cp <= 0xDFFF or chr(cp) in ',"\r\n':
+            continue
+        c = chr(cp)
+        if ignorable(c):
+            rows += [f"Α{c}Σ,k,k,lbx", f"ΑΣ{c}Β,k,k,lbx", f"Α{c}{c}Σ{c},k,k,lbx"]
+        elif cased(c):
+            rows.append(f"{c}Σ,k,k,lbx")
+    return "\n".join(rows) + "\n"
+
+
+def binary_fixtures():
+    text = FIXTURES["plain.csv.gz"].encode("utf-8")
+    member = gz(text)
+    header = member[:10]
+    return {
+        "trunc.csv.gz": member[: len(member) // 2],
+        "trunc_trailer.csv.gz": member[:-3],
+        "garbage.csv.gz": member + b"GARBAGE",
+        "padded.csv.gz": member + b"\x00\x00\x00",
+        "padded_garbage.csv.gz": member + b"\x00\x00x",
+        "leading_nul.csv.gz": b"\x00" + member,
+        "members.csv.gz": gz(text[:40]) + gz(text[40:]),
+        "plaintext.csv.gz": text,
+        "empty.csv.gz": b"",
+        "onebyte.csv.gz": b"\x1f",
+        "header_only.csv.gz": header[:3],
+        "method7.csv.gz": header[:2] + b"\x07" + member[3:],
+        "corrupt.csv.gz": header + b"\x07" + b"\x00" * 8,
+        "badcrc.csv.gz": member[:-8] + bytes([member[-8] ^ 0xFF]) + member[-7:],
+        "badlength.csv.gz": member[:-4] + bytes([member[-4] ^ 0x01]) + member[-3:],
+        "bad_utf8.csv": b"word,phones,syllables,region_code\ncasa,k,c,lbx\nca\xe2\x82sa,k,c,lbx\n",
+        "bad_utf8.csv.gz": gz(b"word,phones,syllables,region_code\ncasa,k,c,lbx\nca\xffsa,k,c,lbx\n"),
+        "sigma.csv.gz": gz(sigma_rows().encode("utf-8")),
+    }
+
+
+def synthetic_names(count):
+    return "".join(f"Nome{i:04d},{'mf'[i % 2]}\n" for i in range(count))
+
+
+# Gender-table directories: (given_names.csv.gz, noun_gender_exceptions.csv.gz)
+# contents. None leaves the file out.
+def datadirs():
+    big = gz(("name,gender\n" + synthetic_names(800)).encode())
+    big_noun = gz(("word,gender\n" + synthetic_names(800).replace("Nome", "palavra")).encode())
+    return {
+        "cr": (gz(b"name,gender\rAna,f\rRui,m\r"), gz(b"word,gender\rcasa,m\rdia,f\r")),
+        "crlf": (gz(b"name,gender\r\nAna,f\r\n\"Bo\r\nb\",m\r\n"), gz(b"word,gender\r\ncasa,m\r\n")),
+        "noname": (gz(b"nome,gender\n"), gz(b"palavra,gender\n")),
+        "noname_rows": (gz(b"nome,gender\nAna,f\n"), gz(b"palavra,gender\ncasa,f\n")),
+        "shortrow": (gz(b"gender,name\nm\nf,Ana\n"), gz(b"gender,word\nm\nf,casa\n")),
+        "dupcols": (gz(b"name,gender,name\nAna,f\nRui,m,Bob\n"), gz(b"word,gender,word\ncasa,m\ndia,f,mesa\n")),
+        "emptyval": (gz(b"name,gender\nAna,\nRui\n"), gz(b"word,gender\ncasa,\ndia\n")),
+        "blank_first": (gz(b"\nname,gender\nAna,f\n"), gz(b"\nword,gender\ncasa,m\n")),
+        "truncated": (big[: len(big) // 2], big_noun[: len(big_noun) // 2]),
+        "plain": (b"name,gender\nAna,f\n", b"word,gender\ncasa,m\n"),
+        "garbage": (gz(b"name,gender\nAna,f\n") + b"XX", gz(b"word,gender\ncasa,m\n") + b"XX"),
+        "members": (gz(b"name,gender\nAna,f\n") + gz(b"Rui,m\n"), gz(b"word,gender\n") + gz(b"casa,m\n")),
+        "badutf8": (gz(b"name,gender\nAn\xe3,f\n"), gz(b"word,gender\nc\xc3sa,m\n")),
+        "missing": (None, None),
+    }
+
+
+DATADIR_NUL = "nul\x00dir"
+DATADIR_WORDS = ["Ana", "Rui", "Bob", "Bo\r\nb", "name", "gender", "nome", "Nome0001", "Nome0799",
+                 "casa", "dia", "mesa", "palavra0002", "m", "f", "", "ana", "CASA", "dias"]
 
 
 def write_fixtures(directory):
     directory.mkdir(parents=True, exist_ok=True)
+    for name, data in binary_fixtures().items():
+        (directory / name).write_bytes(data)
+    for name, files in datadirs().items():
+        for filename, data in zip(("given_names.csv.gz", "noun_gender_exceptions.csv.gz"), files):
+            if data is not None:
+                (directory / name).mkdir(exist_ok=True)
+                (directory / name / filename).write_bytes(data)
     for name, text in FIXTURES.items():
         data = text.encode("utf-8")
         path = directory / name
@@ -358,18 +477,37 @@ def write_fixtures(directory):
             path.write_bytes(data)
 
 
+def datadir_records(out, directory):
+    saved = tugalex.GIVEN_NAMES_PATH, tugalex.NOUN_GENDER_PATH
+    for name in list(datadirs()) + [DATADIR_NUL]:
+        base = os.path.join(directory, name)
+        tugalex.GIVEN_NAMES_PATH = os.path.join(base, "given_names.csv.gz")
+        tugalex.NOUN_GENDER_PATH = os.path.join(base, "noun_gender_exceptions.csv.gz")
+        tugalex._given_names.cache_clear()
+        tugalex._noun_gender_exceptions.cache_clear()
+        for word in DATADIR_WORDS:
+            for method in ("get_given_name_gender", "get_noun_gender"):
+                out.add("datadirs", "datadir:" + name, method, [word], call(getattr(TugaLexicon, method), word))
+    tugalex.GIVEN_NAMES_PATH, tugalex.NOUN_GENDER_PATH = saved
+    tugalex._given_names.cache_clear()
+    tugalex._noun_gender_exceptions.cache_clear()
+
+
 def fixture_records(out, directory):
-    for name in list(FIXTURES) + [MISSING_FIXTURE]:
+    names = list(FIXTURES) + list(binary_fixtures()) + [MISSING_FIXTURE] + NUL_FIXTURES
+    for name in names:
         lex = TugaLexicon(os.path.join(directory, name))
         regions = call(lambda: sorted(lex.regions))
         regions = [] if is_error(regions) else regions
         queried = regions + [r for r in ("lbx", "zzz") if r not in regions]
         table_records(out, "fixtures", lex, name, ["NOUN", "VERB", "ADP", ""], queried)
-        out.add("fixtures", name, "ipa_full", [], call(lambda: lex.ipa))
-        out.add("fixtures", name, "syllables_full", [], call(lambda: lex.syllables))
+        out.add("fixtures", name, "ipa_full", [], sized(call(lambda: lex.ipa)))
+        out.add("fixtures", name, "syllables_full", [], sized(call(lambda: lex.syllables)))
         words = {"para", "casa", "égua", "ÉGUA", " casa ", "ca,sa", "zzz"}
         for region in regions:
             words.update(lex.syllables[region])
+        if len(words) > 200:  # a probe table: the full maps above cover it
+            continue
         for word in sorted(words):
             lookups(out, "fixtures", lex, name, word, ["NOUN", "ADP", ""], queried)
 
@@ -485,6 +623,7 @@ def main():
     # fixtures
     write_fixtures(pathlib.Path(args.fixtures))
     fixture_records(out, args.fixtures)
+    datadir_records(out, args.fixtures)
 
     total = len(out.lines)
     for corpus, count in out.calls.items():
