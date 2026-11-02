@@ -1,0 +1,277 @@
+archaic,modern,notes
+architecta,arquiteta,ch→qu
+architecto,arquiteto,ch→qu
+architectura,arquitetura,ch→qu
+caballo,cavalo,ll→l + b→v
+caravella,caravela,ll→l
+chorographia,corografia,ch→c
+chromatico,cromático,ch→c
+chromosoma,cromossoma,ch→c
+chronico,crónico,ch→c
+chronologia,cronologia,ch→c
+chronometro,cronómetro,ch→c
+chyloso,quiloso,chy→qui
+chyluria,quilúria,chy→qui
+chyme,quime,chy→qui
+chymico,químico,chy→qui
+diccionario,dicionário,cc→c
+diphthongo,ditongo,phth→t
+grammatica,gramática,mm→m
+grammatico,gramático,mm→m
+hypnose,hipnose,y→i + h→h
+hypocrisia,hipocrisia,y→i + h→h
+hypocrisia,hipocrisia,y→i + h→h regularization
+hypothese,hipótese,y→i + h→h
+inflexão,inflexão,archaic identical spelling kept
+kalendario,calendário,k→c
+katholico,católico,k→c
+kilogramma,quilograma,k→qu
+kilolitro,quilolitro,k→qu
+kilometro,quilómetro,k→qu
+litteral,literal,tt→t
+litterario,literário,tt→t
+litteratura,literatura,tt→t
+lyrio,lírio,y→i
+mysterio,mistério,y→i
+mysticismo,misticismo,y→i
+mystico,místico,y→i
+orthodoxo,ortodoxo,ortho→orto
+orthographia,ortografia,ortho→orto
+orthographico,ortográfico,ortho→orto
+orthopedico,ortopédico,ortho→orto
+parochia,paroquia,ch→qu
+parochiano,paroquiano,ch→qu
+phanatico,fanático,ph→f
+phantasma,fantasma,ph→f
+pharmaceutica,farmacêutica,ph→f
+pharmaceutico,farmacêutico,ph→f
+pharmacia,farmácia,ph→f
+pharmacopea,farmacopeia,ph→f
+pharol,farol,ph→f
+philosophia,filosofia,ph→f
+philosophico,filosófico,ph→f
+philosopho,filósofo,ph→f
+phlegma,fleuma,ph→f
+phlegmon,flegmão,ph→f
+phleugma,fleuma,ph→f
+phosphorico,fosfórico,ph→f
+phosphoro,fósforo,ph→f
+photographia,fotografia,ph→f
+photographico,fotográfico,ph→f
+photometro,fotómetro,ph→f
+phrase,frase,ph→f
+phthisica,tísica,ph→f
+phthisico,tísico,ph→f
+prompto,pronto,mp→n
+pseudonymo,pseudónimo,ps + y→i
+psychoanalytico,psicanalítico,psy→psi
+rhapsodia,rapsódia,rh→r
+rhapsodico,rapsódico,rh→r
+rhetorica,retórica,rh→r + accent shift
+rhetorico,retórico,rh→r
+rheumatismo,reumatismo,rh→r
+rheumatologia,reumatologia,rh→r
+rheumatologico,reumatológico,rh→r
+sanccionar,sancionar,cc→c
+subjecto,sujeito,ct→j (semantic shift)
+syllaba,sílaba,yll→íl
+syllabario,silabário,yll→íl
+syllabario,silabário,yll→íl
+syllogismo,silogismo,yll→íl
+symbolico,simbólico,sy→si
+symbolo,símbolo,sy→si
+symphonia,sinfonia,symph→sinf
+symptoma,sintoma,sympt→sint
+symptomatico,sintomático,sympt→sint
+synagoga,sinagoga,sy→si
+syndroma,síndroma,sy→si
+syndromo,síndromo,sy→si
+theatro,teatro,th→t
+theocracia,teocracia,th→t
+theologia,teologia,th→t
+theologico,teológico,th→t
+therapeutico,terapêutico,th→t
+therapia,terapia,th→t
+thermodynamica,termodinâmica,th→t
+thermometro,termómetro,th→t
+thesouro,tesouro,th→t
+thesouroso,tesouroso,th→t
+throno,trono,th→t
+thurbina,turbina,th→t
+thymia,timia,th→t
+typo,tipo,y→i
+typographia,tipografia,y→i
+typographico,tipográfico,y→i
+tyrania,tirania,y→i
+tyranno,tirano,y→i + nn→n
+physica,física,ph→f + y→i
+rhythmo,ritmo,th→t + rh→r + y→i
+estylo,estilo,y→i
+martyr,mártir,y→i
+hymno,hino,y→i
+phthysica,tísica,ph→f + th→t + y→i
+elephante,elefante,ph→f
+propheta,profeta,ph→f
+phantasia,fantasia,ph→f
+triumpho,triunfo,ph→f
+prophecia,profecia,ph→f
+saphira,safira,ph→f
+geographia,geografia,ph→f
+biographia,biografia,ph→f
+telegrapho,telégrafo,ph→f
+phenomeno,fenómeno,ph→f
+nympha,ninfa,ph→f + y→i
+pharyngite,faringite,ph→f + y→i
+physiologia,fisiologia,ph→f + y→i
+theoria,teoria,th→t
+thema,tema,th→t
+thesoura,tesoura,th→t
+cathedral,catedral,th→t
+cathedra,cátedra,th→t
+catholico,católico,th→t
+epitheto,epíteto,th→t
+anesthesia,anestesia,th→t
+synthese,síntese,th→t + y→i
+mytho,mito,th→t + y→i
+mythologia,mitologia,th→t + y→i
+amphitheatro,anfiteatro,ph→f + th→t
+rhinoceronte,rinoceronte,rh→r
+hemorrhagia,hemorragia,rh→r
+analyse,análise,y→i
+analysar,analisar,y→i
+systema,sistema,y→i
+syntaxe,sintaxe,y→i
+abysmo,abismo,y→i
+hyena,hiena,y→i
+cyclo,ciclo,y→i
+cylindrico,cilíndrico,y→i
+cymbalo,címbalo,y→i
+cysterna,cisterna,y→i
+dynastia,dinastia,y→i
+anonymo,anónimo,y→i
+gymnasio,ginásio,y→i
+gymnastica,ginástica,y→i
+hygiene,higiene,y→i
+hypoteca,hipoteca,y→i
+lympha,linfa,ph→f + y→i
+myrtho,mirto,th→t + y→i
+amethista,ametista,th→t
+antipathia,antipatia,th→t
+egypto,egito,y→i
+chimica,química,ch→qu/c
+chimico,químico,ch→qu/c
+christão,cristão,ch→qu/c
+christo,cristo,ch→qu/c
+chronica,crónica,ch→qu/c
+monarchia,monarquia,ch→qu/c
+archivo,arquivo,ch→qu/c
+chaos,caos,ch→qu/c
+echo,eco,ch→qu/c
+machina,máquina,ch→qu/c
+orchestra,orquestra,ch→qu/c
+psychologia,psicologia,ch→qu/c
+sepulchro,sepulcro,ch→qu/c
+archaico,arcaico,ch→qu/c
+epocha,época,ch→qu/c
+eschola,escola,ch→qu/c
+charta,carta,ch→qu/c
+acrosticho,acróstico,ch→qu/c
+cholerico,colérico,ch→qu/c
+melancholia,melancolia,ch→qu/c
+mechanica,mecânica,ch→qu/c
+chloreto,cloreto,ch→qu/c
+anchora,âncora,ch→qu/c
+chimera,quimera,ch→qu/c
+psychiatria,psiquiatria,ch→qu/c
+elle,ele,ll→l
+ella,ela,ll→l
+elles,eles,ll→l
+ellas,elas,ll→l
+anno,ano,nn→n
+annos,anos,nn→n
+annual,anual,nn→n
+commando,comando,mm→m
+communicar,comunicar,mm→m
+commum,comum,mm→m
+commercio,comércio,mm→m
+commodo,cómodo,mm→m
+commover,comover,mm→m
+commoção,comoção,mm→m
+recommendar,recomendar,mm→m
+gemma,gema,mm→m
+approvar,aprovar,pp→p
+supprimir,suprimir,pp→p
+applicar,aplicar,pp→p
+apparecer,aparecer,pp→p
+suppor,supor,pp→p
+oppor,opor,pp→p
+opposição,oposição,pp→p
+applauso,aplauso,pp→p
+approximar,aproximar,pp→p
+appellido,apelido,ll→l
+differente,diferente,ff→f
+difficuldade,dificuldade,ff→f
+difficil,difícil,ff→f
+official,oficial,ff→f
+officio,ofício,ff→f
+affirmar,afirmar,ff→f
+affecto,afeto,ff→f
+soffrer,sofrer,ff→f
+soffrido,sofrido,ff→f
+estoffo,estofo,ff→f
+attenção,atenção,tt→t
+attento,atento,tt→t
+attestar,atestar,tt→t
+attribuir,atribuir,tt→t
+gutta,gota,tt→t
+additar,aditar,dd→d
+addição,adição,dd→d
+addicionar,adicionar,dd→d
+aggravar,agravar,gg→g
+aggregar,agregar,gg→g
+immenso,imenso,mm→m
+immediato,imediato,mm→m
+bocca,boca,cc→c
+vacca,vaca,cc→c
+sacco,saco,cc→c
+peccado,pecado,cc→c
+seccar,secar,cc→c
+occasião,ocasião,cc→c
+accidente,acidente,cc→c
+panno,pano,nn→n
+cannella,canela,ll→l
+cavallo,cavalo,ll→l
+bello,belo,ll→l
+belleza,beleza,ll→l
+fallar,falar,ll→l
+gallinha,galinha,ll→l
+collega,colega,ll→l
+illustre,ilustre,ll→l
+alliar,aliar,ll→l
+ellipse,elipse,ll→l
+aquelle,aquele,ll→l
+molle,mole,ll→l
+abbade,abade,bb→b
+sabbado,sábado,bb→b
+sciencia,ciência,silent consonant
+scena,cena,silent consonant
+psalmo,salmo,ps→s
+damno,dano,mn→n
+somno,sono,mn→n
+columna,coluna,mn→n
+alumno,aluno,mn→n
+outomno,outono,mn→n
+solemne,solene,mn→n
+inhumano,inumano,h dropped
+comprehender,compreender,h dropped
+comprehensão,compreensão,h dropped
+rehaver,reaver,h dropped
+exhausto,exausto,h dropped
+prohibir,proibir,h dropped
+deshonra,desonra,h dropped
+hombro,ombro,h dropped
+hervas,ervas,h dropped
+kilo,quilo,k→qu / w→v
+kiosque,quiosque,k→qu / w→v
+kermesse,quermesse,k→qu / w→v
+wagon,vagão,k→qu / w→v
