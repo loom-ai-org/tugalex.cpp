@@ -64,6 +64,22 @@ A path that contains a NUL character is a missing file, as in Python's
 `os.path.exists`. The golden checks the type of each exception, and it checks
 the message of each `ValueError`.
 
+A gzip data file can have two faults: one in its gzip stream and one in its
+content. Python decompresses, decodes and parses the file while it reads it.
+Thus Python raises the fault that it reads first. The C++ library decompresses
+the whole file before it decodes it, so the gzip fault always wins. Two
+examples:
+
+- A truncated file with a byte that is not UTF-8 near its start. Python raises
+  `UnicodeDecodeError`. C++ raises `DataError` with `python_type()`
+  `EOFError`.
+- A gender table with no `name` column and a damaged end. Python raises
+  `KeyError` at the first data row. C++ raises `DataError` with
+  `python_type()` `BadGzipFile` or `EOFError`.
+
+Both languages reject such a file. Only the type of the exception differs, and
+no returned value differs.
+
 These parts are not ported:
 
 - The build scripts in the source repository (`scripts/`). The wheel does not
