@@ -20,6 +20,11 @@ find_package(ZLIB REQUIRED)
 find_package(Threads REQUIRED)
 
 set(TUGALEX_DATA_INSTALL_DIR ${CMAKE_INSTALL_DATADIR}/tugalex)
+# The library looks for its data relative to the installed library, or to the
+# executable it is linked into, before the absolute path, so an install made
+# with `cmake --install --prefix` into another prefix finds its data.
+file(RELATIVE_PATH _tugalex_data_from_lib "${CMAKE_INSTALL_FULL_LIBDIR}" "${CMAKE_INSTALL_FULL_DATADIR}/tugalex")
+file(RELATIVE_PATH _tugalex_data_from_bin "${CMAKE_INSTALL_FULL_BINDIR}" "${CMAKE_INSTALL_FULL_DATADIR}/tugalex")
 
 add_library(tugalex
     src/unicode.cpp
@@ -37,8 +42,10 @@ target_include_directories(tugalex
         ${CMAKE_CURRENT_SOURCE_DIR}/src
 )
 target_compile_definitions(tugalex PRIVATE
-    TUGALEX_DEFAULT_DATA_DIR="${CMAKE_INSTALL_PREFIX}/${TUGALEX_DATA_INSTALL_DIR}")
-target_link_libraries(tugalex PRIVATE ZLIB::ZLIB PUBLIC Threads::Threads)
+    TUGALEX_DEFAULT_DATA_DIR="${CMAKE_INSTALL_PREFIX}/${TUGALEX_DATA_INSTALL_DIR}"
+    TUGALEX_DATA_FROM_LIBDIR="${_tugalex_data_from_lib}"
+    TUGALEX_DATA_FROM_BINDIR="${_tugalex_data_from_bin}")
+target_link_libraries(tugalex PRIVATE ZLIB::ZLIB ${CMAKE_DL_LIBS} PUBLIC Threads::Threads)
 set_target_properties(tugalex PROPERTIES POSITION_INDEPENDENT_CODE ON)
 if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
     target_compile_options(tugalex PRIVATE -Wall -Wextra -Wpedantic)
@@ -76,6 +83,18 @@ if(TUGALEX_BUILD_TESTS)
 
     set_tests_properties(parity examples PROPERTIES
         ENVIRONMENT "TUGALEX_DATA_DIR=${CMAKE_CURRENT_SOURCE_DIR}/data")
+
+    # Installs into prefixes that are not CMAKE_INSTALL_PREFIX and runs a
+    # program that links the installed library with no TUGALEX_DATA_DIR.
+    add_test(NAME relocated_install
+             COMMAND ${CMAKE_COMMAND} -DBUILD_DIR=${CMAKE_CURRENT_BINARY_DIR} -DSOURCE_DIR=${CMAKE_CURRENT_SOURCE_DIR}
+                     -DPREFIX=${CMAKE_CURRENT_BINARY_DIR}/relocated-install -DINSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}
+                     -DBINDIR=${CMAKE_INSTALL_BINDIR} -DLIBDIR=${CMAKE_INSTALL_LIBDIR}
+                     -DDATADIR=${CMAKE_INSTALL_DATADIR} "-DGENERATOR=${CMAKE_GENERATOR}"
+                     -DCXX_COMPILER=${CMAKE_CXX_COMPILER} "-DCXX_FLAGS=${CMAKE_CXX_FLAGS}"
+                     -DBUILD_TYPE=${CMAKE_BUILD_TYPE} -DZLIB_LIBRARY=${ZLIB_LIBRARY}
+                     -DZLIB_INCLUDE_DIR=${ZLIB_INCLUDE_DIR}
+                     -P ${CMAKE_CURRENT_SOURCE_DIR}/tests/relocated_install.cmake)
     # A sanitizer build replays the goldens in about ten minutes.
     set_tests_properties(parity PROPERTIES TIMEOUT 3600)
 endif()

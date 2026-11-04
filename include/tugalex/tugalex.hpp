@@ -118,9 +118,10 @@ private:
 };
 
 // The directory that holds the data files. The first of these that is set
-// wins: set_data_dir(), the TUGALEX_DATA_DIR environment variable, the
-// install location compiled into the library. The noun-gender and given-name
-// tables load once for each path.
+// wins: set_data_dir(), the TUGALEX_DATA_DIR environment variable, the data
+// directory of the install that holds the library (found from the path of the
+// shared library or of the program), the install location compiled into the
+// library. The noun-gender and given-name tables load once for each path.
 std::string data_dir();
 void set_data_dir(std::string path);
 
