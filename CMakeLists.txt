@@ -84,12 +84,13 @@ if(TUGALEX_BUILD_TESTS)
     set_tests_properties(parity examples PROPERTIES
         ENVIRONMENT "TUGALEX_DATA_DIR=${CMAKE_CURRENT_SOURCE_DIR}/data")
 
-    # Installs into a prefix that is not CMAKE_INSTALL_PREFIX and runs a
-    # program installed there with no TUGALEX_DATA_DIR.
+    # Installs into prefixes that are not CMAKE_INSTALL_PREFIX and runs a
+    # program that links the installed library with no TUGALEX_DATA_DIR.
     add_test(NAME relocated_install
              COMMAND ${CMAKE_COMMAND} -DBUILD_DIR=${CMAKE_CURRENT_BINARY_DIR} -DSOURCE_DIR=${CMAKE_CURRENT_SOURCE_DIR}
                      -DPREFIX=${CMAKE_CURRENT_BINARY_DIR}/relocated-install -DINSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}
-                     -DBINDIR=${CMAKE_INSTALL_BINDIR} -DDATADIR=${CMAKE_INSTALL_DATADIR}
+                     -DBINDIR=${CMAKE_INSTALL_BINDIR} -DLIBDIR=${CMAKE_INSTALL_LIBDIR}
+                     -DDATADIR=${CMAKE_INSTALL_DATADIR} "-DGENERATOR=${CMAKE_GENERATOR}"
                      -DCXX_COMPILER=${CMAKE_CXX_COMPILER} "-DCXX_FLAGS=${CMAKE_CXX_FLAGS}"
                      -DBUILD_TYPE=${CMAKE_BUILD_TYPE} -DZLIB_LIBRARY=${ZLIB_LIBRARY}
                      -DZLIB_INCLUDE_DIR=${ZLIB_INCLUDE_DIR}
