@@ -40,7 +40,11 @@ The library finds its data in the first of these locations that is set:
 
 1. `tugalex::set_data_dir(path)`.
 2. The `TUGALEX_DATA_DIR` environment variable.
-3. The install location, `<prefix>/share/tugalex`.
+3. The `share/tugalex` directory of the install that holds the library. The
+   library finds it from the path of the shared library, or of the program that
+   links the static library, so an install that `cmake --install --prefix` puts
+   in another prefix finds its own data.
+4. The install location that the build compiles in, `<prefix>/share/tugalex`.
 
 A `TugaLexicon` reads its tables when it is made, so set the location before
 you make one. A `TugaLexicon` can also read another
