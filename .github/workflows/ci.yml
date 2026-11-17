@@ -44,3 +44,36 @@ jobs:
           cmake --build build -j
       - name: Test
         run: ctest --test-dir build --output-on-failure
+
+  goldens:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v7
+      - name: Read the pins
+        id: pins
+        run: |
+          # The tugalex release is kPythonReference. The Python version is the
+          # one that the header of the committed goldens records.
+          release=$(sed -n 's/^inline constexpr const char\* kPythonReference = "\(.*\)";$/\1/p' include/tugalex/tugalex.hpp)
+          python=$(python3 -c 'import gzip, json; print(json.loads(gzip.open("tests/goldens/lexicon.jsonl.gz", "rt").readline())["python"])')
+          test -n "$release" && test -n "$python"
+          echo "tugalex $release, Python $python"
+          echo "release=$release" >> "$GITHUB_OUTPUT"
+          echo "python=$python" >> "$GITHUB_OUTPUT"
+      - name: Regenerate the goldens
+        env:
+          RELEASE: ${{ steps.pins.outputs.release }}
+          PYTHON: ${{ steps.pins.outputs.python }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/goldens"
+          git -c advice.detachedHead=false clone --quiet --depth 1 --branch "$RELEASE" https://github.com/TigreGotico/tugalex "$RUNNER_TEMP/tugalex"
+          uv venv --python "$PYTHON" "$RUNNER_TEMP/venv"
+          uv pip install --python "$RUNNER_TEMP/venv/bin/python" --prerelease=allow "tugalex==$RELEASE"
+          "$RUNNER_TEMP/venv/bin/python" -I -W error::DeprecationWarning tools/dump_goldens.py \
+            --out "$RUNNER_TEMP/goldens/lexicon.jsonl.gz" --fixtures "$RUNNER_TEMP/goldens/fixtures" \
+            --tests-dir "$RUNNER_TEMP/tugalex/tests"
+      - name: Compare the bytes
+        run: |
+          cmp tests/goldens/lexicon.jsonl.gz "$RUNNER_TEMP/goldens/lexicon.jsonl.gz"
+          diff -r tests/fixtures "$RUNNER_TEMP/goldens/fixtures"

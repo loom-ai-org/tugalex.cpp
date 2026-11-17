@@ -24,8 +24,10 @@ std::vector<std::string> table_lines(const std::string& path) {
     return detail::split_on(detail::translate_newlines(detail::read_text(path, false)), '\n');
 }
 
-// _load_archaisms and _load_homographs: the header line is skipped, quotes
-// are deleted, then the line is split on its first two commas.
+// The homograph and archaism tables: the header line is skipped, quotes are
+// deleted, then the line is split on its first two commas. This follows
+// _load_homographs. Python reads archaisms.csv with csv.DictReader, and the two
+// rules agree only on the shipped file (PARITY.md).
 template <class Store>
 void load_three_columns(const std::string& path, Store store) {
     const auto lines = table_lines(path);

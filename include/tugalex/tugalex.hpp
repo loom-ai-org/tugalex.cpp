@@ -23,8 +23,9 @@
 
 namespace tugalex {
 
-// The Python release this port is held at byte parity with.
-inline constexpr const char* kPythonReference = "2.2.2a1";
+// The Python release this port is held at byte parity with. CI installs this
+// release, regenerates the goldens and fails on any byte diff.
+inline constexpr const char* kPythonReference = "2.5.0a1";
 
 // A string-keyed map that iterates in insertion order, as a Python dict does.
 // Assigning to a key that exists keeps its position.

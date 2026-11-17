@@ -26,7 +26,8 @@ Corpora:
   fixtures   hand-written dictionaries in tests/fixtures/ for the csv quirks
 
 Usage:
-  python -I tools/dump_goldens.py --out tests/goldens/lexicon.jsonl.gz \\
+  python -I -W error::DeprecationWarning tools/dump_goldens.py \\
+      --out tests/goldens/lexicon.jsonl.gz \\
       --fixtures tests/fixtures --tests-dir <tugalex>/tests
 """
 import argparse
@@ -42,10 +43,14 @@ import pathlib
 import random
 import sys
 import unicodedata
+import warnings
 import zlib
 
 import tugalex
 from tugalex import TugaLexicon
+
+# The start of every DeprecationWarning that tugalex raises for its own names.
+TUGALEX_DEPRECATION = r"TugaLexicon\.\w+ is deprecated and will be removed in tugalex "
 
 REGIONS_EXTRA = ["zzz", "LBX", ""]
 POS_EXTRA = ["", "X", "noun"]
@@ -519,6 +524,11 @@ def main():
     parser.add_argument("--tests-dir")
     parser.add_argument("--sample", type=int, default=4000)
     args = parser.parse_args()
+
+    # The goldens record the deprecated dictionary and spelling API on purpose.
+    # Only tugalex's own deprecation notices are silenced; any other
+    # DeprecationWarning stays an error under -W error::DeprecationWarning.
+    warnings.filterwarnings("ignore", TUGALEX_DEPRECATION, DeprecationWarning)
 
     out = Writer()
     lex = TugaLexicon()
