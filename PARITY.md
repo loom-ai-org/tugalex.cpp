@@ -3,13 +3,15 @@
 This library is held at byte parity with the Python `tugalex` release named in
 `kPythonReference` (`include/tugalex/tugalex.hpp`). The test `parity` checks that
 claim. It repeats every call recorded in `tests/goldens/lexicon.jsonl.gz` and
-compares the bytes of each result. The file holds 374,034 calls.
+compares the bytes of each result. The file holds 599,558 calls.
 
 ## Public surface
 
-The Python package defines 35 public names: 8 at module level and 27 members of
-`TugaLexicon` (18 class attributes and 9 instance attributes). The version
-constants are left out of that count. Each name maps to C++ as shown below.
+The Python package defines 41 public names: 12 at module level and 29 members of
+`TugaLexicon` (23 class attributes and 6 instance attributes). The version
+constants are left out of that count. The port has 35 of them. Each name maps
+to C++ as shown below. The six other names are in the list of parts that are
+not ported.
 
 | Python | C++ |
 | --- | --- |
@@ -90,6 +92,22 @@ These parts are not ported:
 - The `__main__` demonstration block.
 - The csv module's field size limit (131,072 characters). Python raises
   `csv.Error` for a longer field. The C++ reader accepts the field.
+- The `DeprecationWarning` that each deprecated name raises. The C++ library
+  has no warnings at run time.
+- `modern_spelling` and `archaic_words_br`. Both are deprecated spelling
+  accessors. The release that removes them is `SPELLING_REMOVAL_VERSION`, and
+  desacordo_ortografico owns the spelling table.
+- `DICTIONARY_REMOVAL_VERSION` and `SPELLING_REMOVAL_VERSION`.
+- The `csv.DictReader` read of the archaism table. The C++ library deletes all
+  quotes and splits each line on its first two commas. The two rules give the
+  same table for the shipped `archaisms.csv` only. A padded key, a quoted comma
+  or a line with no comma reads differently.
+- `WORDLIST_PATH` (`data/words.csv.gz`) and `REGIONAL_DICT_PATH`. Python reads
+  the word list of the shipped dictionary from `words.csv.gz`. The C++
+  `get_wordlist` gives the sorted keys of the dictionary for the region.
+  tugalex builds `words.csv.gz` from those keys
+  (`scripts/build_wordlist.py`), so the two lists are the same. The goldens
+  check this for each region.
 - Two checks of the gzip header. Python ignores the reserved flag bits and does
   not verify the header CRC (`FHCRC`). zlib rejects both, and the C++ library
   raises `BadGzipFile` for them.
@@ -102,8 +120,8 @@ The port copies these behaviours of the Python code. The goldens check each one.
   quoting rules. Universal-newline translation and the `#` line filter come
   first, so a quoted field can hide a `#` line. An open quote swallows the rest
   of the file.
-- The homograph and archaism tables use a plain `split(",")` after all quotes
-  are deleted.
+- The homograph table uses a plain `split(",")` after all quotes are
+  deleted.
 - The AO1990 tables are read through the `csv` reader with no line-end
   translation, and the first row is skipped. A row that does not have two
   fields is skipped. Each old spelling in the first field maps to all the new
@@ -152,13 +170,13 @@ sample alone is not sufficient.
 | Corpus | Lines | Source |
 | --- | ---: | --- |
 | tables | 114 | each small table, the region orders, `ipa`, `syllables`, `get_wordlist` and `get_ipa_map` for every region and every POS, hashed |
-| sweeps | 78 | `get_phonemes` and `get_syllables` for all 59,335 sweep words in each region and POS, hashed, and the gender and AO1990 functions over the same words |
-| tests | 8,714 | every string literal in tugalex `tests/` |
-| homographs | 37,439 | every homograph, archaism and AO1990 entry through each method, and the dictionary words written with capitals |
-| genders | 235,974 | every noun-gender exception and given name as written, lowercased and uppercased, and each suffix rule in context |
-| sample | 34,098 | seeded random lookups, case and whitespace variants, and sentences |
+| sweeps | 78 | `get_phonemes` and `get_syllables` for all 70,744 sweep words in each region and POS, hashed, and the gender and AO1990 functions over the same words |
+| tests | 29,343 | every string literal in tugalex `tests/` |
+| homographs | 242,728 | every homograph, archaism and AO1990 entry through each method, and the dictionary words written with capitals |
+| genders | 235,899 | every noun-gender exception and given name as written, lowercased and uppercased, and each suffix rule in context |
+| sample | 33,920 | seeded random lookups, case and whitespace variants, and sentences |
 | unicode | 31,110 | every code point with a lowercase mapping, whitespace status or category Mn/Lt, in context |
-| edge | 13,226 | hand-built arguments for each method: empty and whitespace strings, unknown words, regions, POS tags and dialect codes, and odd letter cases |
+| edge | 13,085 | hand-built arguments for each method: empty and whitespace strings, unknown words, regions, POS tags and dialect codes, and odd letter cases |
 | raw | 7,140 | 34 byte sequences, valid and invalid UTF-8, in 7 contexts, given as hex to each method that takes a string, against the shipped dictionary and against a fixture whose keys hold U+FFFD |
 | fixtures | 5,571 | the dictionaries in `tests/fixtures/`, which exercise the csv and loader quirks, and gzip and UTF-8 files that are not valid |
 | datadirs | 570 | the gender lookups against each data directory in `tests/fixtures/`: other line ends, missing and duplicate columns, short rows, damaged gzip and a NUL in the path |
@@ -167,9 +185,20 @@ The sweep words are the sorted union of the wordlist of each region, the
 homographs, the archaisms and both sides of AO1990. The C++ test builds the same
 list through the public API.
 
-To regenerate the goldens, run this with the reference release installed:
+To regenerate the goldens, install the release named in `kPythonReference`,
+check out the tests of the same release tag, and run this:
 
 ```
-python -I tools/dump_goldens.py --out tests/goldens/lexicon.jsonl.gz \
+python -I -W error::DeprecationWarning tools/dump_goldens.py \
+    --out tests/goldens/lexicon.jsonl.gz \
     --fixtures tests/fixtures --tests-dir <tugalex>/tests
 ```
+
+The script records the deprecated tugalex API on purpose. It silences only the
+deprecation notices of tugalex itself, so any other `DeprecationWarning` stops
+the run.
+
+The CI job `goldens` does the same steps. It reads the release from
+`kPythonReference` and the Python version from the header of the committed
+goldens. It then compares the new goldens and fixtures with the committed
+files, and fails on any byte diff.

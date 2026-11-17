@@ -2,7 +2,7 @@
 
 A C++17 port of [tugalex](https://github.com/TigreGotico/tugalex), the regional
 Portuguese pronunciation lexicon. It gives the same output as the Python package,
-byte for byte: see [PARITY.md](PARITY.md). It ships the same data files.
+byte for byte: see [PARITY.md](PARITY.md). It ships the data files that it reads.
 
 ```cpp
 #include <tugalex/tugalex.hpp>

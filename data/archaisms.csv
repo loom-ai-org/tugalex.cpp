@@ -1,277 +1,5523 @@
-archaic,modern,notes
-architecta,arquiteta,ch→qu
-architecto,arquiteto,ch→qu
-architectura,arquitetura,ch→qu
-caballo,cavalo,ll→l + b→v
-caravella,caravela,ll→l
-chorographia,corografia,ch→c
-chromatico,cromático,ch→c
-chromosoma,cromossoma,ch→c
-chronico,crónico,ch→c
-chronologia,cronologia,ch→c
-chronometro,cronómetro,ch→c
-chyloso,quiloso,chy→qui
-chyluria,quilúria,chy→qui
-chyme,quime,chy→qui
-chymico,químico,chy→qui
-diccionario,dicionário,cc→c
-diphthongo,ditongo,phth→t
-grammatica,gramática,mm→m
-grammatico,gramático,mm→m
-hypnose,hipnose,y→i + h→h
-hypocrisia,hipocrisia,y→i + h→h
-hypocrisia,hipocrisia,y→i + h→h regularization
-hypothese,hipótese,y→i + h→h
-inflexão,inflexão,archaic identical spelling kept
-kalendario,calendário,k→c
-katholico,católico,k→c
-kilogramma,quilograma,k→qu
-kilolitro,quilolitro,k→qu
-kilometro,quilómetro,k→qu
-litteral,literal,tt→t
-litterario,literário,tt→t
-litteratura,literatura,tt→t
-lyrio,lírio,y→i
-mysterio,mistério,y→i
-mysticismo,misticismo,y→i
-mystico,místico,y→i
-orthodoxo,ortodoxo,ortho→orto
-orthographia,ortografia,ortho→orto
-orthographico,ortográfico,ortho→orto
-orthopedico,ortopédico,ortho→orto
-parochia,paroquia,ch→qu
-parochiano,paroquiano,ch→qu
-phanatico,fanático,ph→f
-phantasma,fantasma,ph→f
-pharmaceutica,farmacêutica,ph→f
-pharmaceutico,farmacêutico,ph→f
-pharmacia,farmácia,ph→f
-pharmacopea,farmacopeia,ph→f
-pharol,farol,ph→f
-philosophia,filosofia,ph→f
-philosophico,filosófico,ph→f
-philosopho,filósofo,ph→f
-phlegma,fleuma,ph→f
-phlegmon,flegmão,ph→f
-phleugma,fleuma,ph→f
-phosphorico,fosfórico,ph→f
-phosphoro,fósforo,ph→f
-photographia,fotografia,ph→f
-photographico,fotográfico,ph→f
-photometro,fotómetro,ph→f
-phrase,frase,ph→f
-phthisica,tísica,ph→f
-phthisico,tísico,ph→f
-prompto,pronto,mp→n
-pseudonymo,pseudónimo,ps + y→i
-psychoanalytico,psicanalítico,psy→psi
-rhapsodia,rapsódia,rh→r
-rhapsodico,rapsódico,rh→r
-rhetorica,retórica,rh→r + accent shift
-rhetorico,retórico,rh→r
-rheumatismo,reumatismo,rh→r
-rheumatologia,reumatologia,rh→r
-rheumatologico,reumatológico,rh→r
-sanccionar,sancionar,cc→c
-subjecto,sujeito,ct→j (semantic shift)
-syllaba,sílaba,yll→íl
-syllabario,silabário,yll→íl
-syllabario,silabário,yll→íl
-syllogismo,silogismo,yll→íl
-symbolico,simbólico,sy→si
-symbolo,símbolo,sy→si
-symphonia,sinfonia,symph→sinf
-symptoma,sintoma,sympt→sint
-symptomatico,sintomático,sympt→sint
-synagoga,sinagoga,sy→si
-syndroma,síndroma,sy→si
-syndromo,síndromo,sy→si
-theatro,teatro,th→t
-theocracia,teocracia,th→t
-theologia,teologia,th→t
-theologico,teológico,th→t
-therapeutico,terapêutico,th→t
-therapia,terapia,th→t
-thermodynamica,termodinâmica,th→t
-thermometro,termómetro,th→t
-thesouro,tesouro,th→t
-thesouroso,tesouroso,th→t
-throno,trono,th→t
-thurbina,turbina,th→t
-thymia,timia,th→t
-typo,tipo,y→i
-typographia,tipografia,y→i
-typographico,tipográfico,y→i
-tyrania,tirania,y→i
-tyranno,tirano,y→i + nn→n
-physica,física,ph→f + y→i
-rhythmo,ritmo,th→t + rh→r + y→i
-estylo,estilo,y→i
-martyr,mártir,y→i
-hymno,hino,y→i
-phthysica,tísica,ph→f + th→t + y→i
-elephante,elefante,ph→f
-propheta,profeta,ph→f
-phantasia,fantasia,ph→f
-triumpho,triunfo,ph→f
-prophecia,profecia,ph→f
-saphira,safira,ph→f
-geographia,geografia,ph→f
-biographia,biografia,ph→f
-telegrapho,telégrafo,ph→f
-phenomeno,fenómeno,ph→f
-nympha,ninfa,ph→f + y→i
-pharyngite,faringite,ph→f + y→i
-physiologia,fisiologia,ph→f + y→i
-theoria,teoria,th→t
-thema,tema,th→t
-thesoura,tesoura,th→t
-cathedral,catedral,th→t
-cathedra,cátedra,th→t
-catholico,católico,th→t
-epitheto,epíteto,th→t
-anesthesia,anestesia,th→t
-synthese,síntese,th→t + y→i
-mytho,mito,th→t + y→i
-mythologia,mitologia,th→t + y→i
-amphitheatro,anfiteatro,ph→f + th→t
-rhinoceronte,rinoceronte,rh→r
-hemorrhagia,hemorragia,rh→r
-analyse,análise,y→i
-analysar,analisar,y→i
-systema,sistema,y→i
-syntaxe,sintaxe,y→i
-abysmo,abismo,y→i
-hyena,hiena,y→i
-cyclo,ciclo,y→i
-cylindrico,cilíndrico,y→i
-cymbalo,címbalo,y→i
-cysterna,cisterna,y→i
-dynastia,dinastia,y→i
-anonymo,anónimo,y→i
-gymnasio,ginásio,y→i
-gymnastica,ginástica,y→i
-hygiene,higiene,y→i
-hypoteca,hipoteca,y→i
-lympha,linfa,ph→f + y→i
-myrtho,mirto,th→t + y→i
-amethista,ametista,th→t
-antipathia,antipatia,th→t
-egypto,egito,y→i
-chimica,química,ch→qu/c
-chimico,químico,ch→qu/c
-christão,cristão,ch→qu/c
-christo,cristo,ch→qu/c
-chronica,crónica,ch→qu/c
-monarchia,monarquia,ch→qu/c
-archivo,arquivo,ch→qu/c
-chaos,caos,ch→qu/c
-echo,eco,ch→qu/c
-machina,máquina,ch→qu/c
-orchestra,orquestra,ch→qu/c
-psychologia,psicologia,ch→qu/c
-sepulchro,sepulcro,ch→qu/c
-archaico,arcaico,ch→qu/c
-epocha,época,ch→qu/c
-eschola,escola,ch→qu/c
-charta,carta,ch→qu/c
-acrosticho,acróstico,ch→qu/c
-cholerico,colérico,ch→qu/c
-melancholia,melancolia,ch→qu/c
-mechanica,mecânica,ch→qu/c
-chloreto,cloreto,ch→qu/c
-anchora,âncora,ch→qu/c
-chimera,quimera,ch→qu/c
-psychiatria,psiquiatria,ch→qu/c
-elle,ele,ll→l
-ella,ela,ll→l
-elles,eles,ll→l
-ellas,elas,ll→l
-anno,ano,nn→n
-annos,anos,nn→n
-annual,anual,nn→n
-commando,comando,mm→m
-communicar,comunicar,mm→m
-commum,comum,mm→m
-commercio,comércio,mm→m
-commodo,cómodo,mm→m
-commover,comover,mm→m
-commoção,comoção,mm→m
-recommendar,recomendar,mm→m
-gemma,gema,mm→m
-approvar,aprovar,pp→p
-supprimir,suprimir,pp→p
-applicar,aplicar,pp→p
-apparecer,aparecer,pp→p
-suppor,supor,pp→p
-oppor,opor,pp→p
-opposição,oposição,pp→p
-applauso,aplauso,pp→p
-approximar,aproximar,pp→p
-appellido,apelido,ll→l
-differente,diferente,ff→f
-difficuldade,dificuldade,ff→f
-difficil,difícil,ff→f
-official,oficial,ff→f
-officio,ofício,ff→f
-affirmar,afirmar,ff→f
-affecto,afeto,ff→f
-soffrer,sofrer,ff→f
-soffrido,sofrido,ff→f
-estoffo,estofo,ff→f
-attenção,atenção,tt→t
-attento,atento,tt→t
-attestar,atestar,tt→t
-attribuir,atribuir,tt→t
-gutta,gota,tt→t
-additar,aditar,dd→d
-addição,adição,dd→d
-addicionar,adicionar,dd→d
-aggravar,agravar,gg→g
-aggregar,agregar,gg→g
-immenso,imenso,mm→m
-immediato,imediato,mm→m
-bocca,boca,cc→c
-vacca,vaca,cc→c
-sacco,saco,cc→c
-peccado,pecado,cc→c
-seccar,secar,cc→c
-occasião,ocasião,cc→c
-accidente,acidente,cc→c
-panno,pano,nn→n
-cannella,canela,ll→l
-cavallo,cavalo,ll→l
-bello,belo,ll→l
-belleza,beleza,ll→l
-fallar,falar,ll→l
-gallinha,galinha,ll→l
-collega,colega,ll→l
-illustre,ilustre,ll→l
-alliar,aliar,ll→l
-ellipse,elipse,ll→l
-aquelle,aquele,ll→l
-molle,mole,ll→l
-abbade,abade,bb→b
-sabbado,sábado,bb→b
-sciencia,ciência,silent consonant
-scena,cena,silent consonant
-psalmo,salmo,ps→s
-damno,dano,mn→n
-somno,sono,mn→n
-columna,coluna,mn→n
-alumno,aluno,mn→n
-outomno,outono,mn→n
-solemne,solene,mn→n
-inhumano,inumano,h dropped
-comprehender,compreender,h dropped
-comprehensão,compreensão,h dropped
-rehaver,reaver,h dropped
-exhausto,exausto,h dropped
-prohibir,proibir,h dropped
-deshonra,desonra,h dropped
-hombro,ombro,h dropped
-hervas,ervas,h dropped
-kilo,quilo,k→qu / w→v
-kiosque,quiosque,k→qu / w→v
-kermesse,quermesse,k→qu / w→v
-wagon,vagão,k→qu / w→v
+archaic,modern,modern_pt_BR,notes
+architecta,arquiteta,,ch→qu
+architecto,arquiteto,,ch→qu
+architectura,arquitetura,,ch→qu
+caravella,caravela,,ll→l
+chorographia,corografia,,ch→c
+chromatico,cromático,,ch→c
+chromosoma,cromossoma,,ch→c
+chronico,crónico,crônico,ch→c
+chronologia,cronologia,,ch→c
+chronometro,cronómetro,cronômetro,ch→c
+chyloso,quiloso,,chy→qui
+chyluria,quilúria,,chy→qui
+chymico,químico,,chy→qui
+diccionario,dicionário,,cc→c
+diphthongo,ditongo,,phth→t
+grammatica,gramática,,mm→m
+grammatico,gramático,,mm→m
+hypnose,hipnose,,y→i + h→h
+hypocrisia,hipocrisia,,y→i + h→h
+hypothese,hipótese,,y→i + h→h
+kalendario,calendário,,k→c
+katholico,católico,,k→c
+kilogramma,quilograma,,k→qu + mm→m
+kilometro,quilómetro,quilômetro,k→qu
+litteral,literal,,tt→t
+litterario,literário,,tt→t
+litteratura,literatura,,tt→t
+lyrio,lírio,,y→i
+mysterio,mistério,,y→i
+mysticismo,misticismo,,y→i
+mystico,místico,,y→i
+orthodoxo,ortodoxo,,ortho→orto
+orthographia,ortografia,,ortho→orto
+orthographico,ortográfico,,ortho→orto
+orthopedico,ortopédico,,ortho→orto
+parochia,paróquia,,ch→qu
+parochiano,paroquiano,,ch→qu
+phanatico,fanático,,ph→f
+phantasma,fantasma,,ph→f
+pharmaceutica,farmacêutica,,ph→f
+pharmaceutico,farmacêutico,,ph→f
+pharmacia,farmácia,,ph→f
+pharmacopea,farmacopeia,,ph→f
+pharol,farol,,ph→f
+philosophia,filosofia,,ph→f
+philosophico,filosófico,,ph→f
+philosopho,filósofo,,ph→f
+phlegma,fleuma,,ph→f
+phlegmon,flegmão,,ph→f
+phleugma,fleuma,,ph→f
+phosphorico,fosfórico,,ph→f
+phosphoro,fósforo,,ph→f
+photographia,fotografia,,ph→f
+photographico,fotográfico,,ph→f
+photometro,fotómetro,fotômetro,ph→f
+phrase,frase,,ph→f
+phthisica,tísica,,ph→f
+phthisico,tísico,,ph→f
+prompto,pronto,,mp→n
+pseudonymo,pseudónimo,pseudônimo,ps + y→i
+psychoanalytico,psicanalítico,,psy→psi
+rhapsodia,rapsódia,,rh→r
+rhapsodico,rapsódico,,rh→r
+rhetorica,retórica,,rh→r + accent shift
+rhetorico,retórico,,rh→r
+rheumatismo,reumatismo,,rh→r
+rheumatologia,reumatologia,,rh→r
+rheumatologico,reumatológico,,rh→r
+sanccionar,sancionar,,cc→c
+subjecto,sujeito,,ct→j (semantic shift)
+syllaba,sílaba,,yll→íl
+syllabario,silabário,,yll→íl
+syllogismo,silogismo,,yll→íl
+symbolico,simbólico,,sy→si
+symbolo,símbolo,,sy→si
+symphonia,sinfonia,,symph→sinf
+symptoma,sintoma,,sympt→sint
+symptomatico,sintomático,,sympt→sint
+synagoga,sinagoga,,sy→si
+syndroma,síndroma,,sy→si
+syndromo,síndromo,,sy→si
+theatro,teatro,,th→t
+theocracia,teocracia,,th→t
+theologia,teologia,,th→t
+theologico,teológico,,th→t
+therapeutico,terapêutico,,th→t
+therapia,terapia,,th→t
+thermodynamica,termodinâmica,,th→t
+thermometro,termómetro,termômetro,th→t
+thesouro,tesouro,,th→t
+throno,trono,,th→t
+thurbina,turbina,,th→t
+typo,tipo,,y→i
+typographia,tipografia,,y→i
+typographico,tipográfico,,y→i
+tyrania,tirania,,y→i
+tyranno,tirano,,y→i + nn→n
+physica,física,,ph→f + y→i
+rhythmo,ritmo,,th→t + rh→r + y→i
+estylo,estilo,,y→i
+martyr,mártir,,y→i
+hymno,hino,,y→i
+phthysica,tísica,,ph→f + th→t + y→i
+elephante,elefante,,ph→f
+propheta,profeta,,ph→f
+phantasia,fantasia,,ph→f
+triumpho,triunfo,,ph→f
+prophecia,profecia,,ph→f
+saphira,safira,,ph→f
+geographia,geografia,,ph→f
+biographia,biografia,,ph→f
+telegrapho,telégrafo,,ph→f
+phenomeno,fenómeno,fenômeno,ph→f
+nympha,ninfa,,ph→f + y→i
+pharyngite,faringite,,ph→f + y→i
+physiologia,fisiologia,,ph→f + y→i
+theoria,teoria,,th→t
+thema,tema,,th→t
+thesoura,tesoura,,th→t
+cathedral,catedral,,th→t
+cathedra,cátedra,,th→t
+catholico,católico,,th→t
+epitheto,epíteto,,th→t
+anesthesia,anestesia,,th→t
+synthese,síntese,,th→t + y→i
+mytho,mito,,th→t + y→i
+mythologia,mitologia,,th→t + y→i
+amphitheatro,anfiteatro,,ph→f + th→t
+rhinoceronte,rinoceronte,,rh→r
+hemorrhagia,hemorragia,,rh→r
+analyse,análise,,y→i
+analysar,analisar,,y→i
+systema,sistema,,y→i
+syntaxe,sintaxe,,y→i
+abysmo,abismo,,y→i
+hyena,hiena,,y→i
+cyclo,ciclo,,y→i
+cylindrico,cilíndrico,,y→i
+cymbalo,címbalo,,y→i
+cysterna,cisterna,,y→i
+dynastia,dinastia,,y→i
+anonymo,anónimo,anônimo,y→i
+gymnasio,ginásio,,y→i
+gymnastica,ginástica,,y→i
+hygiene,higiene,,y→i
+hypoteca,hipoteca,,y→i
+lympha,linfa,,ph→f + y→i
+myrtho,mirto,,th→t + y→i
+amethista,ametista,,th→t
+antipathia,antipatia,,th→t
+egypto,egito,,y→i
+chimica,química,,ch→qu/c
+chimico,químico,,ch→qu/c
+christão,cristão,,ch→qu/c
+christo,cristo,,ch→qu/c
+chronica,crónica,crônica,ch→qu/c
+monarchia,monarquia,,ch→qu/c
+archivo,arquivo,,ch→qu/c
+chaos,caos,,ch→qu/c
+echo,eco,,ch→qu/c
+machina,máquina,,ch→qu/c
+orchestra,orquestra,,ch→qu/c
+psychologia,psicologia,,ch→qu/c
+sepulchro,sepulcro,,ch→qu/c
+archaico,arcaico,,ch→qu/c
+epocha,época,,ch→qu/c
+eschola,escola,,ch→qu/c
+charta,carta,,ch→qu/c
+acrosticho,acróstico,,ch→qu/c
+cholerico,colérico,,ch→qu/c
+melancholia,melancolia,,ch→qu/c
+mechanica,mecânica,,ch→qu/c
+chloreto,cloreto,,ch→qu/c
+anchora,âncora,,ch→qu/c
+chimera,quimera,,ch→qu/c
+psychiatria,psiquiatria,,ch→qu/c
+elle,ele,,ll→l
+ella,ela,,ll→l
+elles,eles,,ll→l
+ellas,elas,,ll→l
+anno,ano,,nn→n
+annos,anos,,nn→n
+annual,anual,,nn→n
+commando,comando,,mm→m
+communicar,comunicar,,mm→m
+commum,comum,,mm→m
+commercio,comércio,,mm→m
+commodo,cómodo,cômodo,mm→m
+commover,comover,,mm→m
+commoção,comoção,,mm→m
+recommendar,recomendar,,mm→m
+gemma,gema,,mm→m
+approvar,aprovar,,pp→p
+supprimir,suprimir,,pp→p
+applicar,aplicar,,pp→p
+apparecer,aparecer,,pp→p
+suppor,supor,,pp→p
+oppor,opor,,pp→p
+opposição,oposição,,pp→p
+applauso,aplauso,,pp→p
+approximar,aproximar,,pp→p
+appellido,apelido,,ll→l
+differente,diferente,,ff→f
+difficuldade,dificuldade,,ff→f
+difficil,difícil,,ff→f
+official,oficial,,ff→f
+officio,ofício,,ff→f
+affirmar,afirmar,,ff→f
+affecto,afeto,,ff→f
+soffrer,sofrer,,ff→f
+soffrido,sofrido,,ff→f
+estoffo,estofo,,ff→f
+attenção,atenção,,tt→t
+attento,atento,,tt→t
+attestar,atestar,,tt→t
+attribuir,atribuir,,tt→t
+gutta,gota,,tt→t
+additar,aditar,,dd→d
+addição,adição,,dd→d
+addicionar,adicionar,,dd→d
+aggravar,agravar,,gg→g
+aggregar,agregar,,gg→g
+immenso,imenso,,mm→m
+immediato,imediato,,mm→m
+bocca,boca,,cc→c
+vacca,vaca,,cc→c
+sacco,saco,,cc→c
+peccado,pecado,,cc→c
+seccar,secar,,cc→c
+occasião,ocasião,,cc→c
+accidente,acidente,,cc→c
+panno,pano,,nn→n
+cannella,canela,,ll→l
+cavallo,cavalo,,ll→l
+bello,belo,,ll→l
+belleza,beleza,,ll→l
+fallar,falar,,ll→l
+gallinha,galinha,,ll→l
+collega,colega,,ll→l
+illustre,ilustre,,ll→l
+alliar,aliar,,ll→l
+ellipse,elipse,,ll→l
+aquelle,aquele,,ll→l
+molle,mole,,ll→l
+abbade,abade,,bb→b
+sabbado,sábado,,bb→b
+sciencia,ciência,,silent consonant
+psalmo,salmo,,ps→s
+damno,dano,,mn→n
+somno,sono,,mn→n
+columna,coluna,,mn→n
+alumno,aluno,,mn→n
+outomno,outono,,mn→n
+solemne,solene,,mn→n
+inhumano,inumano,,h dropped
+comprehender,compreender,,h dropped
+comprehensão,compreensão,,h dropped
+rehaver,reaver,,h dropped
+exhausto,exausto,,h dropped
+prohibir,proibir,,h dropped
+deshonra,desonra,,h dropped
+hombro,ombro,,h dropped
+hervas,ervas,,h dropped
+kiosque,quiosque,,k→qu / w→v
+wagon,vagão,,k→qu / w→v
+acabaes,acabais,,ae→ai
+agiotae,agiotai,,ae→ai
+amaes,amais,,ae→ai
+ancestraes,ancestrais,,ae→ai
+andae,andai,,ae→ai
+animaes,animais,,ae→ai
+aproximaes,aproximais,,ae→ai
+atacaes,atacais,,ae→ai
+autoraes,autorais,,ae→ai
+aventaes,aventais,,ae→ai
+avistaes,avistais,,ae→ai
+banaes,banais,,ae→ai
+barrocaes,barrocais,,ae→ai
+beiraes,beirais,,ae→ai
+bocaes,bocais,,ae→ai
+bragaes,bragais,,ae→ai
+brincaes,brincais,,ae→ai
+brutaes,brutais,,ae→ai
+cabedaes,cabedais,,ae→ai
+cae,cai,,ae→ai
+caes,cais,,ae→ai
+campaes,campais,,ae→ai
+canaes,canais,,ae→ai
+cantonaes,cantonais,,ae→ai
+capitaes,capitais,,ae→ai
+carnaes,carnais,,ae→ai
+casaes,casais,,ae→ai
+castigae,castigai,,ae→ai
+catarraes,catarrais,,ae→ai
+caudaes,caudais,,ae→ai
+centraes,centrais,,ae→ai
+cerebraes,cerebrais,,ae→ai
+cervicaes,cervicais,,ae→ai
+chamae,chamai,,ae→ai
+choraes,chorais,,ae→ai
+colossaes,colossais,,ae→ai
+comprae,comprai,,ae→ai
+condicionaes,condicionais,,ae→ai
+conjugaes,conjugais,,ae→ai
+constitucionaes,constitucionais,,ae→ai
+convencionaes,convencionais,,ae→ai
+coraes,corais,,ae→ai
+cristaes,cristais,,ae→ai
+curraes,currais,,ae→ai
+daes,dais,,ae→ai
+dedicae,dedicai,,ae→ai
+deixae,deixai,,ae→ai
+despertaes,despertais,,ae→ai
+distrae,distrai,,ae→ai
+dominicaes,dominicais,,ae→ai
+ducaes,ducais,,ae→ai
+editoraes,editorais,,ae→ai
+eleitoraes,eleitorais,,ae→ai
+enxovaes,enxovais,,ae→ai
+episcopaes,episcopais,,ae→ai
+espiraes,espirais,,ae→ai
+estaes,estais,,ae→ai
+estivaes,estivais,,ae→ai
+excepcionaes,excecionais,excepcionais,ae→ai
+fabricaes,fabricais,,ae→ai
+fataes,fatais,,ae→ai
+festivaes,festivais,,ae→ai
+feudaes,feudais,,ae→ai
+ficaes,ficais,,ae→ai
+finaes,finais,,ae→ai
+fiscaes,fiscais,,ae→ai
+fitae,fitai,,ae→ai
+foraes,forais,,ae→ai
+fraternaes,fraternais,,ae→ai
+frontaes,frontais,,ae→ai
+frugaes,frugais,,ae→ai
+fundamentaes,fundamentais,,ae→ai
+garrafaes,garrafais,,ae→ai
+generaes,generais,,ae→ai
+geraes,gerais,,ae→ai
+guardae,guardai,,ae→ai
+habitaes,habitais,,ae→ai
+hemorroidaes,hemorroidais,,ae→ai
+hospitaes,hospitais,,ae→ai
+infernaes,infernais,,ae→ai
+intencionaes,intencionais,,ae→ai
+internacionaes,internacionais,,ae→ai
+intestinaes,intestinais,,ae→ai
+irae,irai,,ae→ai
+jograes,jograis,,ae→ai
+jornaes,jornais,,ae→ai
+julgaes,julgais,,ae→ai
+juncaes,juncais,,ae→ai
+lateraes,laterais,,ae→ai
+legaes,legais,,ae→ai
+levaes,levais,,ae→ai
+liberaes,liberais,,ae→ai
+locaes,locais,,ae→ai
+loureiraes,loureirais,,ae→ai
+lustraes,lustrais,,ae→ai
+madrigaes,madrigais,,ae→ai
+magistraes,magistrais,,ae→ai
+maioraes,maiorais,,ae→ai
+mandae,mandai,,ae→ai
+maquinaes,maquinais,,ae→ai
+matagaes,matagais,,ae→ai
+maternaes,maternais,,ae→ai
+medicinaes,medicinais,,ae→ai
+medievaes,medievais,,ae→ai
+mensaes,mensais,,ae→ai
+mentaes,mentais,,ae→ai
+meridionaes,meridionais,,ae→ai
+metaes,metais,,ae→ai
+milharaes,milharais,,ae→ai
+milheiraes,milheirais,,ae→ai
+mineraes,minerais,,ae→ai
+missaes,missais,,ae→ai
+monumentaes,monumentais,,ae→ai
+moraes,morais,,ae→ai
+mortaes,mortais,,ae→ai
+mostrae,mostrai,,ae→ai
+municipaes,municipais,,ae→ai
+nacionaes,nacionais,,ae→ai
+nataes,natais,,ae→ai
+naturaes,naturais,,ae→ai
+navaes,navais,,ae→ai
+normaes,normais,,ae→ai
+ogivaes,ogivais,,ae→ai
+olivaes,olivais,,ae→ai
+oraes,orais,,ae→ai
+orientaes,orientais,,ae→ai
+originaes,originais,,ae→ai
+outonaes,outonais,,ae→ai
+ovaes,ovais,,ae→ai
+pae,pai,,ae→ai
+paes,pais,,ae→ai
+papae,papai,,ae→ai
+pardaes,pardais,,ae→ai
+paternaes,paternais,,ae→ai
+pedestaes,pedestais,,ae→ai
+pensaes,pensais,,ae→ai
+percaes,percais,,ae→ai
+pinheiraes,pinheirais,,ae→ai
+plantae,plantai,,ae→ai
+pluraes,plurais,,ae→ai
+portaes,portais,,ae→ai
+principaes,principais,,ae→ai
+profissionaes,profissionais,,ae→ai
+queixaes,queixais,,ae→ai
+quintaes,quintais,,ae→ai
+racionaes,racionais,,ae→ai
+radicaes,radicais,,ae→ai
+reparae,reparai,,ae→ai
+respiraes,respirais,,ae→ai
+rivaes,rivais,,ae→ai
+rogae,rogai,,ae→ai
+rosaes,rosais,,ae→ai
+ruraes,rurais,,ae→ai
+sacerdotaes,sacerdotais,,ae→ai
+sacramentaes,sacramentais,,ae→ai
+sae,sai,,ae→ai
+salgueiraes,salgueirais,,ae→ai
+saturnaes,saturnais,,ae→ai
+semanaes,semanais,,ae→ai
+sentimentaes,sentimentais,,ae→ai
+sobrenaturaes,sobrenaturais,,ae→ai
+subaes,subais,,ae→ai
+subtrae,subtrai,,ae→ai
+supernaturaes,supernaturais,,ae→ai
+taes,tais,,ae→ai
+temporaes,temporais,,ae→ai
+tiritaes,tiritais,,ae→ai
+tradicionaes,tradicionais,,ae→ai
+transversaes,transversais,,ae→ai
+tribunaes,tribunais,,ae→ai
+umbraes,umbrais,,ae→ai
+universaes,universais,,ae→ai
+vae,vai,,ae→ai
+vaes,vais,,ae→ai
+varaes,varais,,ae→ai
+vegetaes,vegetais,,ae→ai
+venaes,venais,,ae→ai
+vendavaes,vendavais,,ae→ai
+verticaes,verticais,,ae→ai
+vestaes,vestais,,ae→ai
+virginaes,virginais,,ae→ai
+vitaes,vitais,,ae→ai
+vogaes,vogais,,ae→ai
+pao,pau,,ao→au
+abbacial,abacial,,bb→b
+abbades,abades,,bb→b
+abbadessa,abadessa,,bb→b
+abbadia,abadia,,bb→b
+abbadias,abadias,,bb→b
+rabbino,rabino,,bb→b
+sabbados,sábados,,bb→b
+sabbatina,sabatina,,bb→b
+accabassem,acabassem,,cc→c
+accacio,acácio,,cc→c
+accalmando,acalmando,,cc→c
+accaso,acaso,,cc→c
+accedeu,acedeu,,cc→c
+accedo,acedo,,cc→c
+acceita,aceita,,cc→c
+acceitai,aceitai,,cc→c
+acceitando,aceitando,,cc→c
+acceitar,aceitar,,cc→c
+acceitaram,aceitaram,,cc→c
+acceitas,aceitas,,cc→c
+acceitasse,aceitasse,,cc→c
+acceitaste,aceitaste,,cc→c
+acceitava,aceitava,,cc→c
+acceite,aceite,,cc→c
+acceitei,aceitei,,cc→c
+acceiteis,aceiteis,,cc→c
+acceito,aceito,,cc→c
+acceitou,aceitou,,cc→c
+acceitámos,aceitámos,,cc→c
+acceitára,aceitara,,cc→c
+accelera,acelera,,cc→c
+accelerada,acelerada,,cc→c
+accelerei,acelerei,,cc→c
+accelerou,acelerou,,cc→c
+accenda,acenda,,cc→c
+accende,acende,,cc→c
+accendem,acendem,,cc→c
+accendendo,acendendo,,cc→c
+accender,acender,,cc→c
+accendera,acendera,,cc→c
+accenderam,acenderam,,cc→c
+accendesse,acendesse,,cc→c
+accendeu,acendeu,,cc→c
+accendi,acendi,,cc→c
+accendia,acendia,,cc→c
+accendiam,acendiam,,cc→c
+accendido,acendido,,cc→c
+accendêra,acendera,,cc→c
+accento,acento,,cc→c
+accentos,acentos,,cc→c
+accentuada,acentuada,,cc→c
+accentuadamente,acentuadamente,,cc→c
+accentuadas,acentuadas,,cc→c
+accentuado,acentuado,,cc→c
+accentuando,acentuando,,cc→c
+accentuar,acentuar,,cc→c
+accentuara,acentuara,,cc→c
+accentuaram,acentuaram,,cc→c
+accentuassem,acentuassem,,cc→c
+accentuava,acentuava,,cc→c
+accentuavam,acentuavam,,cc→c
+accentuação,acentuação,,cc→c
+accentuou,acentuou,,cc→c
+accertado,acertado,,cc→c
+accesa,acesa,,cc→c
+accesas,acesas,,cc→c
+acceso,aceso,,cc→c
+accesos,acesos,,cc→c
+accessivel,acessível,,cc→c
+accesso,acesso,,cc→c
+accessoriamente,acessoriamente,,cc→c
+accessorio,acessório,,cc→c
+accessorios,acessórios,,cc→c
+accessos,acessos,,cc→c
+accessão,acessão,,cc→c
+accidentada,acidentada,,cc→c
+accidentado,acidentado,,cc→c
+accidentando,acidentando,,cc→c
+accidentes,acidentes,,cc→c
+acclamada,aclamada,,cc→c
+acclamado,aclamado,,cc→c
+acclamador,aclamador,,cc→c
+acclamando,aclamando,,cc→c
+acclamar,aclamar,,cc→c
+acclamaram,aclamaram,,cc→c
+acclamatorios,aclamatórios,,cc→c
+acclamava,aclamava,,cc→c
+acclamavam,aclamavam,,cc→c
+acclamação,aclamação,,cc→c
+acclamações,aclamações,,cc→c
+acclamou,aclamou,,cc→c
+acclamára,aclamara,,cc→c
+acclarado,aclarado,,cc→c
+acclaram,aclaram,,cc→c
+acclives,aclives,,cc→c
+accode,acode,,cc→c
+accolhedora,acolhedora,,cc→c
+accolher,acolher,,cc→c
+accolhera,acolhera,,cc→c
+accolhi,acolhi,,cc→c
+accomodar,acomodar,,cc→c
+accomodava,acomodava,,cc→c
+accomodou,acomodou,,cc→c
+accompanha,acompanha,,cc→c
+accompanhado,acompanhado,,cc→c
+accompanhados,acompanhados,,cc→c
+accompanham,acompanham,,cc→c
+accompanhando,acompanhando,,cc→c
+accompanhar,acompanhar,,cc→c
+accompanhavam,acompanhavam,,cc→c
+accompanhei,acompanhei,,cc→c
+accompanhára,acompanhara,,cc→c
+accorda,acorda,,cc→c
+accordado,acordado,,cc→c
+accordando,acordando,,cc→c
+accordar,acordar,,cc→c
+accordaram,acordaram,,cc→c
+accordasse,acordasse,,cc→c
+accordava,acordava,,cc→c
+accorde,acorde,,cc→c
+accordei,acordei,,cc→c
+accordes,acordes,,cc→c
+accordo,acordo,,cc→c
+accordou,acordou,,cc→c
+accostados,acostados,,cc→c
+accredita,acredita,,cc→c
+accreditai,acreditai,,cc→c
+accreditar,acreditar,,cc→c
+accresce,acresce,,cc→c
+accrescenta,acrescenta,,cc→c
+accrescentadas,acrescentadas,,cc→c
+accrescentam,acrescentam,,cc→c
+accrescentamento,acrescentamento,,cc→c
+accrescentando,acrescentando,,cc→c
+accrescentar,acrescentar,,cc→c
+accrescentara,acrescentara,,cc→c
+accrescentaram,acrescentaram,,cc→c
+accrescentarei,acrescentarei,,cc→c
+accrescentasse,acrescentasse,,cc→c
+accrescentava,acrescentava,,cc→c
+accrescentei,acrescentei,,cc→c
+accrescento,acrescento,,cc→c
+accrescentou,acrescentou,,cc→c
+accrescentára,acrescentara,,cc→c
+accrescia,acrescia,,cc→c
+accrescimo,acréscimo,,cc→c
+accuda,acuda,,cc→c
+accudia,acudia,,cc→c
+accudiam,acudiam,,cc→c
+accudieis,acudíeis,,cc→c
+accudindo,acudindo,,cc→c
+accudir,acudir,,cc→c
+accudira,acudira,,cc→c
+accudiram,acudiram,,cc→c
+accudiu,acudiu,,cc→c
+accumulada,acumulada,,cc→c
+accumulado,acumulado,,cc→c
+accumulados,acumulados,,cc→c
+accumulam,acumulam,,cc→c
+accumulando,acumulando,,cc→c
+accumular,acumular,,cc→c
+accumulara,acumulara,,cc→c
+accumularam,acumularam,,cc→c
+accumulaste,acumulaste,,cc→c
+accumulava,acumulava,,cc→c
+accumulavam,acumulavam,,cc→c
+accumulação,acumulação,,cc→c
+accumulou,acumulou,,cc→c
+accuradamente,acuradamente,,cc→c
+accusa,acusa,,cc→c
+accusada,acusada,,cc→c
+accusado,acusado,,cc→c
+accusador,acusador,,cc→c
+accusando,acusando,,cc→c
+accusar,acusar,,cc→c
+accusaram,acusaram,,cc→c
+accusarei,acusarei,,cc→c
+accusas,acusas,,cc→c
+accusativo,acusativo,,cc→c
+accusava,acusava,,cc→c
+accusação,acusação,,cc→c
+accusações,acusações,,cc→c
+accuses,acuses,,cc→c
+accuso,acuso,,cc→c
+accusou,acusou,,cc→c
+accêsa,acesa,,cc→c
+accêsas,acesas,,cc→c
+accêso,aceso,,cc→c
+accêsos,acesos,,cc→c
+becco,beco,,cc→c
+boccas,bocas,,cc→c
+bôcca,boca,,cc→c
+bôccas,bocas,,cc→c
+desaccordado,desacordado,,cc→c
+desaccordo,desacordo,,cc→c
+desaccordos,desacordos,,cc→c
+desoccupada,desocupada,,cc→c
+desoccupadas,desocupadas,,cc→c
+desoccupado,desocupado,,cc→c
+desoccupados,desocupados,,cc→c
+desoccupação,desocupação,,cc→c
+despreoccupado,despreocupado,,cc→c
+diccionarios,dicionários,,cc→c
+ecclesiastica,eclesiástica,,cc→c
+ecclesiasticas,eclesiásticas,,cc→c
+ecclesiastico,eclesiástico,,cc→c
+ecclesiasticos,eclesiásticos,,cc→c
+ecco,eco,,cc→c
+eccoara,ecoara,,cc→c
+eccoaram,ecoaram,,cc→c
+eccoavam,ecoavam,,cc→c
+eccos,ecos,,cc→c
+flaccida,flácida,,cc→c
+flaccidas,flácidas,,cc→c
+flaccido,flácido,,cc→c
+flaccidos,flácidos,,cc→c
+funccionalismo,funcionalismo,,cc→c
+funccionando,funcionando,,cc→c
+funccionar,funcionar,,cc→c
+funccionario,funcionário,,cc→c
+funccionarios,funcionários,,cc→c
+funccionou,funcionou,,cc→c
+impeccavel,impecável,,cc→c
+inaccessiveis,inacessíveis,,cc→c
+inaccessivel,inacessível,,cc→c
+inaccessivelmente,inacessivelmente,,cc→c
+lacca,laca,,cc→c
+laccada,lacada,,cc→c
+maccas,macas,,cc→c
+occasionalmente,ocasionalmente,,cc→c
+occasionar,ocasionar,,cc→c
+occasiões,ocasiões,,cc→c
+occaso,ocaso,,cc→c
+occasos,ocasos,,cc→c
+occidental,ocidental,,cc→c
+occidente,ocidente,,cc→c
+occiosidade,ociosidade,,cc→c
+occorre,ocorre,,cc→c
+occorrem,ocorrem,,cc→c
+occorrencia,ocorrência,,cc→c
+occorrentes,ocorrentes,,cc→c
+occorrera,ocorrera,,cc→c
+occorreram,ocorreram,,cc→c
+occorreu,ocorreu,,cc→c
+occorria,ocorria,,cc→c
+occorriam,ocorriam,,cc→c
+occorrida,ocorrida,,cc→c
+occorrido,ocorrido,,cc→c
+occorridos,ocorridos,,cc→c
+occulta,oculta,,cc→c
+occultado,ocultado,,cc→c
+occultamente,ocultamente,,cc→c
+occultar,ocultar,,cc→c
+occultaram,ocultaram,,cc→c
+occultaria,ocultaria,,cc→c
+occultas,ocultas,,cc→c
+occultasse,ocultasse,,cc→c
+occultava,ocultava,,cc→c
+occultavam,ocultavam,,cc→c
+occultemos,ocultemos,,cc→c
+occulto,oculto,,cc→c
+occultos,ocultos,,cc→c
+occupa,ocupa,,cc→c
+occupada,ocupada,,cc→c
+occupadas,ocupadas,,cc→c
+occupadissimo,ocupadíssimo,,cc→c
+occupado,ocupado,,cc→c
+occupados,ocupados,,cc→c
+occupam,ocupam,,cc→c
+occupamos,ocupamos,,cc→c
+occupando,ocupando,,cc→c
+occupar,ocupar,,cc→c
+occupara,ocupara,,cc→c
+occuparam,ocuparam,,cc→c
+occuparem,ocuparem,,cc→c
+occuparia,ocuparia,,cc→c
+occupariam,ocupariam,,cc→c
+occupasse,ocupasse,,cc→c
+occupava,ocupava,,cc→c
+occupavam,ocupavam,,cc→c
+occupação,ocupação,,cc→c
+occupações,ocupações,,cc→c
+occupei,ocupei,,cc→c
+occupem,ocupem,,cc→c
+occupo,ocupo,,cc→c
+occupou,ocupou,,cc→c
+occupára,ocupara,,cc→c
+occupâmos,ocupámos,,cc→c
+occúpado,ocupado,,cc→c
+peccador,pecador,,cc→c
+peccadora,pecadora,,cc→c
+peccadores,pecadores,,cc→c
+peccados,pecados,,cc→c
+peccamos,pecamos,,cc→c
+peccar,pecar,,cc→c
+peccara,pecara,,cc→c
+peccavam,pecavam,,cc→c
+peccou,pecou,,cc→c
+peccára,pecara,,cc→c
+piccaresca,picaresca,,cc→c
+piccaresco,picaresco,,cc→c
+preoccupa,preocupa,,cc→c
+preoccupada,preocupada,,cc→c
+preoccupado,preocupado,,cc→c
+preoccupados,preocupados,,cc→c
+preoccupando,preocupando,,cc→c
+preoccupar,preocupar,,cc→c
+preoccupava,preocupava,,cc→c
+preoccupação,preocupação,,cc→c
+preoccupações,preocupações,,cc→c
+preoccupára,preocupara,,cc→c
+reaccenderam,reacenderam,,cc→c
+reaccendeu,reacendeu,,cc→c
+reccorremos,recorremos,,cc→c
+reoccupar,reocupar,,cc→c
+reoccupara,reocupara,,cc→c
+reoccupou,reocupou,,cc→c
+ricca,rica,,cc→c
+riccas,ricas,,cc→c
+ricco,rico,,cc→c
+riccos,ricos,,cc→c
+sacca,saca,,cc→c
+saccar,sacar,,cc→c
+saccola,sacola,,cc→c
+saccos,sacos,,cc→c
+saccou,sacou,,cc→c
+saccudia,sacudia,,cc→c
+saccudindo,sacudindo,,cc→c
+saccudisse,sacudisse,,cc→c
+saccudiu,sacudiu,,cc→c
+saccára,sacara,,cc→c
+sanccionadas,sancionadas,,cc→c
+secca,seca,,cc→c
+seccada,secada,,cc→c
+seccado,secado,,cc→c
+seccam,secam,,cc→c
+seccamente,secamente,,cc→c
+seccando,secando,,cc→c
+seccante,secante,,cc→c
+seccara,secara,,cc→c
+seccaram,secaram,,cc→c
+seccarem,secarem,,cc→c
+seccas,secas,,cc→c
+seccassem,secassem,,cc→c
+seccava,secava,,cc→c
+seccavam,secavam,,cc→c
+secco,seco,,cc→c
+seccos,secos,,cc→c
+seccou,secou,,cc→c
+seccura,secura,,cc→c
+seccára,secara,,cc→c
+soccando,socando,,cc→c
+soccapa,socapa,,cc→c
+socco,soco,,cc→c
+soccorre,socorre,,cc→c
+soccorrer,socorrer,,cc→c
+soccorresse,socorresse,,cc→c
+soccorreu,socorreu,,cc→c
+soccorria,socorria,,cc→c
+soccorriam,socorriam,,cc→c
+soccorridos,socorridos,,cc→c
+soccorro,socorro,,cc→c
+soccorros,socorros,,cc→c
+soccos,socos,,cc→c
+succeda,suceda,,cc→c
+succedaneo,sucedâneo,,cc→c
+succede,sucede,,cc→c
+succedem,sucedem,,cc→c
+succedendo,sucedendo,,cc→c
+succeder,suceder,,cc→c
+succedera,sucedera,,cc→c
+succederam,sucederam,,cc→c
+succederia,sucederia,,cc→c
+succederá,sucederá,,cc→c
+succedeu,sucedeu,,cc→c
+succedia,sucedia,,cc→c
+succediam,sucediam,,cc→c
+succedida,sucedida,,cc→c
+succedido,sucedido,,cc→c
+succedidos,sucedidos,,cc→c
+succedêra,sucedera,,cc→c
+successiva,sucessiva,,cc→c
+successivamente,sucessivamente,,cc→c
+successivas,sucessivas,,cc→c
+successivos,sucessivos,,cc→c
+successo,sucesso,,cc→c
+successor,sucessor,,cc→c
+successos,sucessos,,cc→c
+successão,sucessão,,cc→c
+succinta,sucinta,,cc→c
+succinto,sucinto,,cc→c
+succo,suco,,cc→c
+succulencia,suculência,,cc→c
+succulenta,suculenta,,cc→c
+succulento,suculento,,cc→c
+succulentos,suculentos,,cc→c
+succumbe,sucumbe,,cc→c
+succumbem,sucumbem,,cc→c
+succumbia,sucumbia,,cc→c
+succumbiam,sucumbiam,,cc→c
+succumbida,sucumbida,,cc→c
+succumbido,sucumbido,,cc→c
+succumbidos,sucumbidos,,cc→c
+succumbindo,sucumbindo,,cc→c
+succumbir,sucumbir,,cc→c
+succumbira,sucumbira,,cc→c
+succumbisse,sucumbisse,,cc→c
+succumbiu,sucumbiu,,cc→c
+succumbo,sucumbo,,cc→c
+sécca,seca,,cc→c
+sêcca,seca,,cc→c
+sêccamente,secamente,,cc→c
+sêccas,secas,,cc→c
+sêcco,seco,,cc→c
+sêccos,secos,,cc→c
+sôcco,soco,,cc→c
+tradiccionalmente,tradicionalmente,,cc→c
+vaccas,vacas,,cc→c
+accusaes,acusais,,cc→c + ae→ai
+occidentaes,ocidentais,,cc→c + ae→ai
+accudio,acudiu,,cc→c + io→iu
+accommoda,acomoda,,cc→c + mm→m
+accommodada,acomodada,,cc→c + mm→m
+accommodado,acomodado,,cc→c + mm→m
+accommodados,acomodados,,cc→c + mm→m
+accommodando,acomodando,,cc→c + mm→m
+accommodar,acomodar,,cc→c + mm→m
+accommodara,acomodara,,cc→c + mm→m
+accommodaram,acomodaram,,cc→c + mm→m
+accommodasse,acomodasse,,cc→c + mm→m
+accommodassemos,acomodássemos,,cc→c + mm→m
+accommodava,acomodava,,cc→c + mm→m
+accommodavam,acomodavam,,cc→c + mm→m
+accommodação,acomodação,,cc→c + mm→m
+accommodações,acomodações,,cc→c + mm→m
+accommodou,acomodou,,cc→c + mm→m
+accommodára,acomodara,,cc→c + mm→m
+accummular,acumular,,cc→c + mm→m
+accommetteram,acometeram,,cc→c + mm→m + tt→t
+accommettido,acometido,,cc→c + mm→m + tt→t
+accepção,aceção,acepção,cc→c + silent consonant
+accezas,acesas,,cc→c + z→s
+alchool,álcool,,ch→c
+anachronismo,anacronismo,,ch→c
+archaismo,arcaísmo,,ch→c
+archanjo,arcanjo,,ch→c
+bracharense,bracarense,,ch→c
+character,carácter,caráter,ch→c
+characteristica,característica,,ch→c
+characteristico,característico,,ch→c
+characterizar,caracterizar,,ch→c
+charidade,caridade,,ch→c
+charonte,caronte,,ch→c
+chloroformio,clorofórmio,,ch→c
+chlorotica,clorótica,,ch→c
+cholera,cólera,,ch→c
+choral,coral,,ch→c
+chrismam,crismam,,ch→c
+christandade,cristandade,,ch→c
+christianismo,cristianismo,,ch→c
+christina,cristina,,ch→c
+christovão,cristóvão,,ch→c
+christã,cristã,,ch→c
+christãos,cristãos,,ch→c
+christãs,cristãs,,ch→c
+chronicas,crónicas,crônicas,ch→c
+chroniqueiro,croniqueiro,,ch→c
+chronista,cronista,,ch→c
+chronistas,cronistas,,ch→c
+chronologica,cronológica,,ch→c
+chronologicamente,cronologicamente,,ch→c
+chronologico,cronológico,,ch→c
+chronometrico,cronométrico,,ch→c
+cháos,caos,,ch→c
+eucharistia,eucaristia,,ch→c
+mechanico,mecânico,,ch→c
+mechanismo,mecanismo,,ch→c
+melancholica,melancólica,,ch→c
+melancholicamente,melancolicamente,,ch→c
+melancholico,melancólico,,ch→c
+monarcha,monarca,,ch→c
+parocho,pároco,,ch→c
+paschal,pascal,,ch→c
+paschoa,páscoa,,ch→c
+paschoal,pascoal,,ch→c
+patriarcha,patriarca,,ch→c
+patriarchal,patriarcal,,ch→c
+patriarchalmente,patriarcalmente,,ch→c
+plutarcho,plutarco,,ch→c
+sachristia,sacristia,,ch→c
+sachristias,sacristias,,ch→c
+sachristão,sacristão,,ch→c
+sepulchral,sepulcral,,ch→c
+sepulchros,sepulcros,,ch→c
+écho,eco,,ch→c
+épocha,época,,ch→c
+sepulchraes,sepulcrais,,ch→c + ae→ai
+chorographico,corográfico,,ch→c + ph→f
+chrysantemos,crisântemos,,ch→c + y→i
+chrysologo,crisólogo,,ch→c + y→i
+chrysanthemos,crisântemos,,ch→c + y→i + th→t
+alchimista,alquimista,,ch→qu
+anarchia,anarquia,,ch→qu
+anarchista,anarquista,,ch→qu
+archeologia,arqueologia,,ch→qu
+archeologico,arqueológico,,ch→qu
+archeologo,arqueólogo,,ch→qu
+archiepiscopal,arquiepiscopal,,ch→qu
+archipelago,arquipélago,,ch→qu
+architetura,arquitetura,,ch→qu
+archivar,arquivar,,ch→qu
+archivista,arquivista,,ch→qu
+bronchite,bronquite,,ch→qu
+cachetico,caquético,,ch→qu
+cachexia,caquexia,,ch→qu
+cherubim,querubim,,ch→qu
+hierarchia,hierarquia,,ch→qu
+lichen,líquen,,ch→qu
+machinalmente,maquinalmente,,ch→qu
+machinismo,maquinismo,,ch→qu
+monarchica,monárquica,,ch→qu
+monarchico,monárquico,,ch→qu
+monarchista,monarquista,,ch→qu
+orchestração,orquestração,,ch→qu
+orchidea,orquídea,,ch→qu
+parochial,paroquial,,ch→qu
+parochiana,paroquiana,,ch→qu
+parochiar,paroquiar,,ch→qu
+rachel,raquel,,ch→qu
+rachitico,raquítico,,ch→qu
+architectonica,arquitetónica,arquitetônica,ch→qu + silent consonant
+architectonico,arquitetónico,arquitetônico,ch→qu + silent consonant
+architectural,arquitetural,,ch→qu + silent consonant
+archiduqueza,arquiduquesa,,ch→qu + z→s
+addia,adia,,dd→d
+addiada,adiada,,dd→d
+addiado,adiado,,dd→d
+addicional,adicional,,dd→d
+addicionaram,adicionaram,,dd→d
+addido,adido,,dd→d
+additamento,aditamento,,dd→d
+additou,aditou,,dd→d
+adduzir,aduzir,,dd→d
+adeos,adeus,,eo→eu
+bordeos,bordéus,,eo→eu
+cedeo,cedeu,,eo→eu
+chapeo,chapéu,,eo→eu
+concedeo,concedeu,,eo→eu
+concorreo,concorreu,,eo→eu
+deos,deus,,eo→eu
+desobedeceo,desobedeceu,,eo→eu
+escreveo,escreveu,,eo→eu
+estabeleceo,estabeleceu,,eo→eu
+estendeo,estendeu,,eo→eu
+forneceo,forneceu,,eo→eu
+judeos,judeus,,eo→eu
+morreo,morreu,,eo→eu
+museo,museu,,eo→eu
+nasceo,nasceu,,eo→eu
+percorreo,percorreu,,eo→eu
+procedeo,procedeu,,eo→eu
+recebeo,recebeu,,eo→eu
+reconheceo,reconheceu,,eo→eu
+resolveo,resolveu,,eo→eu
+seo,seu,,eo→eu
+sobreceo,sobrecéu,,eo→eu
+solideo,solidéu,,eo→eu
+veo,véu,,eo→eu
+affabilidade,afabilidade,,ff→f
+affadigou,afadigou,,ff→f
+affaga,afaga,,ff→f
+affagadora,afagadora,,ff→f
+affagando,afagando,,ff→f
+affagaram,afagaram,,ff→f
+affagavam,afagavam,,ff→f
+affago,afago,,ff→f
+affagos,afagos,,ff→f
+affagou,afagou,,ff→f
+affagára,afagara,,ff→f
+affastando,afastando,,ff→f
+affastar,afastar,,ff→f
+affastaram,afastaram,,ff→f
+affastava,afastava,,ff→f
+affasto,afasto,,ff→f
+affastou,afastou,,ff→f
+affaveis,afáveis,,ff→f
+affavel,afável,,ff→f
+affavelmente,afavelmente,,ff→f
+affazeres,afazeres,,ff→f
+affazia,afazia,,ff→f
+affeito,afeito,,ff→f
+affeitos,afeitos,,ff→f
+affeiçoado,afeiçoado,,ff→f
+affeiçoados,afeiçoados,,ff→f
+affeiçoando,afeiçoando,,ff→f
+affeiçoara,afeiçoara,,ff→f
+affeiçoei,afeiçoei,,ff→f
+affeiçoou,afeiçoou,,ff→f
+affeiçoára,afeiçoara,,ff→f
+affeição,afeição,,ff→f
+affeições,afeições,,ff→f
+afferem,aferem,,ff→f
+afferradamente,aferradamente,,ff→f
+afferro,aferro,,ff→f
+affiança,afiança,,ff→f
+affiançam,afiançam,,ff→f
+affiançar,afiançar,,ff→f
+affianças,afianças,,ff→f
+affiançava,afiançava,,ff→f
+affiançou,afiançou,,ff→f
+affiançára,afiançara,,ff→f
+affigurava,afigurava,,ff→f
+affiguravam,afiguravam,,ff→f
+affigurou,afigurou,,ff→f
+affinando,afinando,,ff→f
+affincava,afincava,,ff→f
+affinco,afinco,,ff→f
+affinidade,afinidade,,ff→f
+affinidades,afinidades,,ff→f
+affiou,afiou,,ff→f
+affirma,afirma,,ff→f
+affirmado,afirmado,,ff→f
+affirmam,afirmam,,ff→f
+affirmando,afirmando,,ff→f
+affirmaram,afirmaram,,ff→f
+affirmarem,afirmarem,,ff→f
+affirmativa,afirmativa,,ff→f
+affirmativamente,afirmativamente,,ff→f
+affirmativo,afirmativo,,ff→f
+affirmava,afirmava,,ff→f
+affirmavam,afirmavam,,ff→f
+affirmação,afirmação,,ff→f
+affirmações,afirmações,,ff→f
+affirmo,afirmo,,ff→f
+affirmou,afirmou,,ff→f
+affirmára,afirmara,,ff→f
+affiz,afiz,,ff→f
+afflante,aflante,,ff→f
+afflige,aflige,,ff→f
+affligia,afligia,,ff→f
+affligiam,afligiam,,ff→f
+affligiamos,afligíamos,,ff→f
+affligida,afligida,,ff→f
+affligido,afligido,,ff→f
+affligir,afligir,,ff→f
+affligira,afligira,,ff→f
+affligiram,afligiram,,ff→f
+affligisse,afligisse,,ff→f
+affligiu,afligiu,,ff→f
+afflija,aflija,,ff→f
+afflijas,aflijas,,ff→f
+afflijo,aflijo,,ff→f
+afflorados,aflorados,,ff→f
+afflorar,aflorar,,ff→f
+affluencia,afluência,,ff→f
+affluiam,afluíam,,ff→f
+affogada,afogada,,ff→f
+affogado,afogado,,ff→f
+affogados,afogados,,ff→f
+affogando,afogando,,ff→f
+affogar,afogar,,ff→f
+affogava,afogava,,ff→f
+affogavam,afogavam,,ff→f
+affogueada,afogueada,,ff→f
+affogueado,afogueado,,ff→f
+affogueados,afogueados,,ff→f
+affoitamente,afoitamente,,ff→f
+affoitasse,afoitasse,,ff→f
+affoitos,afoitos,,ff→f
+affonsina,afonsina,,ff→f
+affonsino,afonsino,,ff→f
+affonso,afonso,,ff→f
+afforada,aforada,,ff→f
+affouta,afouta,,ff→f
+affoutado,afoutado,,ff→f
+affoutam,afoutam,,ff→f
+affrica,áfrica,,ff→f
+affricano,africano,,ff→f
+affronta,afronta,,ff→f
+affrontada,afrontada,,ff→f
+affrontado,afrontado,,ff→f
+affrontador,afrontador,,ff→f
+affrontamos,afrontamos,,ff→f
+affrontando,afrontando,,ff→f
+affrontar,afrontar,,ff→f
+affrontaria,afrontaria,,ff→f
+affrontas,afrontas,,ff→f
+affrontasse,afrontasse,,ff→f
+affrontassem,afrontassem,,ff→f
+affrontava,afrontava,,ff→f
+affronte,afronte,,ff→f
+affrontemos,afrontemos,,ff→f
+affrontosa,afrontosa,,ff→f
+affrontosamente,afrontosamente,,ff→f
+affrontosas,afrontosas,,ff→f
+affrontoso,afrontoso,,ff→f
+affrontosos,afrontosos,,ff→f
+affrontára,afrontara,,ff→f
+affrouxa,afrouxa,,ff→f
+affrouxar,afrouxar,,ff→f
+affrouxava,afrouxava,,ff→f
+affugenta,afugenta,,ff→f
+affugentava,afugentava,,ff→f
+affêrro,aferro,,ff→f
+buffete,bufete,,ff→f
+buffetes,bufetes,,ff→f
+coffre,cofre,,ff→f
+deffeito,defeito,,ff→f
+defficiencia,deficiência,,ff→f
+desaffeitar,desafeitar,,ff→f
+desaffeiçoados,desafeiçoados,,ff→f
+desaffinação,desafinação,,ff→f
+desaffinára,desafinara,,ff→f
+desaffogada,desafogada,,ff→f
+desaffogar,desafogar,,ff→f
+desafforada,desaforada,,ff→f
+desaffrontada,desafrontada,,ff→f
+desaffrontado,desafrontado,,ff→f
+desaffrontar,desafrontar,,ff→f
+diffamada,difamada,,ff→f
+diffamador,difamador,,ff→f
+diffamados,difamados,,ff→f
+diffamante,difamante,,ff→f
+diffamassem,difamassem,,ff→f
+diffamação,difamação,,ff→f
+diffamações,difamações,,ff→f
+differe,difere,,ff→f
+differentemente,diferentemente,,ff→f
+differentes,diferentes,,ff→f
+differença,diferença,,ff→f
+differenças,diferenças,,ff→f
+differençava,diferençava,,ff→f
+differençavam,diferençavam,,ff→f
+differia,diferia,,ff→f
+differiam,diferiam,,ff→f
+difficeis,difíceis,,ff→f
+difficilmente,dificilmente,,ff→f
+difficuldades,dificuldades,,ff→f
+difficultoso,dificultoso,,ff→f
+diffundida,difundida,,ff→f
+diffusa,difusa,,ff→f
+diffusamente,difusamente,,ff→f
+diffusas,difusas,,ff→f
+diffuso,difuso,,ff→f
+effeito,efeito,,ff→f
+effeitos,efeitos,,ff→f
+effeminada,efeminada,,ff→f
+effeminado,efeminado,,ff→f
+effervescencia,efervescência,,ff→f
+efficacia,eficácia,,ff→f
+efficaz,eficaz,,ff→f
+efficazes,eficazes,,ff→f
+efficazmente,eficazmente,,ff→f
+efflorescencia,eflorescência,,ff→f
+effluvio,eflúvio,,ff→f
+effluvios,eflúvios,,ff→f
+effusivamente,efusivamente,,ff→f
+effusão,efusão,,ff→f
+effusões,efusões,,ff→f
+indifferente,indiferente,,ff→f
+indifferentemente,indiferentemente,,ff→f
+indifferentes,indiferentes,,ff→f
+indifferentismo,indiferentismo,,ff→f
+indifferença,indiferença,,ff→f
+indifferenças,indiferenças,,ff→f
+ineffaveis,inefáveis,,ff→f
+ineffavel,inefável,,ff→f
+inefficazes,ineficazes,,ff→f
+inoffensiva,inofensiva,,ff→f
+inoffensivo,inofensivo,,ff→f
+inoffensivos,inofensivos,,ff→f
+insoffridos,insofridos,,ff→f
+insoffrivel,insofrível,,ff→f
+insufficiencia,insuficiência,,ff→f
+insufficiente,insuficiente,,ff→f
+insufficientes,insuficientes,,ff→f
+insufflar,insuflar,,ff→f
+insufflou,insuflou,,ff→f
+offegando,ofegando,,ff→f
+offegante,ofegante,,ff→f
+offegantes,ofegantes,,ff→f
+offegar,ofegar,,ff→f
+offenda,ofenda,,ff→f
+offendas,ofendas,,ff→f
+offende,ofende,,ff→f
+offendeis,ofendeis,,ff→f
+offender,ofender,,ff→f
+offendera,ofendera,,ff→f
+offenderia,ofenderia,,ff→f
+offendesse,ofendesse,,ff→f
+offendessem,ofendessem,,ff→f
+offendeu,ofendeu,,ff→f
+offendia,ofendia,,ff→f
+offendiam,ofendiam,,ff→f
+offendida,ofendida,,ff→f
+offendido,ofendido,,ff→f
+offendidos,ofendidos,,ff→f
+offendo,ofendo,,ff→f
+offendêra,ofendera,,ff→f
+offensa,ofensa,,ff→f
+offensas,ofensas,,ff→f
+offensiva,ofensiva,,ff→f
+offensivas,ofensivas,,ff→f
+offensivo,ofensivo,,ff→f
+offensor,ofensor,,ff→f
+offerece,oferece,,ff→f
+offerecem,oferecem,,ff→f
+offerecemos,oferecemos,,ff→f
+offerecendo,oferecendo,,ff→f
+offerecer,oferecer,,ff→f
+offerecera,oferecera,,ff→f
+offereceram,ofereceram,,ff→f
+offereceria,ofereceria,,ff→f
+offerecermos,oferecermos,,ff→f
+offerecesse,oferecesse,,ff→f
+offereceu,ofereceu,,ff→f
+offereci,ofereci,,ff→f
+offerecia,oferecia,,ff→f
+offereciam,ofereciam,,ff→f
+offerecida,oferecida,,ff→f
+offerecido,oferecido,,ff→f
+offerecidos,oferecidos,,ff→f
+offerecimento,oferecimento,,ff→f
+offerecimentos,oferecimentos,,ff→f
+offerenda,oferenda,,ff→f
+offerendas,oferendas,,ff→f
+offereça,ofereça,,ff→f
+offereçais,ofereçais,,ff→f
+offereço,ofereço,,ff→f
+offerta,oferta,,ff→f
+offertada,ofertada,,ff→f
+offertados,ofertados,,ff→f
+offertaram,ofertaram,,ff→f
+offertas,ofertas,,ff→f
+offertasse,ofertasse,,ff→f
+offertava,ofertava,,ff→f
+offertavam,ofertavam,,ff→f
+offertorio,ofertório,,ff→f
+offertára,ofertara,,ff→f
+officiando,oficiando,,ff→f
+officiante,oficiante,,ff→f
+officina,oficina,,ff→f
+officinas,oficinas,,ff→f
+officios,ofícios,,ff→f
+officiosas,oficiosas,,ff→f
+officioso,oficioso,,ff→f
+offuscadas,ofuscadas,,ff→f
+offuscado,ofuscado,,ff→f
+offuscam,ofuscam,,ff→f
+offuscando,ofuscando,,ff→f
+offuscava,ofuscava,,ff→f
+offuscou,ofuscou,,ff→f
+offusquem,ofusquem,,ff→f
+soffra,sofra,,ff→f
+soffras,sofras,,ff→f
+soffre,sofre,,ff→f
+soffreada,sofreada,,ff→f
+soffreado,sofreado,,ff→f
+soffredor,sofredor,,ff→f
+soffredora,sofredora,,ff→f
+soffredores,sofredores,,ff→f
+soffrega,sôfrega,,ff→f
+soffregamente,sofregamente,,ff→f
+soffrego,sôfrego,,ff→f
+soffreguidão,sofreguidão,,ff→f
+soffrem,sofrem,,ff→f
+soffremos,sofremos,,ff→f
+soffrendo,sofrendo,,ff→f
+soffreou,sofreou,,ff→f
+soffrera,sofrera,,ff→f
+soffreram,sofreram,,ff→f
+soffreria,sofreria,,ff→f
+soffrerá,sofrerá,,ff→f
+soffrerás,sofrerás,,ff→f
+soffres,sofres,,ff→f
+soffreu,sofreu,,ff→f
+soffri,sofri,,ff→f
+soffria,sofria,,ff→f
+soffriam,sofriam,,ff→f
+soffriamos,sofríamos,,ff→f
+soffrias,sofrias,,ff→f
+soffridas,sofridas,,ff→f
+soffrimento,sofrimento,,ff→f
+soffrimentos,sofrimentos,,ff→f
+soffrivel,sofrível,,ff→f
+soffro,sofro,,ff→f
+soffrêra,sofrera,,ff→f
+sufficiente,suficiente,,ff→f
+sufficientemente,suficientemente,,ff→f
+sufficientes,suficientes,,ff→f
+suffoca,sufoca,,ff→f
+suffocada,sufocada,,ff→f
+suffocadas,sufocadas,,ff→f
+suffocado,sufocado,,ff→f
+suffocados,sufocados,,ff→f
+suffocando,sufocando,,ff→f
+suffocante,sufocante,,ff→f
+suffocar,sufocar,,ff→f
+suffocaram,sufocaram,,ff→f
+suffocassem,sufocassem,,ff→f
+suffocava,sufocava,,ff→f
+suffocavam,sufocavam,,ff→f
+suffocavamos,sufocávamos,,ff→f
+suffocações,sufocações,,ff→f
+suffocou,sufocou,,ff→f
+suffocára,sufocara,,ff→f
+suffoquei,sufoquei,,ff→f
+suffragio,sufrágio,,ff→f
+suffragios,sufrágios,,ff→f
+sôffregamente,sofregamente,,ff→f
+taffetá,tafetá,,ff→f
+tartuffo,tartufo,,ff→f
+officiaes,oficiais,,ff→f + ae→ai
+offereceo,ofereceu,,ff→f + eo→eu
+difficillima,dificílima,,ff→f + ll→l
+affecta,afeta,,ff→f + silent consonant
+affectada,afetada,,ff→f + silent consonant
+affectadamente,afetadamente,,ff→f + silent consonant
+affectadas,afetadas,,ff→f + silent consonant
+affectado,afetado,,ff→f + silent consonant
+affectados,afetados,,ff→f + silent consonant
+affectando,afetando,,ff→f + silent consonant
+affectar,afetar,,ff→f + silent consonant
+affectara,afetara,,ff→f + silent consonant
+affectaram,afetaram,,ff→f + silent consonant
+affectava,afetava,,ff→f + silent consonant
+affectavam,afetavam,,ff→f + silent consonant
+affectação,afetação,,ff→f + silent consonant
+affectações,afetações,,ff→f + silent consonant
+affectiva,afetiva,,ff→f + silent consonant
+affectivo,afetivo,,ff→f + silent consonant
+affectos,afetos,,ff→f + silent consonant
+affectou,afetou,,ff→f + silent consonant
+affectuosa,afetuosa,,ff→f + silent consonant
+affectuosamente,afetuosamente,,ff→f + silent consonant
+affectuosas,afetuosas,,ff→f + silent consonant
+affectuoso,afetuoso,,ff→f + silent consonant
+affectuosos,afetuosos,,ff→f + silent consonant
+afflicta,aflita,,ff→f + silent consonant
+afflictamente,aflitamente,,ff→f + silent consonant
+afflictas,aflitas,,ff→f + silent consonant
+afflictiva,aflitiva,,ff→f + silent consonant
+afflictivo,aflitivo,,ff→f + silent consonant
+afflictivos,aflitivos,,ff→f + silent consonant
+afflicto,aflito,,ff→f + silent consonant
+afflictos,aflitos,,ff→f + silent consonant
+afflicção,aflição,,ff→f + silent consonant
+afflicções,aflições,,ff→f + silent consonant
+desaffectada,desafetada,,ff→f + silent consonant
+desaffectos,desafetos,,ff→f + silent consonant
+effectiva,efetiva,,ff→f + silent consonant
+effectivamente,efetivamente,,ff→f + silent consonant
+effectividade,efetividade,,ff→f + silent consonant
+effectivo,efetivo,,ff→f + silent consonant
+effectuar,efetuar,,ff→f + silent consonant
+effectuareis,efetuareis,,ff→f + silent consonant
+effectuavam,efetuavam,,ff→f + silent consonant
+effectuou,efetuou,,ff→f + silent consonant
+agglomerados,aglomerados,,gg→g
+agglomerar,aglomerar,,gg→g
+agglomerarem,aglomerarem,,gg→g
+agglomeravam,aglomeravam,,gg→g
+agglomeração,aglomeração,,gg→g
+agglutinamento,aglutinamento,,gg→g
+aggrava,agrava,,gg→g
+aggravado,agravado,,gg→g
+aggravando,agravando,,gg→g
+aggravava,agravava,,gg→g
+aggravos,agravos,,gg→g
+aggravou,agravou,,gg→g
+aggravára,agravara,,gg→g
+aggredida,agredida,,gg→g
+aggrega,agrega,,gg→g
+aggregada,agregada,,gg→g
+aggregado,agregado,,gg→g
+aggremiem,agremiem,,gg→g
+aggressiva,agressiva,,gg→g
+aggressivamente,agressivamente,,gg→g
+aggressivas,agressivas,,gg→g
+aggressor,agressor,,gg→g
+aggressores,agressores,,gg→g
+aggressão,agressão,,gg→g
+aggressões,agressões,,gg→g
+desaggregaram,desagregaram,,gg→g
+exaggerada,exagerada,,gg→g
+exaggerado,exagerado,,gg→g
+exaggeram,exageram,,gg→g
+exaggerando,exagerando,,gg→g
+exaggerar,exagerar,,gg→g
+exaggeração,exageração,,gg→g
+exaggeremos,exageremos,,gg→g
+suggeri,sugeri,,gg→g
+suggeria,sugeria,,gg→g
+suggerido,sugerido,,gg→g
+suggeridos,sugeridos,,gg→g
+suggerira,sugerira,,gg→g
+suggeriu,sugeriu,,gg→g
+suggestionado,sugestionado,,gg→g
+suggestiva,sugestiva,,gg→g
+suggestivo,sugestivo,,gg→g
+suggestão,sugestão,,gg→g
+suggestões,sugestões,,gg→g
+suggira,sugira,,gg→g
+augmenta,aumenta,,gm→m
+augmentada,aumentada,,gm→m
+augmentado,aumentado,,gm→m
+augmentam,aumentam,,gm→m
+augmentando,aumentando,,gm→m
+augmentar,aumentar,,gm→m
+augmentaram,aumentaram,,gm→m
+augmentará,aumentará,,gm→m
+augmentava,aumentava,,gm→m
+augmentavam,aumentavam,,gm→m
+augmente,aumente,,gm→m
+augmentem,aumentem,,gm→m
+augmentou,aumentou,,gm→m
+augmentára,aumentara,,gm→m
+fleugmaticamente,fleumaticamente,,gm→m
+fleugmaticos,fleumáticos,,gm→m
+assigna,assina,,gn→n
+assignada,assinada,,gn→n
+assignadas,assinadas,,gn→n
+assignado,assinado,,gn→n
+assignalado,assinalado,,gn→n
+assignalados,assinalados,,gn→n
+assignalamos,assinalamos,,gn→n
+assignamos,assinamos,,gn→n
+assignando,assinando,,gn→n
+assignante,assinante,,gn→n
+assignantes,assinantes,,gn→n
+assignara,assinara,,gn→n
+assignaram,assinaram,,gn→n
+assignarem,assinarem,,gn→n
+assignaste,assinaste,,gn→n
+assignatura,assinatura,,gn→n
+assignava,assinava,,gn→n
+assignei,assinei,,gn→n
+assigno,assino,,gn→n
+assignou,assinou,,gn→n
+assignára,assinara,,gn→n
+signalzinho,sinalzinho,,gn→n
+signaes,sinais,,gn→n + ae→ai
+abahuladas,abauladas,,h dropped
+abrahão,abraão,,h dropped
+abstrahidamente,abstraidamente,,h dropped
+abstrahido,abstraído,,h dropped
+ahi,aí,,h dropped
+alahude,alaúde,,h dropped
+atahide,ataíde,,h dropped
+bahiana,baiana,,h dropped
+bahias,baías,,h dropped
+bahu,baú,,h dropped
+bahus,baús,,h dropped
+bahú,baú,,h dropped
+bahús,baús,,h dropped
+bohemia,boémia,boêmia,h dropped
+bohemias,boémias,boêmias,h dropped
+bohemio,boémio,boêmio,h dropped
+cahem,caem,,h dropped
+cahetés,caetés,,h dropped
+cahi,caí,,h dropped
+cahia,caía,,h dropped
+cahiam,caíam,,h dropped
+cahiamos,caíamos,,h dropped
+cahida,caída,,h dropped
+cahidas,caídas,,h dropped
+cahidinha,caidinha,,h dropped
+cahido,caído,,h dropped
+cahidos,caídos,,h dropped
+cahimos,caímos,,h dropped
+cahindo,caindo,,h dropped
+cahir,cair,,h dropped
+cahira,caíra,,h dropped
+cahiram,caíram,,h dropped
+cahiramos,caíramos,,h dropped
+cahirem,caírem,,h dropped
+cahiria,cairia,,h dropped
+cahirá,cairá,,h dropped
+cahisse,caísse,,h dropped
+cahissem,caíssem,,h dropped
+cahiste,caíste,,h dropped
+cahiu,caiu,,h dropped
+cahos,caos,,h dropped
+cahía,caía,,h dropped
+cahídas,caídas,,h dropped
+cahíram,caíram,,h dropped
+cohabitado,coabitado,,h dropped
+coherente,coerente,,h dropped
+cohesão,coesão,,h dropped
+cohibiu,coibiu,,h dropped
+cohorte,coorte,,h dropped
+cohortes,coortes,,h dropped
+comprehenda,compreenda,,h dropped
+comprehendam,compreendam,,h dropped
+comprehendas,compreendas,,h dropped
+comprehende,compreende,,h dropped
+comprehendei,compreendei,,h dropped
+comprehendeis,compreendeis,,h dropped
+comprehendem,compreendem,,h dropped
+comprehendemos,compreendemos,,h dropped
+comprehendendo,compreendendo,,h dropped
+comprehendera,compreendera,,h dropped
+comprehenderam,compreenderam,,h dropped
+comprehendereis,compreendereis,,h dropped
+comprehenderem,compreenderem,,h dropped
+comprehenderia,compreenderia,,h dropped
+comprehenderá,compreenderá,,h dropped
+comprehenderás,compreenderás,,h dropped
+comprehendes,compreendes,,h dropped
+comprehendesse,compreendesse,,h dropped
+comprehendeste,compreendeste,,h dropped
+comprehendeu,compreendeu,,h dropped
+comprehendi,compreendi,,h dropped
+comprehendia,compreendia,,h dropped
+comprehendiam,compreendiam,,h dropped
+comprehendida,compreendida,,h dropped
+comprehendido,compreendido,,h dropped
+comprehendo,compreendo,,h dropped
+comprehendémos,compreendemos,,h dropped
+comprehendêra,compreendera,,h dropped
+comprehensiva,compreensiva,,h dropped
+comprehensivel,compreensível,,h dropped
+comprehensões,compreensões,,h dropped
+contrahentes,contraentes,,h dropped
+contrahi,contraí,,h dropped
+contrahida,contraída,,h dropped
+contrahidas,contraídas,,h dropped
+contrahido,contraído,,h dropped
+contrahidos,contraídos,,h dropped
+contrahindo,contraindo,,h dropped
+contrahira,contraíra,,h dropped
+contrahiram,contraíram,,h dropped
+contrahiria,contrairia,,h dropped
+contrahiste,contraíste,,h dropped
+dahi,daí,,h dropped
+decahido,decaído,,h dropped
+decahidos,decaídos,,h dropped
+decahir,decair,,h dropped
+decahira,decaíra,,h dropped
+decahirem,decaírem,,h dropped
+deprehende,depreende,,h dropped
+descahia,descaía,,h dropped
+descahiam,descaíam,,h dropped
+descahida,descaída,,h dropped
+descahidas,descaídas,,h dropped
+descahido,descaído,,h dropped
+descahidos,descaídos,,h dropped
+descahindo,descaindo,,h dropped
+descahir,descair,,h dropped
+descahiu,descaiu,,h dropped
+detrahidor,detraidor,,h dropped
+distrahia,distraía,,h dropped
+distrahiam,distraíam,,h dropped
+distrahida,distraída,,h dropped
+distrahidamente,distraidamente,,h dropped
+distrahidas,distraídas,,h dropped
+distrahido,distraído,,h dropped
+distrahindo,distraindo,,h dropped
+distrahir,distrair,,h dropped
+distrahiram,distraíram,,h dropped
+distrahisse,distraísse,,h dropped
+emprehendedores,empreendedores,,h dropped
+emprehendemos,empreendemos,,h dropped
+emprehender,empreender,,h dropped
+emprehendido,empreendido,,h dropped
+emprehendimentos,empreendimentos,,h dropped
+extrahem,extraem,,h dropped
+extrahido,extraído,,h dropped
+extrahir,extrair,,h dropped
+extrahíra,extraíra,,h dropped
+hia,ia,,h dropped
+hiam,iam,,h dropped
+hir,ir,,h dropped
+hirem,irem,,h dropped
+hombreando,ombreando,,h dropped
+hombrear,ombrear,,h dropped
+hombreira,ombreira,,h dropped
+hombreiras,ombreiras,,h dropped
+hombros,ombros,,h dropped
+hontem,ontem,,h dropped
+incoherencia,incoerência,,h dropped
+incoherencias,incoerências,,h dropped
+incoherente,incoerente,,h dropped
+incoherentes,incoerentes,,h dropped
+incomprehendidos,incompreendidos,,h dropped
+incomprehensivel,incompreensível,,h dropped
+incomprehensão,incompreensão,,h dropped
+irreprehensivelmente,irrepreensivelmente,,h dropped
+mahometanas,maometanas,,h dropped
+mahometano,maometano,,h dropped
+mahometanos,maometanos,,h dropped
+nihilismo,niilismo,,h dropped
+pahul,paul,,h dropped
+prohibem,proíbem,,h dropped
+prohibia,proibia,,h dropped
+prohibida,proibida,,h dropped
+prohibidas,proibidas,,h dropped
+prohibido,proibido,,h dropped
+prohibindo,proibindo,,h dropped
+prohibira,proibira,,h dropped
+prohibirem,proibirem,,h dropped
+prohibiu,proibiu,,h dropped
+prohibo,proíbo,,h dropped
+protrahir,protrair,,h dropped
+recahia,recaía,,h dropped
+recahiam,recaíam,,h dropped
+recahida,recaída,,h dropped
+recahido,recaído,,h dropped
+recahindo,recaindo,,h dropped
+recahir,recair,,h dropped
+recahira,recaíra,,h dropped
+recahiram,recaíram,,h dropped
+recahiu,recaiu,,h dropped
+recahíndo,recaindo,,h dropped
+rehabilitado,reabilitado,,h dropped
+rehabilitaria,reabilitaria,,h dropped
+rehabilitação,reabilitação,,h dropped
+rehouver,reouver,,h dropped
+reprehende,repreende,,h dropped
+reprehendendo,repreendendo,,h dropped
+reprehender,repreender,,h dropped
+reprehenderia,repreenderia,,h dropped
+reprehenderá,repreenderá,,h dropped
+reprehendesse,repreendesse,,h dropped
+reprehendeu,repreendeu,,h dropped
+reprehendia,repreendia,,h dropped
+reprehendido,repreendido,,h dropped
+reprehendo,repreendo,,h dropped
+reprehensiva,repreensiva,,h dropped
+reprehensivamente,repreensivamente,,h dropped
+reprehensivel,repreensível,,h dropped
+reprehensivo,repreensivo,,h dropped
+reprehensão,repreensão,,h dropped
+reprehensível,repreensível,,h dropped
+reprehensões,repreensões,,h dropped
+retrahia,retraía,,h dropped
+retrahidas,retraídas,,h dropped
+retrahido,retraído,,h dropped
+retrahimento,retraimento,,h dropped
+retrahir,retrair,,h dropped
+sahem,saem,,h dropped
+sahi,saí,,h dropped
+sahia,saía,,h dropped
+sahiam,saíam,,h dropped
+sahiamos,saíamos,,h dropped
+sahias,saías,,h dropped
+sahida,saída,,h dropped
+sahidas,saídas,,h dropped
+sahido,saído,,h dropped
+sahidos,saídos,,h dropped
+sahimento,saimento,,h dropped
+sahimos,saímos,,h dropped
+sahindo,saindo,,h dropped
+sahir,sair,,h dropped
+sahira,saíra,,h dropped
+sahiram,saíram,,h dropped
+sahirei,sairei,,h dropped
+sahirem,saírem,,h dropped
+sahires,saíres,,h dropped
+sahiria,sairia,,h dropped
+sahiriamos,sairíamos,,h dropped
+sahirmos,sairmos,,h dropped
+sahirá,sairá,,h dropped
+sahisse,saísse,,h dropped
+sahissem,saíssem,,h dropped
+sahiste,saíste,,h dropped
+sahistes,saístes,,h dropped
+sahiu,saiu,,h dropped
+sahía,saía,,h dropped
+sahíra,saíra,,h dropped
+sahíram,saíram,,h dropped
+subtrahir,subtrair,,h dropped
+subtrahisse,subtraísse,,h dropped
+surprehende,surpreende,,h dropped
+surprehendedor,surpreendedor,,h dropped
+surprehendendo,surpreendendo,,h dropped
+surprehendente,surpreendente,,h dropped
+surprehendentes,surpreendentes,,h dropped
+surprehender,surpreender,,h dropped
+surprehendera,surpreendera,,h dropped
+surprehendesse,surpreendesse,,h dropped
+surprehendessem,surpreendessem,,h dropped
+surprehendeu,surpreendeu,,h dropped
+surprehendi,surpreendi,,h dropped
+surprehendia,surpreendia,,h dropped
+surprehendiam,surpreendiam,,h dropped
+surprehendida,surpreendida,,h dropped
+surprehendidas,surpreendidas,,h dropped
+surprehendido,surpreendido,,h dropped
+surprehendidos,surpreendidos,,h dropped
+trahi,traí,,h dropped
+trahia,traía,,h dropped
+trahida,traída,,h dropped
+trahido,traído,,h dropped
+trahidos,traídos,,h dropped
+trahir,trair,,h dropped
+trahira,traíra,,h dropped
+trahiria,trairia,,h dropped
+trahissem,traíssem,,h dropped
+vehemencia,veemência,,h dropped
+vehemente,veemente,,h dropped
+vehementes,veementes,,h dropped
+vehiculo,veículo,,h dropped
+vehiculos,veículos,,h dropped
+áhi,aí,,h dropped
+cahio,caiu,,h dropped + io→iu
+extrahio,extraiu,,h dropped + io→iu
+sahio,saiu,,h dropped + io→iu
+resahir,ressair,,h dropped + s→ss
+sobresahem,sobressaem,,h dropped + s→ss
+sobresahia,sobressaía,,h dropped + s→ss
+sobresahiam,sobressaíam,,h dropped + s→ss
+sobresahindo,sobressaindo,,h dropped + s→ss
+sobresahir,sobressair,,h dropped + s→ss
+sobresahiu,sobressaiu,,h dropped + s→ss
+kalendas,calendas,,k→c
+mazurka,mazurca,,k→c
+mazurkas,mazurcas,,k→c
+polka,polca,,k→c
+polkas,polcas,,k→c
+polkava,polcava,,k→c
+cakexia,caquexia,,k→qu
+fakir,faquir,,k→qu
+acairellada,acairelada,,ll→l
+acastelladas,acasteladas,,ll→l
+acastellado,acastelado,,ll→l
+acastellava,acastelava,,ll→l
+acastellavam,acastelavam,,ll→l
+acautelladamente,acauteladamente,,ll→l
+acautellado,acautelado,,ll→l
+acavallada,acavalada,,ll→l
+acavallado,acavalado,,ll→l
+acavallados,acavalados,,ll→l
+acavallam,acavalam,,ll→l
+acavallando,acavalando,,ll→l
+acavallavam,acavalavam,,ll→l
+achinellados,achinelados,,ll→l
+acotovella,acotovela,,ll→l
+acotovellado,acotovelado,,ll→l
+acotovellar,acotovelar,,ll→l
+acotovellou,acotovelou,,ll→l
+afivellar,afivelar,,ll→l
+agallegou,agalegou,,ll→l
+aguarella,aguarela,,ll→l
+aguarellas,aguarelas,,ll→l
+allanos,alanos,,ll→l
+allarma,alarma,,ll→l
+allea,álea,,ll→l
+alleas,áleas,,ll→l
+allega,alega,,ll→l
+allegado,alegado,,ll→l
+allegando,alegando,,ll→l
+allegar,alegar,,ll→l
+allegariam,alegariam,,ll→l
+allegava,alegava,,ll→l
+allegações,alegações,,ll→l
+allegoria,alegoria,,ll→l
+allegorica,alegórica,,ll→l
+allegorico,alegórico,,ll→l
+allegou,alegou,,ll→l
+alleguei,aleguei,,ll→l
+alleluias,aleluias,,ll→l
+allemã,alemã,,ll→l
+allemães,alemães,,ll→l
+allemão,alemão,,ll→l
+alli,ali,,ll→l
+alliada,aliada,,ll→l
+alliadas,aliadas,,ll→l
+alliado,aliado,,ll→l
+alliados,aliados,,ll→l
+alliam,aliam,,ll→l
+alliança,aliança,,ll→l
+allianças,alianças,,ll→l
+alliassem,aliassem,,ll→l
+alliciara,aliciara,,ll→l
+allinhadas,alinhadas,,ll→l
+allivia,alivia,,ll→l
+alliviada,aliviada,,ll→l
+alliviado,aliviado,,ll→l
+alliviando,aliviando,,ll→l
+alliviar,aliviar,,ll→l
+alliviassem,aliviassem,,ll→l
+alliviava,aliviava,,ll→l
+allivio,alívio,,ll→l
+alliviou,aliviou,,ll→l
+alliámos,aliámos,,ll→l
+allocução,alocução,,ll→l
+allongou,alongou,,ll→l
+allucinada,alucinada,,ll→l
+allucinado,alucinado,,ll→l
+allucinação,alucinação,,ll→l
+allucinações,alucinações,,ll→l
+alluda,aluda,,ll→l
+alludamos,aludamos,,ll→l
+allude,alude,,ll→l
+alludi,aludi,,ll→l
+alludia,aludia,,ll→l
+alludiam,aludiam,,ll→l
+alludimos,aludimos,,ll→l
+alludindo,aludindo,,ll→l
+alludir,aludir,,ll→l
+alludira,aludira,,ll→l
+alludisse,aludisse,,ll→l
+alludissem,aludissem,,ll→l
+alludiu,aludiu,,ll→l
+alluisse,aluísse,,ll→l
+allumia,alumia,,ll→l
+allumiada,alumiada,,ll→l
+allumiadas,alumiadas,,ll→l
+allumiado,alumiado,,ll→l
+allumiando,alumiando,,ll→l
+allumiar,alumiar,,ll→l
+allumiaram,alumiaram,,ll→l
+allumiarem,alumiarem,,ll→l
+allumiasse,alumiasse,,ll→l
+allumiava,alumiava,,ll→l
+allumiavam,alumiavam,,ll→l
+allumiou,alumiou,,ll→l
+allusiva,alusiva,,ll→l
+allusivas,alusivas,,ll→l
+allusão,alusão,,ll→l
+allusões,alusões,,ll→l
+alluvial,aluvial,,ll→l
+alluvião,aluvião,,ll→l
+alluviões,aluviões,,ll→l
+alquilla,alquila,,ll→l
+amarella,amarela,,ll→l
+amarellada,amarelada,,ll→l
+amarelladas,amareladas,,ll→l
+amarellado,amarelado,,ll→l
+amarellados,amarelados,,ll→l
+amarellando,amarelando,,ll→l
+amarellas,amarelas,,ll→l
+amarellavam,amarelavam,,ll→l
+amarellece,amarelece,,ll→l
+amarellecera,amarelecera,,ll→l
+amarelleciam,amareleciam,,ll→l
+amarellecida,amarelecida,,ll→l
+amarellidão,amarelidão,,ll→l
+amarellidões,amarelidões,,ll→l
+amarellinho,amarelinho,,ll→l
+amarello,amarelo,,ll→l
+amarellos,amarelos,,ll→l
+amarellára,amarelara,,ll→l
+amollece,amolece,,ll→l
+amollecem,amolecem,,ll→l
+amollecendo,amolecendo,,ll→l
+amollecer,amolecer,,ll→l
+amollecera,amolecera,,ll→l
+amolleceram,amoleceram,,ll→l
+amolleceu,amoleceu,,ll→l
+amollecia,amolecia,,ll→l
+amolleciam,amoleciam,,ll→l
+amollecida,amolecida,,ll→l
+amollecido,amolecido,,ll→l
+amollecimento,amolecimento,,ll→l
+anelladas,aneladas,,ll→l
+aniquillar,aniquilar,,ll→l
+apalpadellas,apalpadelas,,ll→l
+apellido,apelido,,ll→l
+apollo,apolo,,ll→l
+aquarella,aquarela,,ll→l
+aquartellára,aquartelara,,ll→l
+aquella,aquela,,ll→l
+aquellas,aquelas,,ll→l
+aquelles,aqueles,,ll→l
+aquillo,aquilo,,ll→l
+arandellas,arandelas,,ll→l
+armillar,armilar,,ll→l
+arranhadellas,arranhadelas,,ll→l
+arranjadella,arranjadela,,ll→l
+arrepella,arrepela,,ll→l
+arrepellava,arrepelava,,ll→l
+arrepellou,arrepelou,,ll→l
+arruella,arruela,,ll→l
+arruellas,arruelas,,ll→l
+arrumadella,arrumadela,,ll→l
+atrellada,atrelada,,ll→l
+atrellado,atrelado,,ll→l
+atrellar,atrelar,,ll→l
+atrellára,atrelara,,ll→l
+atropelladamente,atropeladamente,,ll→l
+atropellado,atropelado,,ll→l
+atropellam,atropelam,,ll→l
+atropellando,atropelando,,ll→l
+atropellava,atropelava,,ll→l
+atropellavam,atropelavam,,ll→l
+atropello,atropelo,,ll→l
+avelluda,aveluda,,ll→l
+avelludada,aveludada,,ll→l
+avelludado,aveludado,,ll→l
+avelludava,aveludava,,ll→l
+bacharellarem,bacharelarem,,ll→l
+badallado,badalado,,ll→l
+bagatella,bagatela,,ll→l
+bagatellas,bagatelas,,ll→l
+baixella,baixela,,ll→l
+baixellas,baixelas,,ll→l
+balla,bala,,ll→l
+ballada,balada,,ll→l
+balladas,baladas,,ll→l
+ballas,balas,,ll→l
+bambinellas,bambinelas,,ll→l
+barbella,barbela,,ll→l
+barcarolla,barcarola,,ll→l
+barcellense,barcelense,,ll→l
+bella,bela,,ll→l
+bellas,belas,,ll→l
+bellem,belém,,ll→l
+bellezas,belezas,,ll→l
+bellicosas,belicosas,,ll→l
+bellicosos,belicosos,,ll→l
+bellissimas,belíssimas,,ll→l
+bellos,belos,,ll→l
+bengalla,bengala,,ll→l
+bengallada,bengalada,,ll→l
+bengallas,bengalas,,ll→l
+benguella,benguela,,ll→l
+bulla,bula,,ll→l
+bullas,bulas,,ll→l
+caballisticos,cabalísticos,,ll→l
+cabedella,cabedela,,ll→l
+cabedello,cabedelo,,ll→l
+cabelleira,cabeleira,,ll→l
+cabelleiras,cabeleiras,,ll→l
+cabelleireiro,cabeleireiro,,ll→l
+cabelleireiros,cabeleireiros,,ll→l
+cabellinho,cabelinho,,ll→l
+cabellinhos,cabelinhos,,ll→l
+cabello,cabelo,,ll→l
+cabellos,cabelos,,ll→l
+cabelluda,cabeluda,,ll→l
+cabelludas,cabeludas,,ll→l
+cabelludo,cabeludo,,ll→l
+cabelludos,cabeludos,,ll→l
+cabidella,cabidela,,ll→l
+cadella,cadela,,ll→l
+cadellas,cadelas,,ll→l
+cadellinha,cadelinha,,ll→l
+calla,cala,,ll→l
+callada,calada,,ll→l
+calladamente,caladamente,,ll→l
+callado,calado,,ll→l
+callados,calados,,ll→l
+callar,calar,,ll→l
+callaram,calaram,,ll→l
+callavam,calavam,,ll→l
+callavamos,calávamos,,ll→l
+callei,calei,,ll→l
+calleja,caleja,,ll→l
+callejou,calejou,,ll→l
+callejára,calejara,,ll→l
+callida,cálida,,ll→l
+callidas,cálidas,,ll→l
+callos,calos,,ll→l
+callosa,calosa,,ll→l
+callosas,calosas,,ll→l
+callosidades,calosidades,,ll→l
+callou,calou,,ll→l
+callôso,caloso,,ll→l
+camartello,camartelo,,ll→l
+camilla,camila,,ll→l
+cancella,cancela,,ll→l
+cancellas,cancelas,,ll→l
+cancello,cancelo,,ll→l
+canella,canela,,ll→l
+canelladas,caneladas,,ll→l
+canellas,canelas,,ll→l
+canellões,canelões,,ll→l
+capella,capela,,ll→l
+capellas,capelas,,ll→l
+capellinas,capelinas,,ll→l
+capellinha,capelinha,,ll→l
+capellista,capelista,,ll→l
+capellistas,capelistas,,ll→l
+capellita,capelita,,ll→l
+capello,capelo,,ll→l
+capellos,capelos,,ll→l
+capellão,capelão,,ll→l
+caravellas,caravelas,,ll→l
+castellania,castelania,,ll→l
+castello,castelo,,ll→l
+castellos,castelos,,ll→l
+castellã,castelã,,ll→l
+castellão,castelão,,ll→l
+castellãs,castelãs,,ll→l
+castellões,castelões,,ll→l
+cautella,cautela,,ll→l
+cautellas,cautelas,,ll→l
+cautellosamente,cautelosamente,,ll→l
+cavalladas,cavaladas,,ll→l
+cavallar,cavalar,,ll→l
+cavallaram,cavalaram,,ll→l
+cavallares,cavalares,,ll→l
+cavallaria,cavalaria,,ll→l
+cavallariça,cavalariça,,ll→l
+cavallariças,cavalariças,,ll→l
+cavallariço,cavalariço,,ll→l
+cavallavam,cavalavam,,ll→l
+cavalleira,cavaleira,,ll→l
+cavalleiras,cavaleiras,,ll→l
+cavalleiro,cavaleiro,,ll→l
+cavalleiros,cavaleiros,,ll→l
+cavallete,cavalete,,ll→l
+cavallicoque,cavalicoque,,ll→l
+cavallinho,cavalinho,,ll→l
+cavallinhos,cavalinhos,,ll→l
+cavallos,cavalos,,ll→l
+cavallão,cavalão,,ll→l
+cavilloso,caviloso,,ll→l
+cella,cela,,ll→l
+celleiro,celeiro,,ll→l
+celleiros,celeiros,,ll→l
+cellula,célula,,ll→l
+cerebêllo,cerebelo,,ll→l
+chanceller,chanceler,,ll→l
+chancelleres,chanceleres,,ll→l
+chapelleira,chapeleira,,ll→l
+chapelleiras,chapeleiras,,ll→l
+chinella,chinela,,ll→l
+chinellas,chinelas,,ll→l
+chinellinha,chinelinha,,ll→l
+chinellinhas,chinelinhas,,ll→l
+chinello,chinelo,,ll→l
+chinellos,chinelos,,ll→l
+cidadella,cidadela,,ll→l
+clientella,clientela,,ll→l
+cochillando,cochilando,,ll→l
+cochillasse,cochilasse,,ll→l
+codicillo,codicilo,,ll→l
+colla,cola,,ll→l
+collaborador,colaborador,,ll→l
+collaboradora,colaboradora,,ll→l
+collaboradores,colaboradores,,ll→l
+collaborando,colaborando,,ll→l
+collaborar,colaborar,,ll→l
+collaborarem,colaborarem,,ll→l
+collaborava,colaborava,,ll→l
+collaboração,colaboração,,ll→l
+collaborára,colaborara,,ll→l
+collada,colada,,ll→l
+colladas,coladas,,ll→l
+collado,colado,,ll→l
+collador,colador,,ll→l
+collados,colados,,ll→l
+collando,colando,,ll→l
+collante,colante,,ll→l
+collar,colar,,ll→l
+collaram,colaram,,ll→l
+collares,colares,,ll→l
+collarinho,colarinho,,ll→l
+collarinhos,colarinhos,,ll→l
+collava,colava,,ll→l
+collavam,colavam,,ll→l
+collaço,colaço,,ll→l
+collação,colação,,ll→l
+colleando,coleando,,ll→l
+colleantes,coleantes,,ll→l
+collegas,colegas,,ll→l
+collegiada,colegiada,,ll→l
+collegial,colegial,,ll→l
+collegio,colégio,,ll→l
+collegios,colégios,,ll→l
+colleira,coleira,,ll→l
+colleiras,coleiras,,ll→l
+collete,colete,,ll→l
+colletes,coletes,,ll→l
+collige,colige,,ll→l
+colligi,coligi,,ll→l
+colligindo,coligindo,,ll→l
+colligir,coligir,,ll→l
+colligira,coligira,,ll→l
+colligiria,coligiria,,ll→l
+collijo,colijo,,ll→l
+collina,colina,,ll→l
+collinas,colinas,,ll→l
+colliseu,coliseu,,ll→l
+collo,colo,,ll→l
+colloca,coloca,,ll→l
+collocada,colocada,,ll→l
+collocadas,colocadas,,ll→l
+collocado,colocado,,ll→l
+collocados,colocados,,ll→l
+collocam,colocam,,ll→l
+collocando,colocando,,ll→l
+collocar,colocar,,ll→l
+collocara,colocara,,ll→l
+collocaram,colocaram,,ll→l
+collocarem,colocarem,,ll→l
+collocava,colocava,,ll→l
+collocavam,colocavam,,ll→l
+collocação,colocação,,ll→l
+collocações,colocações,,ll→l
+collocou,colocou,,ll→l
+collocára,colocara,,ll→l
+colloquei,coloquei,,ll→l
+colloquio,colóquio,,ll→l
+colloquios,colóquios,,ll→l
+collori,colori,,ll→l
+collorindo,colorindo,,ll→l
+collossal,colossal,,ll→l
+collou,colou,,ll→l
+collára,colara,,ll→l
+compelle,compele,,ll→l
+compellia,compelia,,ll→l
+compelliam,compeliam,,ll→l
+compellido,compelido,,ll→l
+compellir,compelir,,ll→l
+compelliu,compeliu,,ll→l
+constellado,constelado,,ll→l
+constellação,constelação,,ll→l
+constellações,constelações,,ll→l
+corollario,corolário,,ll→l
+corollas,corolas,,ll→l
+coronella,coronela,,ll→l
+costella,costela,,ll→l
+costellas,costelas,,ll→l
+costelleta,costeleta,,ll→l
+cotovello,cotovelo,,ll→l
+cotovellos,cotovelos,,ll→l
+cotovêllos,cotovelos,,ll→l
+cumulla,cumula,,ll→l
+cutello,cutelo,,ll→l
+dalli,dali,,ll→l
+daquella,daquela,,ll→l
+daquellas,daquelas,,ll→l
+daquelle,daquele,,ll→l
+daquelles,daqueles,,ll→l
+daquillo,daquilo,,ll→l
+debellar,debelar,,ll→l
+degollaste,degolaste,,ll→l
+della,dela,,ll→l
+dellas,delas,,ll→l
+delle,dele,,ll→l
+delles,deles,,ll→l
+desafivella,desafivela,,ll→l
+desatrellado,desatrelado,,ll→l
+desatrellava,desatrelava,,ll→l
+descabellada,descabelada,,ll→l
+descabelladas,descabeladas,,ll→l
+descabellado,descabelado,,ll→l
+descabellados,descabelados,,ll→l
+descollasse,descolasse,,ll→l
+descollava,descolava,,ll→l
+desentalladas,desentaladas,,ll→l
+desfallecendo,desfalecendo,,ll→l
+desfallecer,desfalecer,,ll→l
+desfalleceram,desfaleceram,,ll→l
+desfallecesse,desfalecesse,,ll→l
+desfalleceu,desfaleceu,,ll→l
+desfallecia,desfalecia,,ll→l
+desfallecida,desfalecida,,ll→l
+desfallecido,desfalecido,,ll→l
+desfallecidos,desfalecidos,,ll→l
+desfallecimento,desfalecimento,,ll→l
+desfallecimentos,desfalecimentos,,ll→l
+desilludi,desiludi,,ll→l
+desilludida,desiludida,,ll→l
+desilludido,desiludido,,ll→l
+desilludidos,desiludidos,,ll→l
+desilludiu,desiludiu,,ll→l
+desillusão,desilusão,,ll→l
+desillusões,desilusões,,ll→l
+desmantellado,desmantelado,,ll→l
+despellada,despelada,,ll→l
+desvallida,desvalida,,ll→l
+desvellada,desvelada,,ll→l
+desvello,desvelo,,ll→l
+desvellos,desvelos,,ll→l
+dificíllimo,dificílimo,,ll→l
+dilletante,diletante,,ll→l
+dilletantismo,diletantismo,,ll→l
+dilluisse,diluísse,,ll→l
+distillar,distilar,,ll→l
+donzella,donzela,,ll→l
+donzellas,donzelas,,ll→l
+donzellinha,donzelinha,,ll→l
+donzellinhas,donzelinhas,,ll→l
+donzellona,donzelona,,ll→l
+duello,duelo,,ll→l
+duellos,duelos,,ll→l
+emballada,embalada,,ll→l
+emballado,embalado,,ll→l
+emballadora,embaladora,,ll→l
+emballara,embalara,,ll→l
+emballava,embalava,,ll→l
+emballe,embale,,ll→l
+embaçadellas,embaçadelas,,ll→l
+embelleza,embeleza,,ll→l
+embellezado,embelezado,,ll→l
+embellezar,embelezar,,ll→l
+embellezavam,embelezavam,,ll→l
+emolliente,emoliente,,ll→l
+empallidece,empalidece,,ll→l
+empallidecendo,empalidecendo,,ll→l
+empallidecer,empalidecer,,ll→l
+empallideceu,empalideceu,,ll→l
+empallideci,empalideci,,ll→l
+empallidecia,empalidecia,,ll→l
+empallideciam,empalideciam,,ll→l
+empallidecêra,empalidecera,,ll→l
+encabelladas,encabeladas,,ll→l
+encastella,encastela,,ll→l
+encavallada,encavalada,,ll→l
+encavallou,encavalou,,ll→l
+enovellado,enovelado,,ll→l
+entaladella,entaladela,,ll→l
+entallado,entalado,,ll→l
+escabello,escabelo,,ll→l
+escaldadella,escaldadela,,ll→l
+escalla,escala,,ll→l
+escalpello,escalpelo,,ll→l
+escalpellos,escalpelos,,ll→l
+escarcella,escarcela,,ll→l
+escarollados,escarolados,,ll→l
+escudella,escudela,,ll→l
+esfarellada,esfarelada,,ll→l
+esfarellou,esfarelou,,ll→l
+esfollado,esfolado,,ll→l
+esfollar,esfolar,,ll→l
+esmolla,esmola,,ll→l
+espadella,espadela,,ll→l
+espadellada,espadelada,,ll→l
+espadelladas,espadeladas,,ll→l
+espadellas,espadelas,,ll→l
+estalla,estala,,ll→l
+estallaram,estalaram,,ll→l
+estallo,estalo,,ll→l
+estatellado,estatelado,,ll→l
+estella,estela,,ll→l
+estrallejava,estralejava,,ll→l
+estrella,estrela,,ll→l
+estrellada,estrelada,,ll→l
+estrelladas,estreladas,,ll→l
+estrellado,estrelado,,ll→l
+estrellados,estrelados,,ll→l
+estrellas,estrelas,,ll→l
+estrellinha,estrelinha,,ll→l
+estrellinhas,estrelinhas,,ll→l
+excellencia,excelência,,ll→l
+excellencias,excelências,,ll→l
+excellente,excelente,,ll→l
+excellentemente,excelentemente,,ll→l
+excellentes,excelentes,,ll→l
+excellentissima,excelentíssima,,ll→l
+excellentissimo,excelentíssimo,,ll→l
+expelle,expele,,ll→l
+expellem,expelem,,ll→l
+expelli,expeli,,ll→l
+expellia,expelia,,ll→l
+expellida,expelida,,ll→l
+expellidos,expelidos,,ll→l
+expellindo,expelindo,,ll→l
+expellir,expelir,,ll→l
+expelliu,expeliu,,ll→l
+falla,fala,,ll→l
+fallaciosos,falaciosos,,ll→l
+fallada,falada,,ll→l
+falladas,faladas,,ll→l
+falladeira,faladeira,,ll→l
+fallado,falado,,ll→l
+fallador,falador,,ll→l
+falladora,faladora,,ll→l
+falladores,faladores,,ll→l
+fallados,falados,,ll→l
+fallam,falam,,ll→l
+fallamos,falamos,,ll→l
+fallando,falando,,ll→l
+fallante,falante,,ll→l
+fallara,falara,,ll→l
+fallaram,falaram,,ll→l
+fallarei,falarei,,ll→l
+fallarem,falarem,,ll→l
+fallaremos,falaremos,,ll→l
+fallaria,falaria,,ll→l
+fallariamos,falaríamos,,ll→l
+fallarmos,falarmos,,ll→l
+fallará,falará,,ll→l
+fallaría,falaria,,ll→l
+fallas,falas,,ll→l
+fallasse,falasse,,ll→l
+fallassem,falassem,,ll→l
+fallasses,falasses,,ll→l
+fallaste,falaste,,ll→l
+fallatorio,falatório,,ll→l
+fallatorios,falatórios,,ll→l
+fallava,falava,,ll→l
+fallavam,falavam,,ll→l
+fallavamos,falávamos,,ll→l
+fallavas,falavas,,ll→l
+fallaz,falaz,,ll→l
+fallazes,falazes,,ll→l
+falle,fale,,ll→l
+fallece,falece,,ll→l
+fallecera,falecera,,ll→l
+falleceu,faleceu,,ll→l
+fallecida,falecida,,ll→l
+fallecido,falecido,,ll→l
+fallecidos,falecidos,,ll→l
+fallecèra,falecera,,ll→l
+fallecêra,falecera,,ll→l
+fallei,falei,,ll→l
+fallem,falem,,ll→l
+fallemos,falemos,,ll→l
+fallencia,falência,,ll→l
+fallencias,falências,,ll→l
+fallir,falir,,ll→l
+fallira,falira,,ll→l
+falliu,faliu,,ll→l
+fallo,falo,,ll→l
+fallou,falou,,ll→l
+fallámos,falámos,,ll→l
+fallára,falara,,ll→l
+favilla,favila,,ll→l
+fillado,filado,,ll→l
+fivella,fivela,,ll→l
+fivellas,fivelas,,ll→l
+flagella,flagela,,ll→l
+flagellada,flagelada,,ll→l
+flagellado,flagelado,,ll→l
+flagellantes,flagelantes,,ll→l
+flagellava,flagelava,,ll→l
+flagellação,flagelação,,ll→l
+flagello,flagelo,,ll→l
+flagellos,flagelos,,ll→l
+flanella,flanela,,ll→l
+flanellas,flanelas,,ll→l
+folle,fole,,ll→l
+folliculario,foliculário,,ll→l
+gabellas,gabelas,,ll→l
+gallega,galega,,ll→l
+gallegadas,galegadas,,ll→l
+gallegas,galegas,,ll→l
+gallego,galego,,ll→l
+gallegos,galegos,,ll→l
+gallicismo,galicismo,,ll→l
+gallinhas,galinhas,,ll→l
+gallinheiro,galinheiro,,ll→l
+gallinheiros,galinheiros,,ll→l
+gallinhola,galinhola,,ll→l
+gallinholas,galinholas,,ll→l
+gallo,galo,,ll→l
+gallos,galos,,ll→l
+gamella,gamela,,ll→l
+gazella,gazela,,ll→l
+goella,goela,,ll→l
+goellas,goelas,,ll→l
+golla,gola,,ll→l
+grillo,grilo,,ll→l
+grillos,grilos,,ll→l
+guellas,guelas,,ll→l
+hellena,helena,,ll→l
+hellenica,helénica,helênica,ll→l
+hellenos,helenos,,ll→l
+hollanda,holanda,,ll→l
+idillico,idílico,,ll→l
+illa,ila,,ll→l
+illaqueado,ilaqueado,,ll→l
+illaquear,ilaquear,,ll→l
+illações,ilações,,ll→l
+illegalidade,ilegalidade,,ll→l
+illegallidade,ilegalidade,,ll→l
+illegitimamente,ilegitimamente,,ll→l
+illegitimos,ilegítimos,,ll→l
+illetrada,iletrada,,ll→l
+illiada,ilíada,,ll→l
+illibada,ilibada,,ll→l
+illicitas,ilícitas,,ll→l
+illide,ilide,,ll→l
+illimitada,ilimitada,,ll→l
+illimitado,ilimitado,,ll→l
+illudamos,iludamos,,ll→l
+illudas,iludas,,ll→l
+illude,ilude,,ll→l
+illudem,iludem,,ll→l
+illudes,iludes,,ll→l
+illudi,iludi,,ll→l
+illudia,iludia,,ll→l
+illudiam,iludiam,,ll→l
+illudida,iludida,,ll→l
+illudidas,iludidas,,ll→l
+illudido,iludido,,ll→l
+illudindo,iludindo,,ll→l
+illudir,iludir,,ll→l
+illudira,iludira,,ll→l
+illudisse,iludisse,,ll→l
+illumina,ilumina,,ll→l
+illuminada,iluminada,,ll→l
+illuminadas,iluminadas,,ll→l
+illuminado,iluminado,,ll→l
+illuminados,iluminados,,ll→l
+illuminam,iluminam,,ll→l
+illuminando,iluminando,,ll→l
+illuminar,iluminar,,ll→l
+illuminasse,iluminasse,,ll→l
+illuminava,iluminava,,ll→l
+illuminavam,iluminavam,,ll→l
+illuminação,iluminação,,ll→l
+illuminações,iluminações,,ll→l
+illumino,ilumino,,ll→l
+illuminou,iluminou,,ll→l
+illuminuras,iluminuras,,ll→l
+illuminára,iluminara,,ll→l
+illustra,ilustra,,ll→l
+illustrada,ilustrada,,ll→l
+illustradas,ilustradas,,ll→l
+illustrado,ilustrado,,ll→l
+illustrados,ilustrados,,ll→l
+illustrando,ilustrando,,ll→l
+illustrar,ilustrar,,ll→l
+illustrasse,ilustrasse,,ll→l
+illustração,ilustração,,ll→l
+illustres,ilustres,,ll→l
+illustrou,ilustrou,,ll→l
+illusão,ilusão,,ll→l
+illusões,ilusões,,ll→l
+imbecillidade,imbecilidade,,ll→l
+impelle,impele,,ll→l
+impellia,impelia,,ll→l
+impelliam,impeliam,,ll→l
+impellida,impelida,,ll→l
+impellidas,impelidas,,ll→l
+impellido,impelido,,ll→l
+impellidos,impelidos,,ll→l
+impellindo,impelindo,,ll→l
+impellir,impelir,,ll→l
+impellisse,impelisse,,ll→l
+impelliu,impeliu,,ll→l
+impolluta,impoluta,,ll→l
+incellencia,incelência,,ll→l
+infallibilidade,infalibilidade,,ll→l
+infalliveis,infalíveis,,ll→l
+infallivel,infalível,,ll→l
+infallivelmente,infalivelmente,,ll→l
+inilludiveis,iniludíveis,,ll→l
+inilludivel,iniludível,,ll→l
+inintelligiveis,ininteligíveis,,ll→l
+inintelligivel,ininteligível,,ll→l
+installa,instala,,ll→l
+installada,instalada,,ll→l
+installadas,instaladas,,ll→l
+installado,instalado,,ll→l
+installados,instalados,,ll→l
+installando,instalando,,ll→l
+installar,instalar,,ll→l
+installara,instalara,,ll→l
+installaram,instalaram,,ll→l
+installarem,instalarem,,ll→l
+installares,instalares,,ll→l
+installasse,instalasse,,ll→l
+installava,instalava,,ll→l
+installação,instalação,,ll→l
+installações,instalações,,ll→l
+installou,instalou,,ll→l
+installára,instalara,,ll→l
+instillava,instilava,,ll→l
+intellecto,intelecto,,ll→l
+intellectual,intelectual,,ll→l
+intellectualidade,intelectualidade,,ll→l
+intelligencia,inteligência,,ll→l
+intelligencias,inteligências,,ll→l
+intelligente,inteligente,,ll→l
+intelligentemente,inteligentemente,,ll→l
+intelligentes,inteligentes,,ll→l
+intelligiveis,inteligíveis,,ll→l
+intelligivel,inteligível,,ll→l
+intercallar,intercalar,,ll→l
+interpellado,interpelado,,ll→l
+interpellando,interpelando,,ll→l
+interpellar,interpelar,,ll→l
+interpellava,interpelava,,ll→l
+interpellei,interpelei,,ll→l
+interpellou,interpelou,,ll→l
+intervallado,intervalado,,ll→l
+intervallo,intervalo,,ll→l
+intervallos,intervalos,,ll→l
+janella,janela,,ll→l
+janellar,janelar,,ll→l
+janellas,janelas,,ll→l
+janelleira,janeleira,,ll→l
+janellinha,janelinha,,ll→l
+janellinhas,janelinhas,,ll→l
+lapella,lapela,,ll→l
+lapellas,lapelas,,ll→l
+limpadella,limpadela,,ll→l
+macella,macela,,ll→l
+magricella,magricela,,ll→l
+magricellas,magricelas,,ll→l
+malla,mala,,ll→l
+malleavel,maleável,,ll→l
+mallograda,malograda,,ll→l
+mallogrados,malogrados,,ll→l
+mallogro,malogro,,ll→l
+maninêllo,maninelo,,ll→l
+manivella,manivela,,ll→l
+marcella,marcela,,ll→l
+marmellada,marmelada,,ll→l
+marmelleiro,marmeleiro,,ll→l
+martelladas,marteladas,,ll→l
+martelladinhas,marteladinhas,,ll→l
+martellando,martelando,,ll→l
+martellar,martelar,,ll→l
+martellava,martelava,,ll→l
+martello,martelo,,ll→l
+martellou,martelou,,ll→l
+maxillas,maxilas,,ll→l
+melancollico,melancólico,,ll→l
+melladas,meladas,,ll→l
+melliflua,melíflua,,ll→l
+mellifluos,melífluos,,ll→l
+mellodrama,melodrama,,ll→l
+mellíflua,melíflua,,ll→l
+metallica,metálica,,ll→l
+metallicas,metálicas,,ll→l
+metallico,metálico,,ll→l
+metallicos,metálicos,,ll→l
+millenaria,milenária,,ll→l
+millenio,milénio,milênio,ll→l
+millionario,milionário,,ll→l
+miollo,miolo,,ll→l
+miscellanea,miscelânea,,ll→l
+mochilla,mochila,,ll→l
+modêllo,modelo,,ll→l
+moella,moela,,ll→l
+mollas,molas,,ll→l
+mollemente,molemente,,ll→l
+mollenga,molenga,,ll→l
+mollengo,molengo,,ll→l
+mollengão,molengão,,ll→l
+molles,moles,,ll→l
+molleza,moleza,,ll→l
+molluscos,moluscos,,ll→l
+mordedella,mordedela,,ll→l
+murzello,murzelo,,ll→l
+naquella,naquela,,ll→l
+naquellas,naquelas,,ll→l
+naquelle,naquele,,ll→l
+naquelles,naqueles,,ll→l
+naquillo,naquilo,,ll→l
+narguillé,narguilé,,ll→l
+nella,nela,,ll→l
+nellas,nelas,,ll→l
+nelle,nele,,ll→l
+nelles,neles,,ll→l
+nivellados,nivelados,,ll→l
+nobillissima,nobilíssima,,ll→l
+novella,novela,,ll→l
+novellas,novelas,,ll→l
+novellista,novelista,,ll→l
+novello,novelo,,ll→l
+novellos,novelos,,ll→l
+novéllas,novelas,,ll→l
+novêllo,novelo,,ll→l
+novêllos,novelos,,ll→l
+nulla,nula,,ll→l
+nullidade,nulidade,,ll→l
+nullo,nulo,,ll→l
+nullos,nulos,,ll→l
+olhadella,olhadela,,ll→l
+olhadellas,olhadelas,,ll→l
+oscilla,oscila,,ll→l
+oscillando,oscilando,,ll→l
+oscillante,oscilante,,ll→l
+oscillantes,oscilantes,,ll→l
+oscillar,oscilar,,ll→l
+oscillarem,oscilarem,,ll→l
+oscillava,oscilava,,ll→l
+oscillavam,oscilavam,,ll→l
+oscillação,oscilação,,ll→l
+oscillações,oscilações,,ll→l
+oscillou,oscilou,,ll→l
+ourello,ourelo,,ll→l
+palladio,paládio,,ll→l
+pallavras,palavras,,ll→l
+pallida,pálida,,ll→l
+pallidamente,palidamente,,ll→l
+pallidas,pálidas,,ll→l
+pallidez,palidez,,ll→l
+pallido,pálido,,ll→l
+pallidos,pálidos,,ll→l
+pallio,pálio,,ll→l
+panella,panela,,ll→l
+panellas,panelas,,ll→l
+panellinha,panelinha,,ll→l
+paralello,paralelo,,ll→l
+parallelamente,paralelamente,,ll→l
+parallelas,paralelas,,ll→l
+parallelo,paralelo,,ll→l
+parallelos,paralelos,,ll→l
+parcella,parcela,,ll→l
+parentella,parentela,,ll→l
+parentellas,parentelas,,ll→l
+parolla,parola,,ll→l
+passarolla,passarola,,ll→l
+pella,pela,,ll→l
+pellada,pelada,,ll→l
+pellado,pelado,,ll→l
+pellagem,pelagem,,ll→l
+pellavam,pelavam,,ll→l
+pelle,pele,,ll→l
+pelles,peles,,ll→l
+pellica,pelica,,ll→l
+pellicula,película,,ll→l
+pelliculas,películas,,ll→l
+pellinha,pelinha,,ll→l
+pelliça,peliça,,ll→l
+pelliças,peliças,,ll→l
+pello,pelo,,ll→l
+pellos,pelos,,ll→l
+pellotão,pelotão,,ll→l
+pellucia,pelúcia,,ll→l
+pelluda,peluda,,ll→l
+pelludo,peludo,,ll→l
+penteadella,penteadela,,ll→l
+peristillo,peristilo,,ll→l
+pesadello,pesadelo,,ll→l
+pisadella,pisadela,,ll→l
+pisadellas,pisadelas,,ll→l
+pistolla,pistola,,ll→l
+polichinello,polichinelo,,ll→l
+pollar,polar,,ll→l
+pollegada,polegada,,ll→l
+pollegar,polegar,,ll→l
+pollegares,polegares,,ll→l
+pollidez,polidez,,ll→l
+pollos,polos,,ll→l
+polluida,poluída,,ll→l
+polluido,poluído,,ll→l
+polluir,poluir,,ll→l
+polluiram,poluíram,,ll→l
+porcellana,porcelana,,ll→l
+porcellanas,porcelanas,,ll→l
+portello,portelo,,ll→l
+procella,procela,,ll→l
+propellido,propelido,,ll→l
+protocollos,protocolos,,ll→l
+pullar,pular,,ll→l
+pullular,pulular,,ll→l
+pupilla,pupila,,ll→l
+pupillas,pupilas,,ll→l
+pupillo,pupilo,,ll→l
+pusillanime,pusilânime,,ll→l
+pélla,pela,,ll→l
+pêllo,pelo,,ll→l
+pêllos,pêlos,,ll→l
+quadrella,quadrela,,ll→l
+quadrellas,quadrelas,,ll→l
+querella,querela,,ll→l
+rallam,ralam,,ll→l
+rallavam,ralavam,,ll→l
+ramelloso,rameloso,,ll→l
+reallumiado,realumiado,,ll→l
+rebellado,rebelado,,ll→l
+rebellião,rebelião,,ll→l
+rebelliões,rebeliões,,ll→l
+recollocou,recolocou,,ll→l
+regallados,regalados,,ll→l
+regallou,regalou,,ll→l
+relles,reles,,ll→l
+rellice,relice,,ll→l
+repelle,repele,,ll→l
+repellem,repelem,,ll→l
+repellente,repelente,,ll→l
+repellentes,repelentes,,ll→l
+repelli,repeli,,ll→l
+repellia,repelia,,ll→l
+repelliam,repeliam,,ll→l
+repellida,repelida,,ll→l
+repellido,repelido,,ll→l
+repellidos,repelidos,,ll→l
+repellindo,repelindo,,ll→l
+repellir,repelir,,ll→l
+repellira,repelira,,ll→l
+repelliram,repeliram,,ll→l
+repellirem,repelirem,,ll→l
+repellirmos,repelirmos,,ll→l
+repellis,repelis,,ll→l
+repelliu,repeliu,,ll→l
+repellão,repelão,,ll→l
+repellões,repelões,,ll→l
+retornello,retornelo,,ll→l
+rodella,rodela,,ll→l
+rodellas,rodelas,,ll→l
+rodellinhas,rodelinhas,,ll→l
+rollim,rolim,,ll→l
+rôllos,rolos,,ll→l
+sacudidella,sacudidela,,ll→l
+sacudidellas,sacudidelas,,ll→l
+salla,sala,,ll→l
+sallas,salas,,ll→l
+sella,sela,,ll→l
+sellada,selada,,ll→l
+sellado,selado,,ll→l
+sellados,selados,,ll→l
+sellar,selar,,ll→l
+sellas,selas,,ll→l
+sellei,selei,,ll→l
+sellim,selim,,ll→l
+sello,selo,,ll→l
+sellos,selos,,ll→l
+sellou,selou,,ll→l
+sentinella,sentinela,,ll→l
+sentinellas,sentinelas,,ll→l
+sibillava,sibilava,,ll→l
+singella,singela,,ll→l
+singellas,singelas,,ll→l
+singelleza,singeleza,,ll→l
+sobrepelliz,sobrepeliz,,ll→l
+sobrepellizes,sobrepelizes,,ll→l
+solla,sola,,ll→l
+sollicitar,solicitar,,ll→l
+sollicitara,solicitara,,ll→l
+sollicitasse,solicitasse,,ll→l
+sollicitavam,solicitavam,,ll→l
+sollicito,solícito,,ll→l
+sollicitude,solicitude,,ll→l
+subllime,sublime,,ll→l
+sêllo,selo,,ll→l
+tabella,tabela,,ll→l
+tabellião,tabelião,,ll→l
+tagarellado,tagarelado,,ll→l
+tagarellando,tagarelando,,ll→l
+tagarellar,tagarelar,,ll→l
+tagarellava,tagarelava,,ll→l
+tagarellavam,tagarelavam,,ll→l
+tagarellice,tagarelice,,ll→l
+tagarellou,tagarelou,,ll→l
+tagarellára,tagarelara,,ll→l
+tallares,talares,,ll→l
+taramellava,taramelava,,ll→l
+tarantella,tarantela,,ll→l
+tigella,tigela,,ll→l
+tigellas,tigelas,,ll→l
+tiracollo,tiracolo,,ll→l
+titillar,titilar,,ll→l
+tornozello,tornozelo,,ll→l
+torvellinho,torvelinho,,ll→l
+tranquilla,tranquila,,ll→l
+tranquillamente,tranquilamente,,ll→l
+tranquillas,tranquilas,,ll→l
+tranquillidade,tranquilidade,,ll→l
+tranquillo,tranquilo,,ll→l
+tranquillos,tranquilos,,ll→l
+trella,trela,,ll→l
+trillo,trilo,,ll→l
+trillos,trilos,,ll→l
+tulle,tule,,ll→l
+tulles,tules,,ll→l
+tutella,tutela,,ll→l
+vacilla,vacila,,ll→l
+vacillando,vacilando,,ll→l
+vacillante,vacilante,,ll→l
+vacillantes,vacilantes,,ll→l
+vacillar,vacilar,,ll→l
+vacillação,vacilação,,ll→l
+vacillações,vacilações,,ll→l
+vacillou,vacilou,,ll→l
+valla,vala,,ll→l
+vallado,valado,,ll→l
+vallados,valados,,ll→l
+vallas,valas,,ll→l
+valle,vale,,ll→l
+valles,vales,,ll→l
+valleta,valeta,,ll→l
+vallo,valo,,ll→l
+vassalla,vassala,,ll→l
+vassallo,vassalo,,ll→l
+vassallos,vassalos,,ll→l
+vella,vela,,ll→l
+vellas,velas,,ll→l
+velleidade,veleidade,,ll→l
+velleidades,veleidades,,ll→l
+velludilho,veludilho,,ll→l
+velludilhos,veludilhos,,ll→l
+velludo,veludo,,ll→l
+velludos,veludos,,ll→l
+vellára,velara,,ll→l
+viella,viela,,ll→l
+viellas,vielas,,ll→l
+villa,vila,,ll→l
+villanagem,vilanagem,,ll→l
+villania,vilania,,ll→l
+villanias,vilanias,,ll→l
+villar,vilar,,ll→l
+villares,vilares,,ll→l
+villas,vilas,,ll→l
+villegiatura,vilegiatura,,ll→l
+villezas,vilezas,,ll→l
+villico,vilico,,ll→l
+villipendiar,vilipendiar,,ll→l
+villissima,vilíssima,,ll→l
+villão,vilão,,ll→l
+villôa,viloa,,ll→l
+villões,vilões,,ll→l
+violoncello,violoncelo,,ll→l
+violoncellos,violoncelos,,ll→l
+vitella,vitela,,ll→l
+àquella,àquela,,ll→l
+áquella,àquela,,ll→l
+áquellas,àquelas,,ll→l
+áquelle,àquele,,ll→l
+áquelles,àqueles,,ll→l
+áquillo,àquilo,,ll→l
+élle,ele,,ll→l
+alluviaes,aluviais,,ll→l + ae→ai
+collateraes,colaterais,,ll→l + ae→ai
+collossaes,colossais,,ll→l + ae→ai
+collecciona,coleciona,,ll→l + cc→c
+colleccionador,colecionador,,ll→l + cc→c
+colleccionar,colecionar,,ll→l + cc→c
+villeggiatura,vilegiatura,,ll→l + gg→g
+alludio,aludiu,,ll→l + io→iu
+impellio,impeliu,,ll→l + io→iu
+parallelogrammo,paralelogramo,,ll→l + mm→m
+calligraphia,caligrafia,,ll→l + ph→f
+calligraphicas,caligráficas,,ll→l + ph→f
+collectiva,coletiva,,ll→l + silent consonant
+collectividade,coletividade,,ll→l + silent consonant
+collectivo,coletivo,,ll→l + silent consonant
+collector,coletor,,ll→l + silent consonant
+collecção,coleção,,ll→l + silent consonant
+collecções,coleções,,ll→l + silent consonant
+tranquillisada,tranquilizada,,ll→l + s→z
+tranquillisado,tranquilizado,,ll→l + s→z
+tranquillisar,tranquilizar,,ll→l + s→z
+tranquillisaram,tranquilizaram,,ll→l + s→z
+tranquillisasse,tranquilizasse,,ll→l + s→z
+tranquillisava,tranquilizava,,ll→l + s→z
+tranquillisavam,tranquilizavam,,ll→l + s→z
+tranquillisou,tranquilizou,,ll→l + s→z
+allopatha,alopata,,ll→l + th→t
+allopathia,alopatia,,ll→l + th→t
+gallimathias,galimatias,,ll→l + th→t
+dillettantes,diletantes,,ll→l + tt→t
+dillettantismo,diletantismo,,ll→l + tt→t
+ullysses,ulisses,,ll→l + y→i
+hollandez,holandês,,ll→l + z→s
+hollandeza,holandesa,,ll→l + z→s
+hollandezas,holandesas,,ll→l + z→s
+illeza,ilesa,,ll→l + z→s
+acommodado,acomodado,,mm→m
+acommodar,acomodar,,mm→m
+acommodaram,acomodaram,,mm→m
+acommodarem,acomodarem,,mm→m
+acommodava,acomodava,,mm→m
+acommodára,acomodara,,mm→m
+chamma,chama,,mm→m
+chammas,chamas,,mm→m
+chammejante,chamejante,,mm→m
+chammejantes,chamejantes,,mm→m
+chammejava,chamejava,,mm→m
+chammejavam,chamejavam,,mm→m
+commadres,comadres,,mm→m
+commanda,comanda,,mm→m
+commandada,comandada,,mm→m
+commandadas,comandadas,,mm→m
+commandado,comandado,,mm→m
+commandante,comandante,,mm→m
+commandar,comandar,,mm→m
+commandava,comandava,,mm→m
+commandavam,comandavam,,mm→m
+commanditario,comanditário,,mm→m
+commandos,comandos,,mm→m
+commarca,comarca,,mm→m
+commedimentos,comedimentos,,mm→m
+commemorado,comemorado,,mm→m
+commemorar,comemorar,,mm→m
+commemorativo,comemorativo,,mm→m
+commemorações,comemorações,,mm→m
+commenda,comenda,,mm→m
+commendador,comendador,,mm→m
+commendadores,comendadores,,mm→m
+commensal,comensal,,mm→m
+commentada,comentada,,mm→m
+commentadas,comentadas,,mm→m
+commentado,comentado,,mm→m
+commentadores,comentadores,,mm→m
+commentando,comentando,,mm→m
+commentar,comentar,,mm→m
+commentaram,comentaram,,mm→m
+commentario,comentário,,mm→m
+commentarios,comentários,,mm→m
+commentasse,comentasse,,mm→m
+commentava,comentava,,mm→m
+commentavam,comentavam,,mm→m
+commentou,comentou,,mm→m
+commercial,comercial,,mm→m
+commercialmente,comercialmente,,mm→m
+commerciante,comerciante,,mm→m
+commerciantes,comerciantes,,mm→m
+commerciar,comerciar,,mm→m
+commerciava,comerciava,,mm→m
+commercios,comércios,,mm→m
+commigo,comigo,,mm→m
+commina,comina,,mm→m
+commissario,comissário,,mm→m
+commissarios,comissários,,mm→m
+commissão,comissão,,mm→m
+commissões,comissões,,mm→m
+commoda,cómoda,cômoda,mm→m
+commodamente,comodamente,,mm→m
+commodas,cómodas,cômodas,mm→m
+commodidade,comodidade,,mm→m
+commodidades,comodidades,,mm→m
+commodos,cómodos,cômodos,mm→m
+commovendo,comovendo,,mm→m
+commovente,comovente,,mm→m
+commovera,comovera,,mm→m
+commoveram,comoveram,,mm→m
+commoveu,comoveu,,mm→m
+commovia,comovia,,mm→m
+commoviam,comoviam,,mm→m
+commovida,comovida,,mm→m
+commovidas,comovidas,,mm→m
+commovido,comovido,,mm→m
+commovidos,comovidos,,mm→m
+commovêra,comovera,,mm→m
+commoções,comoções,,mm→m
+communa,comuna,,mm→m
+communga,comunga,,mm→m
+commungando,comungando,,mm→m
+commungar,comungar,,mm→m
+commungasse,comungasse,,mm→m
+commungava,comungava,,mm→m
+communhão,comunhão,,mm→m
+communica,comunica,,mm→m
+communicada,comunicada,,mm→m
+communicado,comunicado,,mm→m
+communicados,comunicados,,mm→m
+communicam,comunicam,,mm→m
+communicando,comunicando,,mm→m
+communicara,comunicara,,mm→m
+communicaram,comunicaram,,mm→m
+communicativa,comunicativa,,mm→m
+communicativo,comunicativo,,mm→m
+communicava,comunicava,,mm→m
+communicavam,comunicavam,,mm→m
+communicação,comunicação,,mm→m
+communicações,comunicações,,mm→m
+communico,comunico,,mm→m
+communicou,comunicou,,mm→m
+communidade,comunidade,,mm→m
+communismo,comunismo,,mm→m
+communista,comunista,,mm→m
+communs,comuns,,mm→m
+commutada,comutada,,mm→m
+commutação,comutação,,mm→m
+commutou,comutou,,mm→m
+consummada,consumada,,mm→m
+consummadamente,consumadamente,,mm→m
+consummado,consumado,,mm→m
+consummados,consumados,,mm→m
+consummar,consumar,,mm→m
+consummação,consumação,,mm→m
+consummia,consumia,,mm→m
+consummido,consumido,,mm→m
+consummir,consumir,,mm→m
+consummou,consumou,,mm→m
+consummára,consumara,,mm→m
+descommunalmente,descomunalmente,,mm→m
+encommenda,encomenda,,mm→m
+encommendado,encomendado,,mm→m
+encommendar,encomendar,,mm→m
+encommendaram,encomendaram,,mm→m
+encommendas,encomendas,,mm→m
+encommendação,encomendação,,mm→m
+encommendei,encomendei,,mm→m
+encommendou,encomendou,,mm→m
+encommendára,encomendara,,mm→m
+engomma,engoma,,mm→m
+engommada,engomada,,mm→m
+engommadas,engomadas,,mm→m
+engommadeira,engomadeira,,mm→m
+engommado,engomado,,mm→m
+engommados,engomados,,mm→m
+engommando,engomando,,mm→m
+engommar,engomar,,mm→m
+engommava,engomava,,mm→m
+engomme,engome,,mm→m
+epigramma,epigrama,,mm→m
+epigrammas,epigramas,,mm→m
+epigrammatico,epigramático,,mm→m
+excommungada,excomungada,,mm→m
+excommungadas,excomungadas,,mm→m
+excommungado,excomungado,,mm→m
+excommungados,excomungados,,mm→m
+excommungando,excomungando,,mm→m
+excommunhão,excomunhão,,mm→m
+flamma,flama,,mm→m
+flammante,flamante,,mm→m
+flammejam,flamejam,,mm→m
+flammejando,flamejando,,mm→m
+flammejante,flamejante,,mm→m
+flammejantes,flamejantes,,mm→m
+flammejar,flamejar,,mm→m
+flammejava,flamejava,,mm→m
+flammejavam,flamejavam,,mm→m
+flammejou,flamejou,,mm→m
+fummando,fumando,,mm→m
+fummar,fumar,,mm→m
+fummo,fumo,,mm→m
+fummou,fumou,,mm→m
+gemmas,gemas,,mm→m
+gomma,goma,,mm→m
+grammas,gramas,,mm→m
+grammaticos,gramáticos,,mm→m
+grammaticão,gramaticão,,mm→m
+immaculada,imaculada,,mm→m
+immaculadas,imaculadas,,mm→m
+immaculado,imaculado,,mm→m
+immanente,imanente,,mm→m
+immaterial,imaterial,,mm→m
+immediata,imediata,,mm→m
+immediatamente,imediatamente,,mm→m
+immediatas,imediatas,,mm→m
+immediatos,imediatos,,mm→m
+immediações,imediações,,mm→m
+immemorial,imemorial,,mm→m
+immensa,imensa,,mm→m
+immensamente,imensamente,,mm→m
+immensas,imensas,,mm→m
+immensidade,imensidade,,mm→m
+immensidades,imensidades,,mm→m
+immensidão,imensidão,,mm→m
+immensissima,imensíssima,,mm→m
+immensissimos,imensíssimos,,mm→m
+immensos,imensos,,mm→m
+immensuravel,imensurável,,mm→m
+immerso,imerso,,mm→m
+imminente,iminente,,mm→m
+immobilidade,imobilidade,,mm→m
+immoderadamente,imoderadamente,,mm→m
+immodesta,imodesta,,mm→m
+immodestas,imodestas,,mm→m
+immodestia,imodéstia,,mm→m
+immolada,imolada,,mm→m
+immolaram,imolaram,,mm→m
+immoral,imoral,,mm→m
+immoralidade,imoralidade,,mm→m
+immoralidades,imoralidades,,mm→m
+immorredoiro,imorredoiro,,mm→m
+immorredoura,imorredoura,,mm→m
+immortal,imortal,,mm→m
+immortalidade,imortalidade,,mm→m
+immortalizar,imortalizar,,mm→m
+immoveis,imóveis,,mm→m
+immovel,imóvel,,mm→m
+immunda,imunda,,mm→m
+immundamente,imundamente,,mm→m
+immundice,imundice,,mm→m
+immundices,imundices,,mm→m
+immundicie,imundície,,mm→m
+immundicies,imundícies,,mm→m
+immundo,imundo,,mm→m
+immundos,imundos,,mm→m
+immunes,imunes,,mm→m
+immutabilidade,imutabilidade,,mm→m
+immutaveis,imutáveis,,mm→m
+immutavel,imutável,,mm→m
+immutavelmente,imutavelmente,,mm→m
+incommensuravel,incomensurável,,mm→m
+incommodada,incomodada,,mm→m
+incommodado,incomodado,,mm→m
+incommodados,incomodados,,mm→m
+incommodar,incomodar,,mm→m
+incommodarem,incomodarem,,mm→m
+incommodasse,incomodasse,,mm→m
+incommodava,incomodava,,mm→m
+incommodavam,incomodavam,,mm→m
+incommode,incomode,,mm→m
+incommodem,incomodem,,mm→m
+incommodes,incomodes,,mm→m
+incommodo,incómodo,incômodo,mm→m
+incommodos,incómodos,incômodos,mm→m
+incommódo,incómodo,incômodo,mm→m
+incómmodo,incómodo,incômodo,mm→m
+inflamma,inflama,,mm→m
+inflammada,inflamada,,mm→m
+inflammadas,inflamadas,,mm→m
+inflammado,inflamado,,mm→m
+inflammados,inflamados,,mm→m
+inflammar,inflamar,,mm→m
+inflammava,inflamava,,mm→m
+inflammaveis,inflamáveis,,mm→m
+inflammação,inflamação,,mm→m
+inflammára,inflamara,,mm→m
+monogramma,monograma,,mm→m
+monogrammas,monogramas,,mm→m
+programma,programa,,mm→m
+programmas,programas,,mm→m
+recommenda,recomenda,,mm→m
+recommendado,recomendado,,mm→m
+recommendando,recomendando,,mm→m
+recommendara,recomendara,,mm→m
+recommendaria,recomendaria,,mm→m
+recommendasse,recomendasse,,mm→m
+recommendava,recomendava,,mm→m
+recommendação,recomendação,,mm→m
+recommendações,recomendações,,mm→m
+recommendei,recomendei,,mm→m
+recommendo,recomendo,,mm→m
+recommendou,recomendou,,mm→m
+recommendára,recomendara,,mm→m
+resummisse,resumisse,,mm→m
+resummo,resumo,,mm→m
+somma,soma,,mm→m
+sommado,somado,,mm→m
+sommam,somam,,mm→m
+sommando,somando,,mm→m
+sommar,somar,,mm→m
+sommaria,somaria,,mm→m
+sommas,somas,,mm→m
+sommava,somava,,mm→m
+summa,suma,,mm→m
+summamente,sumamente,,mm→m
+summariamente,sumariamente,,mm→m
+summario,sumário,,mm→m
+summas,sumas,,mm→m
+summo,sumo,,mm→m
+tammanhas,tamanhas,,mm→m
+tammanho,tamanho,,mm→m
+telegramma,telegrama,,mm→m
+telegrammas,telegramas,,mm→m
+ímmensa,imensa,,mm→m
+ímmortal,imortal,,mm→m
+commensaes,comensais,,mm→m + ae→ai
+commerciaes,comerciais,,mm→m + ae→ai
+communaes,comunais,,mm→m + ae→ai
+descommunaes,descomunais,,mm→m + ae→ai
+immemoriaes,imemoriais,,mm→m + ae→ai
+immoraes,imorais,,mm→m + ae→ai
+immortaes,imortais,,mm→m + ae→ai
+immollar,imolar,,mm→m + ll→l
+immobilisa,imobiliza,,mm→m + s→z
+immobilisada,imobilizada,,mm→m + s→z
+immobilisado,imobilizado,,mm→m + s→z
+immobilisados,imobilizados,,mm→m + s→z
+immobilisando,imobilizando,,mm→m + s→z
+immobilisava,imobilizava,,mm→m + s→z
+immobilisavam,imobilizavam,,mm→m + s→z
+immobilisou,imobilizou,,mm→m + s→z
+immortalisar,imortalizar,,mm→m + s→z
+commette,comete,,mm→m + tt→t
+commetteis,cometeis,,mm→m + tt→t
+commettem,cometem,,mm→m + tt→t
+commettendo,cometendo,,mm→m + tt→t
+commetter,cometer,,mm→m + tt→t
+commettera,cometera,,mm→m + tt→t
+commetterem,cometerem,,mm→m + tt→t
+commetteriam,cometeriam,,mm→m + tt→t
+commettes,cometes,,mm→m + tt→t
+commetteu,cometeu,,mm→m + tt→t
+commettia,cometia,,mm→m + tt→t
+commettida,cometida,,mm→m + tt→t
+commettido,cometido,,mm→m + tt→t
+commettidos,cometidos,,mm→m + tt→t
+intrommetteu,intrometeu,,mm→m + tt→t
+alumnos,alunos,,mn→n
+calumnia,calúnia,,mn→n
+calumniado,caluniado,,mn→n
+calumniador,caluniador,,mn→n
+calumniadores,caluniadores,,mn→n
+calumniam,caluniam,,mn→n
+calumniar,caluniar,,mn→n
+calumniaram,caluniaram,,mn→n
+calumniava,caluniava,,mn→n
+calumniosa,caluniosa,,mn→n
+calumniou,caluniou,,mn→n
+calumniára,caluniara,,mn→n
+columnas,colunas,,mn→n
+columnelos,colunelos,,mn→n
+comnosco,connosco,conosco,mn→n
+condemna,condena,,mn→n
+condemnada,condenada,,mn→n
+condemnado,condenado,,mn→n
+condemnados,condenados,,mn→n
+condemnando,condenando,,mn→n
+condemnar,condenar,,mn→n
+condemnas,condenas,,mn→n
+condemnava,condenava,,mn→n
+condemnavam,condenavam,,mn→n
+condemnavel,condenável,,mn→n
+condemnação,condenação,,mn→n
+condemnações,condenações,,mn→n
+condemnou,condenou,,mn→n
+condemnára,condenara,,mn→n
+damnada,danada,,mn→n
+damnadas,danadas,,mn→n
+damnado,danado,,mn→n
+damnados,danados,,mn→n
+damninha,daninha,,mn→n
+damninho,daninho,,mn→n
+damnos,danos,,mn→n
+damnoso,danoso,,mn→n
+insomnia,insónia,insônia,mn→n
+insomnias,insónias,insônias,mn→n
+omnibus,ónibus,ônibus,mn→n
+outomnal,outonal,,mn→n
+solemnemente,solenemente,,mn→n
+solemnes,solenes,,mn→n
+solemnidade,solenidade,,mn→n
+solemnidades,solenidades,,mn→n
+solemnissimo,soleníssimo,,mn→n
+somnambula,sonâmbula,,mn→n
+somnambulismo,sonambulismo,,mn→n
+somnambulo,sonâmbulo,,mn→n
+somnambulos,sonâmbulos,,mn→n
+somneca,soneca,,mn→n
+somniloquo,soníloquo,,mn→n
+somnolencia,sonolência,,mn→n
+somnolenta,sonolenta,,mn→n
+somnolentamente,sonolentamente,,mn→n
+somnolentas,sonolentas,,mn→n
+somnolento,sonolento,,mn→n
+somnolentos,sonolentos,,mn→n
+somnos,sonos,,mn→n
+solemnisadas,solenizadas,,mn→n + s→z
+apromptar,aprontar,,mp→n
+isempção,isenção,,mp→n
+presumptivo,presuntivo,,mp→n
+presumpçosa,presunçosa,,mp→n
+presumpçosas,presunçosas,,mp→n
+presumpçoso,presunçoso,,mp→n
+presumpçosos,presunçosos,,mp→n
+presumpção,presunção,,mp→n
+presumpções,presunções,,mp→n
+prompta,pronta,,mp→n
+promptamente,prontamente,,mp→n
+promptas,prontas,,mp→n
+promptidão,prontidão,,mp→n
+promptifica,prontifica,,mp→n
+promptificou,prontificou,,mp→n
+promptificára,prontificara,,mp→n
+promptinha,prontinha,,mp→n
+promptos,prontos,,mp→n
+redemptor,redentor,,mp→n
+redemptora,redentora,,mp→n
+redempção,redenção,,mp→n
+amphibios,anfíbios,,m→n + ph→f
+amphiguri,anfiguri,,m→n + ph→f
+amphião,anfião,,m→n + ph→f
+camphora,cânfora,,m→n + ph→f
+emphase,ênfase,,m→n + ph→f
+emphaticamente,enfaticamente,,m→n + ph→f
+emphatico,enfático,,m→n + ph→f
+emphrenesiar,enfrenesiar,,m→n + ph→f
+pamphleto,panfleto,,m→n + ph→f
+triumpha,triunfa,,m→n + ph→f
+triumphador,triunfador,,m→n + ph→f
+triumphadores,triunfadores,,m→n + ph→f
+triumphal,triunfal,,m→n + ph→f
+triumphalmente,triunfalmente,,m→n + ph→f
+triumphando,triunfando,,m→n + ph→f
+triumphante,triunfante,,m→n + ph→f
+triumphantemente,triunfantemente,,m→n + ph→f
+triumphantes,triunfantes,,m→n + ph→f
+triumphar,triunfar,,m→n + ph→f
+triumphara,triunfara,,m→n + ph→f
+triumphasse,triunfasse,,m→n + ph→f
+triumphava,triunfava,,m→n + ph→f
+triumphos,triunfos,,m→n + ph→f
+triumphou,triunfou,,m→n + ph→f
+triumphára,triunfara,,m→n + ph→f
+amphitheatros,anfiteatros,,m→n + ph→f + th→t
+alsacianna,alsaciana,,nn→n
+alsacianno,alsaciano,,nn→n
+anna,ana,,nn→n
+anneis,anéis,,nn→n
+annel,anel,,nn→n
+annelado,anelado,,nn→n
+annelados,anelados,,nn→n
+annelavam,anelavam,,nn→n
+annexa,anexa,,nn→n
+annexado,anexado,,nn→n
+annexar,anexar,,nn→n
+anninhada,aninhada,,nn→n
+anniquilamento,aniquilamento,,nn→n
+anniquilação,aniquilação,,nn→n
+anniquilára,aniquilara,,nn→n
+annotadas,anotadas,,nn→n
+annotado,anotado,,nn→n
+annotador,anotador,,nn→n
+annualmente,anualmente,,nn→n
+annuir,anuir,,nn→n
+annulado,anulado,,nn→n
+annuncia,anuncia,,nn→n
+annunciada,anunciada,,nn→n
+annunciado,anunciado,,nn→n
+annunciadora,anunciadora,,nn→n
+annunciadores,anunciadores,,nn→n
+annunciam,anunciam,,nn→n
+annunciando,anunciando,,nn→n
+annunciar,anunciar,,nn→n
+annunciara,anunciara,,nn→n
+annunciaram,anunciaram,,nn→n
+annuncias,anuncias,,nn→n
+annunciasse,anunciasse,,nn→n
+annunciava,anunciava,,nn→n
+annunciavam,anunciavam,,nn→n
+annunciação,anunciação,,nn→n
+annunciei,anunciei,,nn→n
+annuncio,anúncio,,nn→n
+annuncios,anúncios,,nn→n
+annunciou,anunciou,,nn→n
+annunciára,anunciara,,nn→n
+annuviava,anuviava,,nn→n
+annúncio,anúncio,,nn→n
+bannal,banal,,nn→n
+bonné,boné,,nn→n
+britannia,britânia,,nn→n
+britannica,britânica,,nn→n
+britannicas,britânicas,,nn→n
+britannico,britânico,,nn→n
+britannicos,britânicos,,nn→n
+canna,cana,,nn→n
+cannas,canas,,nn→n
+canniçada,caniçada,,nn→n
+connubio,conúbio,,nn→n
+decennio,decénio,decênio,nn→n
+depennado,depenado,,nn→n
+depennava,depenava,,nn→n
+desannuvia,desanuvia,,nn→n
+desannuviado,desanuviado,,nn→n
+desannuviar,desanuviar,,nn→n
+desannuviou,desanuviou,,nn→n
+encanniçado,encaniçado,,nn→n
+filigrannas,filigranas,,nn→n
+grannel,granel,,nn→n
+innatas,inatas,,nn→n
+innefavel,inefável,,nn→n
+innocencia,inocência,,nn→n
+innocencio,inocêncio,,nn→n
+innocente,inocente,,nn→n
+innocentemente,inocentemente,,nn→n
+innocentes,inocentes,,nn→n
+innocentinha,inocentinha,,nn→n
+innocentissima,inocentíssima,,nn→n
+innocentissimas,inocentíssimas,,nn→n
+innocentissimos,inocentíssimos,,nn→n
+innofensivo,inofensivo,,nn→n
+innominavel,inominável,,nn→n
+innovação,inovação,,nn→n
+innovações,inovações,,nn→n
+innumeras,inúmeras,,nn→n
+innumeraveis,inumeráveis,,nn→n
+innumeravel,inumerável,,nn→n
+innumeros,inúmeros,,nn→n
+jannela,janela,,nn→n
+joanna,joana,,nn→n
+joanninha,joaninha,,nn→n
+lausperenne,lausperene,,nn→n
+linneana,lineana,,nn→n
+linneu,lineu,,nn→n
+marianna,mariana,,nn→n
+panninho,paninho,,nn→n
+pannos,panos,,nn→n
+penna,pena,,nn→n
+pennachos,penachos,,nn→n
+pennada,penada,,nn→n
+pennadas,penadas,,nn→n
+pennas,penas,,nn→n
+penneiros,peneiros,,nn→n
+pennugem,penugem,,nn→n
+pennugentos,penugentos,,nn→n
+perenne,perene,,nn→n
+perennemente,perenemente,,nn→n
+vianna,viana,,nn→n
+viennense,vienense,,nn→n
+viennenses,vienenses,,nn→n
+annaes,anais,,nn→n + ae→ai
+perennaes,perenais,,nn→n + ae→ai
+inneffavel,inefável,,nn→n + ff→f
+innoffensiva,inofensiva,,nn→n + ff→f
+annellado,anelado,,nn→n + ll→l
+annellados,anelados,,nn→n + ll→l
+anniquillar,aniquilar,,nn→n + ll→l
+annulla,anula,,nn→n + ll→l
+annullada,anulada,,nn→n + ll→l
+annulladas,anuladas,,nn→n + ll→l
+annullando,anulando,,nn→n + ll→l
+annullariam,anulariam,,nn→n + ll→l
+annullava,anulava,,nn→n + ll→l
+annullavam,anulavam,,nn→n + ll→l
+cannellas,canelas,,nn→n + ll→l
+desannellada,desanelada,,nn→n + ll→l
+desannellando,desanelando,,nn→n + ll→l
+pannellas,panelas,,nn→n + ll→l
+caracoes,caracóis,,oe→oi
+destroe,destrói,,oe→oi
+heroe,herói,,oe→oi
+heroes,heróis,,oe→oi
+roes,róis,,oe→oi
+rouxinoes,rouxinóis,,oe→oi
+adolpho,adolfo,,ph→f
+alphabetica,alfabética,,ph→f
+alphabetico,alfabético,,ph→f
+alphabeto,alfabeto,,ph→f
+analphabeto,analfabeto,,ph→f
+animatographo,animatógrafo,,ph→f
+antiphonas,antífonas,,ph→f
+antistrophes,antístrofes,,ph→f
+aphorismo,aforismo,,ph→f
+aphorismos,aforismos,,ph→f
+aphrodisiaca,afrodisíaca,,ph→f
+aphrodisiaco,afrodisíaco,,ph→f
+apostrophando,apostrofando,,ph→f
+apostrophava,apostrofava,,ph→f
+asphaltada,asfaltada,,ph→f
+asphalto,asfalto,,ph→f
+atmosphera,atmosfera,,ph→f
+atmospherica,atmosférica,,ph→f
+atmosphericos,atmosféricos,,ph→f
+autobiographia,autobiografia,,ph→f
+biographavam,biografavam,,ph→f
+biographica,biográfica,,ph→f
+biographico,biográfico,,ph→f
+biographicos,biográficos,,ph→f
+biographos,biógrafos,,ph→f
+blasphema,blasfema,,ph→f
+blasphemado,blasfemado,,ph→f
+blasphemar,blasfemar,,ph→f
+blasphemava,blasfemava,,ph→f
+blaspheme,blasfeme,,ph→f
+blasphemia,blasfémia,blasfêmia,ph→f
+blasphemias,blasfémias,blasfêmias,ph→f
+blasphemo,blasfemo,,ph→f
+blasphemos,blasfemos,,ph→f
+blasphemou,blasfemou,,ph→f
+blasphêmo,blasfemo,,ph→f
+catastrophe,catástrofe,,ph→f
+catastrophes,catástrofes,,ph→f
+corographia,corografia,,ph→f
+daphne,dafne,,ph→f
+diaphana,diáfana,,ph→f
+diaphanas,diáfanas,,ph→f
+diaphano,diáfano,,ph→f
+diphtericas,diftéricas,,ph→f
+elephantes,elefantes,,ph→f
+engalphinhados,engalfinhados,,ph→f
+engalphinhando,engalfinhando,,ph→f
+engolpham,engolfam,,ph→f
+engolphando,engolfando,,ph→f
+engriphados,engrifados,,ph→f
+ephemera,efémera,efêmera,ph→f
+ephemeras,efémeras,efêmeras,ph→f
+ephemero,efémero,efêmero,ph→f
+ephemeros,efémeros,efêmeros,ph→f
+epitaphio,epitáfio,,ph→f
+epitaphios,epitáfios,,ph→f
+esphacelamento,esfacelamento,,ph→f
+esphera,esfera,,ph→f
+espheras,esferas,,ph→f
+estrophe,estrofe,,ph→f
+estrophes,estrofes,,ph→f
+euphonicos,eufónicos,eufônicos,ph→f
+geographica,geográfica,,ph→f
+geographicamente,geograficamente,,ph→f
+geographicas,geográficas,,ph→f
+geographico,geográfico,,ph→f
+geographos,geógrafos,,ph→f
+golpham,golfam,,ph→f
+golphando,golfando,,ph→f
+golphar,golfar,,ph→f
+golpho,golfo,,ph→f
+golphos,golfos,,ph→f
+griphos,grifos,,ph→f
+hemispherica,hemisférica,,ph→f
+josephina,josefina,,ph→f
+mephistophelica,mefistofélica,,ph→f
+mephiticas,mefíticas,,ph→f
+mephitico,mefítico,,ph→f
+metamorphose,metamorfose,,ph→f
+metaphora,metáfora,,ph→f
+metaphoras,metáforas,,ph→f
+monographia,monografia,,ph→f
+morphologia,morfologia,,ph→f
+ophelia,ofélia,,ph→f
+orographia,orografia,,ph→f
+orphandade,orfandade,,ph→f
+orphã,órfã,,ph→f
+orphão,órfão,,ph→f
+orphãos,órfãos,,ph→f
+orphãs,órfãs,,ph→f
+paragrapho,parágrafo,,ph→f
+paragraphos,parágrafos,,ph→f
+phaeton,fáeton,,ph→f
+phalanges,falanges,,ph→f
+phalansterio,falanstério,,ph→f
+phantasiar,fantasiar,,ph→f
+phantasiara,fantasiara,,ph→f
+phantasias,fantasias,,ph→f
+phantasiaste,fantasiaste,,ph→f
+phantasio,fantasio,,ph→f
+phantasioso,fantasioso,,ph→f
+phantasista,fantasista,,ph→f
+phantasmagoria,fantasmagoria,,ph→f
+phantasmagorias,fantasmagorias,,ph→f
+phantasmas,fantasmas,,ph→f
+phantastica,fantástica,,ph→f
+phantasticas,fantásticas,,ph→f
+phantastico,fantástico,,ph→f
+phantasticos,fantásticos,,ph→f
+pharaó,faraó,,ph→f
+pharaós,faraós,,ph→f
+pharisaismo,farisaísmo,,ph→f
+phariseu,fariseu,,ph→f
+phariseus,fariseus,,ph→f
+pharmaceuticos,farmacêuticos,,ph→f
+pharmacopeia,farmacopeia,,ph→f
+phase,fase,,ph→f
+phases,fases,,ph→f
+phebe,febe,,ph→f
+phenicias,fenícias,,ph→f
+phenicio,fenício,,ph→f
+phenicios,fenícios,,ph→f
+phenix,fénix,fênix,ph→f
+phenol,fenol,,ph→f
+phenomenos,fenómenos,fenômenos,ph→f
+philantropia,filantropia,,ph→f
+philarmonica,filarmónica,filarmônica,ph→f
+philarmonicas,filarmónicas,filarmônicas,ph→f
+philaucia,filáucia,,ph→f
+philipino,filipino,,ph→f
+philologia,filologia,,ph→f
+philologica,filológica,,ph→f
+philologo,filólogo,,ph→f
+philologos,filólogos,,ph→f
+philomena,filomena,,ph→f
+philosophando,filosofando,,ph→f
+philosophar,filosofar,,ph→f
+philosophava,filosofava,,ph→f
+philosophei,filosofei,,ph→f
+philosophias,filosofias,,ph→f
+philosophica,filosófica,,ph→f
+philosophicamente,filosoficamente,,ph→f
+philosophicas,filosóficas,,ph→f
+philosophicos,filosóficos,,ph→f
+philosophos,filósofos,,ph→f
+philosopháramos,filosofáramos,,ph→f
+philtro,filtro,,ph→f
+phisica,física,,ph→f
+phisico,físico,,ph→f
+phisionomia,fisionomia,,ph→f
+phonographo,fonógrafo,,ph→f
+phosphatadas,fosfatadas,,ph→f
+phosphatos,fosfatos,,ph→f
+phosphorescencia,fosforescência,,ph→f
+phosphorescente,fosforescente,,ph→f
+phosphorica,fosfórica,,ph→f
+phosphoros,fósforos,,ph→f
+phosphoríca,fosfórica,,ph→f
+photographar,fotografar,,ph→f
+photographias,fotografias,,ph→f
+photographica,fotográfica,,ph→f
+photographo,fotógrafo,,ph→f
+photographos,fotógrafos,,ph→f
+phraseador,fraseador,,ph→f
+phraseologia,fraseologia,,ph→f
+phrases,frases,,ph→f
+phrenesi,frenesi,,ph→f
+phrenesis,frenesis,,ph→f
+phrenetica,frenética,,ph→f
+phreneticamente,freneticamente,,ph→f
+phreneticas,frenéticas,,ph→f
+phrenetico,frenético,,ph→f
+phreneticos,frenéticos,,ph→f
+phrenologia,frenologia,,ph→f
+prophecias,profecias,,ph→f
+prophetas,profetas,,ph→f
+prophetica,profética,,ph→f
+propheticas,proféticas,,ph→f
+prophetico,profético,,ph→f
+propheticos,proféticos,,ph→f
+raphael,rafael,,ph→f
+raphaela,rafaela,,ph→f
+saphiras,safiras,,ph→f
+sarcophago,sarcófago,,ph→f
+seraphica,seráfica,,ph→f
+seraphico,seráfico,,ph→f
+seraphim,serafim,,ph→f
+seraphins,serafins,,ph→f
+solphejando,solfejando,,ph→f
+sophia,sofia,,ph→f
+sophisma,sofisma,,ph→f
+sophismar,sofismar,,ph→f
+sophismas,sofismas,,ph→f
+sophista,sofista,,ph→f
+sophà,sofá,,ph→f
+sophá,sofá,,ph→f
+sophás,sofás,,ph→f
+sulphuricas,sulfúricas,,ph→f
+sulphurico,sulfúrico,,ph→f
+sulphuroso,sulfuroso,,ph→f
+teatrophone,teatrofone,,ph→f
+telegrapha,telegrafa,,ph→f
+telegraphar,telegrafar,,ph→f
+telegrapharia,telegrafaria,,ph→f
+telegraphei,telegrafei,,ph→f
+telegraphico,telegráfico,,ph→f
+telegraphicos,telegráficos,,ph→f
+telegraphos,telégrafos,,ph→f
+telegraphou,telegrafou,,ph→f
+telegraphára,telegrafara,,ph→f
+telephona,telefona,,ph→f
+telephonado,telefonado,,ph→f
+telephonassemos,telefonássemos,,ph→f
+telephone,telefone,,ph→f
+telephonei,telefonei,,ph→f
+telephones,telefones,,ph→f
+topographia,topografia,,ph→f
+topographicamente,topograficamente,,ph→f
+tropheus,troféus,,ph→f
+zoomorpho,zoomorfo,,ph→f
+phallus,fálus,,ph→f + ll→l
+philomella,filomela,,ph→f + ll→l
+pharoes,faróis,,ph→f + oe→oi
+philippe,filipe,,ph→f + pp→p
+philippino,filipino,,ph→f + pp→p
+prophetisando,profetizando,,ph→f + s→z
+prophetisava,profetizava,,ph→f + s→z
+prophetisavas,profetizavas,,ph→f + s→z
+prophetisára,profetizara,,ph→f + s→z
+philanthropia,filantropia,,ph→f + th→t
+asphyxia,asfixia,,ph→f + y→i
+asphyxiada,asfixiada,,ph→f + y→i
+asphyxiados,asfixiados,,ph→f + y→i
+asphyxiou,asfixiou,,ph→f + y→i
+metaphysica,metafísica,,ph→f + y→i
+metaphysicamente,metafisicamente,,ph→f + y→i
+metaphysico,metafísico,,ph→f + y→i
+metaphysicos,metafísicos,,ph→f + y→i
+physicamente,fisicamente,,ph→f + y→i
+physicas,físicas,,ph→f + y→i
+physico,físico,,ph→f + y→i
+physiologica,fisiológica,,ph→f + y→i
+physiologicas,fisiológicas,,ph→f + y→i
+physiologico,fisiológico,,ph→f + y→i
+physiologicos,fisiológicos,,ph→f + y→i
+physiologista,fisiologista,,ph→f + y→i
+physionomia,fisionomia,,ph→f + y→i
+physionomias,fisionomias,,ph→f + y→i
+saphyra,safira,,ph→f + y→i
+saphyras,safiras,,ph→f + y→i
+sulphydrico,sulfídrico,,ph→f + y→i
+zephyro,zéfiro,,ph→f + y→i
+phylloxera,filoxera,,ph→f + y→i + ll→l
+phrazes,frases,,ph→f + z→s
+agrippina,agripina,,pp→p
+apparato,aparato,,pp→p
+apparatos,aparatos,,pp→p
+apparatosa,aparatosa,,pp→p
+apparatosamente,aparatosamente,,pp→p
+apparatosas,aparatosas,,pp→p
+apparatoso,aparatoso,,pp→p
+apparatosos,aparatosos,,pp→p
+apparece,aparece,,pp→p
+apparecem,aparecem,,pp→p
+apparecemos,aparecemos,,pp→p
+apparecendo,aparecendo,,pp→p
+apparecera,aparecera,,pp→p
+appareceram,apareceram,,pp→p
+apparecerei,aparecerei,,pp→p
+apparecerem,aparecerem,,pp→p
+appareceria,apareceria,,pp→p
+appareces,apareces,,pp→p
+apparecesse,aparecesse,,pp→p
+appareceste,apareceste,,pp→p
+appareceu,apareceu,,pp→p
+appareci,apareci,,pp→p
+apparecia,aparecia,,pp→p
+appareciam,apareciam,,pp→p
+apparecias,aparecias,,pp→p
+apparecida,aparecida,,pp→p
+apparecido,aparecido,,pp→p
+apparecimento,aparecimento,,pp→p
+apparecêra,aparecera,,pp→p
+apparelhados,aparelhados,,pp→p
+apparelhar,aparelhar,,pp→p
+apparelho,aparelho,,pp→p
+apparelhos,aparelhos,,pp→p
+apparelhou,aparelhou,,pp→p
+apparencia,aparência,,pp→p
+apparencias,aparências,,pp→p
+apparentava,aparentava,,pp→p
+apparente,aparente,,pp→p
+apparentemente,aparentemente,,pp→p
+apparentes,aparentes,,pp→p
+apparentou,aparentou,,pp→p
+appareça,apareça,,pp→p
+appareçam,apareçam,,pp→p
+appareças,apareças,,pp→p
+appareço,apareço,,pp→p
+apparição,aparição,,pp→p
+apparições,aparições,,pp→p
+appartamento,apartamento,,pp→p
+appartamentos,apartamentos,,pp→p
+appendice,apêndice,,pp→p
+appercebe,apercebe,,pp→p
+apperfeiçoadores,aperfeiçoadores,,pp→p
+apperta,aperta,,pp→p
+appertada,apertada,,pp→p
+appertado,apertado,,pp→p
+appertados,apertados,,pp→p
+appertais,apertais,,pp→p
+appertando,apertando,,pp→p
+appertar,apertar,,pp→p
+appertava,apertava,,pp→p
+apperte,aperte,,pp→p
+appertou,apertou,,pp→p
+appetece,apetece,,pp→p
+appetecendo,apetecendo,,pp→p
+appetecer,apetecer,,pp→p
+appetecera,apetecera,,pp→p
+appetecesse,apetecesse,,pp→p
+appeteceu,apeteceu,,pp→p
+appetecia,apetecia,,pp→p
+appeteciam,apeteciam,,pp→p
+appeteciamos,apetecíamos,,pp→p
+appetecida,apetecida,,pp→p
+appetecido,apetecido,,pp→p
+appeteciveis,apetecíveis,,pp→p
+appetecivel,apetecível,,pp→p
+appetecêra,apetecera,,pp→p
+appetecía,apetecia,,pp→p
+appeteça,apeteça,,pp→p
+appetite,apetite,,pp→p
+appetites,apetites,,pp→p
+appetitosa,apetitosa,,pp→p
+appetitoso,apetitoso,,pp→p
+applacar,aplacar,,pp→p
+applacára,aplacara,,pp→p
+applaude,aplaude,,pp→p
+applaudem,aplaudem,,pp→p
+applaudia,aplaudia,,pp→p
+applaudiam,aplaudiam,,pp→p
+applaudidas,aplaudidas,,pp→p
+applaudido,aplaudido,,pp→p
+applaudidos,aplaudidos,,pp→p
+applaudindo,aplaudindo,,pp→p
+applaudir,aplaudir,,pp→p
+applaudiram,aplaudiram,,pp→p
+applaudiu,aplaudiu,,pp→p
+applaudo,aplaudo,,pp→p
+applausos,aplausos,,pp→p
+applica,aplica,,pp→p
+applicada,aplicada,,pp→p
+applicadamente,aplicadamente,,pp→p
+applicado,aplicado,,pp→p
+applicados,aplicados,,pp→p
+applicando,aplicando,,pp→p
+applicasse,aplicasse,,pp→p
+applicava,aplicava,,pp→p
+applicavam,aplicavam,,pp→p
+applicavel,aplicável,,pp→p
+applicação,aplicação,,pp→p
+applicações,aplicações,,pp→p
+applicou,aplicou,,pp→p
+appoiada,apoiada,,pp→p
+appoiado,apoiado,,pp→p
+appoiados,apoiados,,pp→p
+appoiar,apoiar,,pp→p
+appoiava,apoiava,,pp→p
+appoio,apoio,,pp→p
+appolo,apolo,,pp→p
+apposento,aposento,,pp→p
+appostados,apostados,,pp→p
+apprazada,aprazada,,pp→p
+apprazado,aprazado,,pp→p
+apprecie,aprecie,,pp→p
+apprendam,aprendam,,pp→p
+apprende,aprende,,pp→p
+apprendem,aprendem,,pp→p
+apprender,aprender,,pp→p
+apprendera,aprendera,,pp→p
+apprenderia,aprenderia,,pp→p
+apprendessem,aprendessem,,pp→p
+apprendeu,aprendeu,,pp→p
+apprendi,aprendi,,pp→p
+apprendia,aprendia,,pp→p
+apprendido,aprendido,,pp→p
+apprendiz,aprendiz,,pp→p
+appresenta,apresenta,,pp→p
+appresentadas,apresentadas,,pp→p
+appresentando,apresentando,,pp→p
+appresentar,apresentar,,pp→p
+appresentaram,apresentaram,,pp→p
+appresentarem,apresentarem,,pp→p
+appresentariam,apresentariam,,pp→p
+appresentasse,apresentasse,,pp→p
+appresentassem,apresentassem,,pp→p
+appresentava,apresentava,,pp→p
+appresentavam,apresentavam,,pp→p
+appresentou,apresentou,,pp→p
+appressa,apressa,,pp→p
+appressaram,apressaram,,pp→p
+appropriada,apropriada,,pp→p
+appropriando,apropriando,,pp→p
+approuvesse,aprouvesse,,pp→p
+approva,aprova,,pp→p
+approvada,aprovada,,pp→p
+approvado,aprovado,,pp→p
+approvamos,aprovamos,,pp→p
+approvando,aprovando,,pp→p
+approvara,aprovara,,pp→p
+approvaram,aprovaram,,pp→p
+approvas,aprovas,,pp→p
+approvasse,aprovasse,,pp→p
+approvassemos,aprovássemos,,pp→p
+approvava,aprovava,,pp→p
+approvavam,aprovavam,,pp→p
+approvação,aprovação,,pp→p
+approvei,aprovei,,pp→p
+approveitar,aproveitar,,pp→p
+approvo,aprovo,,pp→p
+approvou,aprovou,,pp→p
+approvámos,aprovámos,,pp→p
+approvára,aprovara,,pp→p
+approxima,aproxima,,pp→p
+approximado,aproximado,,pp→p
+approximando,aproximando,,pp→p
+approximara,aproximara,,pp→p
+approximaram,aproximaram,,pp→p
+approximarem,aproximarem,,pp→p
+approximativos,aproximativos,,pp→p
+approximava,aproximava,,pp→p
+approximavam,aproximavam,,pp→p
+approximação,aproximação,,pp→p
+approxime,aproxime,,pp→p
+approximei,aproximei,,pp→p
+approximou,aproximou,,pp→p
+appurei,apurei,,pp→p
+appêgo,apego,,pp→p
+appêrto,aperto,,pp→p
+appósto,aposto,,pp→p
+cippo,cipo,,pp→p
+desapparece,desaparece,,pp→p
+desapparecem,desaparecem,,pp→p
+desapparecendo,desaparecendo,,pp→p
+desapparecer,desaparecer,,pp→p
+desapparecera,desaparecera,,pp→p
+desappareceram,desapareceram,,pp→p
+desapparecerem,desaparecerem,,pp→p
+desappareceria,desapareceria,,pp→p
+desapparecerá,desaparecerá,,pp→p
+desapparecesse,desaparecesse,,pp→p
+desappareceu,desapareceu,,pp→p
+desapparecia,desaparecia,,pp→p
+desappareciam,desapareciam,,pp→p
+desapparecida,desaparecida,,pp→p
+desapparecido,desaparecido,,pp→p
+desapparecidos,desaparecidos,,pp→p
+desapparecimento,desaparecimento,,pp→p
+desapparecimentos,desaparecimentos,,pp→p
+desapparecêra,desaparecera,,pp→p
+desapparelhar,desaparelhar,,pp→p
+desapparição,desaparição,,pp→p
+desappertado,desapertado,,pp→p
+desappontado,desapontado,,pp→p
+desappontamento,desapontamento,,pp→p
+desappontar,desapontar,,pp→p
+desapprenderam,desaprenderam,,pp→p
+desapprendi,desaprendi,,pp→p
+desapprovaram,desaprovaram,,pp→p
+desapprovava,desaprovava,,pp→p
+desapprovou,desaprovou,,pp→p
+desopprimida,desoprimida,,pp→p
+desopprimido,desoprimido,,pp→p
+dupplice,dúplice,,pp→p
+hippodromo,hipódromo,,pp→p
+hippolito,hipólito,,pp→p
+hippopotamo,hipopótamo,,pp→p
+inopportuna,inoportuna,,pp→p
+inopportunamente,inoportunamente,,pp→p
+insupportaveis,insuportáveis,,pp→p
+insupportavel,insuportável,,pp→p
+mappa,mapa,,pp→p
+mappas,mapas,,pp→p
+opponho,oponho,,pp→p
+opportuna,oportuna,,pp→p
+opportunamente,oportunamente,,pp→p
+opportunidade,oportunidade,,pp→p
+opportunismo,oportunismo,,pp→p
+opportuno,oportuno,,pp→p
+opposicionista,oposicionista,,pp→p
+opposicionistas,oposicionistas,,pp→p
+opposições,oposições,,pp→p
+opposta,oposta,,pp→p
+oppostas,opostas,,pp→p
+opposto,oposto,,pp→p
+oppostos,opostos,,pp→p
+oppressa,opressa,,pp→p
+oppressivo,opressivo,,pp→p
+oppresso,opresso,,pp→p
+oppressor,opressor,,pp→p
+oppressora,opressora,,pp→p
+oppressores,opressores,,pp→p
+oppressão,opressão,,pp→p
+oppressões,opressões,,pp→p
+opprime,oprime,,pp→p
+opprimem,oprimem,,pp→p
+opprimia,oprimia,,pp→p
+opprimiam,oprimiam,,pp→p
+opprimida,oprimida,,pp→p
+opprimidas,oprimidas,,pp→p
+opprimido,oprimido,,pp→p
+opprimidos,oprimidos,,pp→p
+opprimindo,oprimindo,,pp→p
+opprimir,oprimir,,pp→p
+opprimira,oprimira,,pp→p
+opprobrio,opróbrio,,pp→p
+opprobrios,opróbrios,,pp→p
+oppróbrio,opróbrio,,pp→p
+oppunha,opunha,,pp→p
+oppôr,opor,,pp→p
+oppôrem,oporem,,pp→p
+oppôsto,oposto,,pp→p
+oppõem,opõem,,pp→p
+reapparece,reaparece,,pp→p
+reapparecendo,reaparecendo,,pp→p
+reapparecer,reaparecer,,pp→p
+reapparecera,reaparecera,,pp→p
+reappareceram,reapareceram,,pp→p
+reapparecerem,reaparecerem,,pp→p
+reapparecesse,reaparecesse,,pp→p
+reappareceu,reapareceu,,pp→p
+reapparecia,reaparecia,,pp→p
+reappareciam,reapareciam,,pp→p
+reapparecido,reaparecido,,pp→p
+reapparecimento,reaparecimento,,pp→p
+reapparecêra,reaparecera,,pp→p
+reapparição,reaparição,,pp→p
+supplementar,suplementar,,pp→p
+supplementares,suplementares,,pp→p
+supplemento,suplemento,,pp→p
+supplementos,suplementos,,pp→p
+supplica,súplica,,pp→p
+supplicam,suplicam,,pp→p
+supplicando,suplicando,,pp→p
+supplicante,suplicante,,pp→p
+supplicantes,suplicantes,,pp→p
+supplicar,suplicar,,pp→p
+supplicava,suplicava,,pp→p
+supplicação,suplicação,,pp→p
+supplice,súplice,,pp→p
+supplicio,suplício,,pp→p
+supplicios,suplícios,,pp→p
+supplicou,suplicou,,pp→p
+supplicára,suplicara,,pp→p
+supplício,suplício,,pp→p
+suppondo,supondo,,pp→p
+supponha,suponha,,pp→p
+supponhamos,suponhamos,,pp→p
+supponhas,suponhas,,pp→p
+supponho,suponho,,pp→p
+supporta,suporta,,pp→p
+supportando,suportando,,pp→p
+supportar,suportar,,pp→p
+supportara,suportara,,pp→p
+supportava,suportava,,pp→p
+supporte,suporte,,pp→p
+supportou,suportou,,pp→p
+supposição,suposição,,pp→p
+supposições,suposições,,pp→p
+supposta,suposta,,pp→p
+suppostas,supostas,,pp→p
+supposto,suposto,,pp→p
+suppostos,supostos,,pp→p
+suppram,supram,,pp→p
+suppressão,supressão,,pp→p
+suppria,supria,,pp→p
+supprido,suprido,,pp→p
+supprima,suprima,,pp→p
+supprime,suprime,,pp→p
+supprimi,suprimi,,pp→p
+supprimia,suprimia,,pp→p
+supprimida,suprimida,,pp→p
+supprimido,suprimido,,pp→p
+supprimira,suprimira,,pp→p
+supprimo,suprimo,,pp→p
+supprir,suprir,,pp→p
+suppunha,supunha,,pp→p
+suppôr,supor,,pp→p
+suppõe,supõe,,pp→p
+suppõem,supõem,,pp→p
+suppões,supões,,pp→p
+súpplica,súplica,,pp→p
+apprehende,apreende,,pp→p + h dropped
+apprehensiva,apreensiva,,pp→p + h dropped
+apprehensivo,apreensivo,,pp→p + h dropped
+appella,apela,,pp→p + ll→l
+appellado,apelado,,pp→p + ll→l
+appellam,apelam,,pp→p + ll→l
+appellando,apelando,,pp→p + ll→l
+appellar,apelar,,pp→p + ll→l
+appellasse,apelasse,,pp→p + ll→l
+appellativo,apelativo,,pp→p + ll→l
+appellava,apelava,,pp→p + ll→l
+appellações,apelações,,pp→p + ll→l
+appellidar,apelidar,,pp→p + ll→l
+appellidarem,apelidarem,,pp→p + ll→l
+appellidos,apelidos,,pp→p + ll→l
+appello,apelo,,pp→p + ll→l
+appellou,apelou,,pp→p + ll→l
+appéllo,apelo,,pp→p + ll→l
+cappella,capela,,pp→p + ll→l
+inappellavel,inapelável,,pp→p + ll→l
+reppelliu,repeliu,,pp→p + ll→l
+oppuz,opus,,pp→p + z→s
+suppoz,supôs,,pp→p + z→s
+suppuz,supus,,pp→p + z→s
+suppôz,supôs,,pp→p + z→s
+catarrheira,catarreira,,rh→r
+catarrho,catarro,,rh→r
+catarrhos,catarros,,rh→r
+encatarrhoado,encatarroado,,rh→r
+rhapsodias,rapsódias,,rh→r
+rhapsodo,rapsodo,,rh→r
+rheno,reno,,rh→r
+rheumatica,reumática,,rh→r
+rheumaticas,reumáticas,,rh→r
+rheumatico,reumático,,rh→r
+rheumaticos,reumáticos,,rh→r
+rheumatismos,reumatismos,,rh→r
+rhuibarbo,ruibarbo,,rh→r
+rhum,rum,,rh→r
+rhyma,rima,,rh→r + y→i
+rhytmo,ritmo,,rh→r + y→i
+scintilla,cintila,,sc→c + ll→l
+scintillam,cintilam,,sc→c + ll→l
+scintillante,cintilante,,sc→c + ll→l
+scintillantes,cintilantes,,sc→c + ll→l
+scintillar,cintilar,,sc→c + ll→l
+scintillas,cintilas,,sc→c + ll→l
+scintillava,cintilava,,sc→c + ll→l
+scintillavam,cintilavam,,sc→c + ll→l
+scintillação,cintilação,,sc→c + ll→l
+scintillações,cintilações,,sc→c + ll→l
+scintillou,cintilou,,sc→c + ll→l
+sceptro,cetro,,sc→c + silent consonant
+adscripticio,adscritício,,silent consonant
+anedocta,anedota,,silent consonant
+anedoctas,anedotas,,silent consonant
+aqueducto,aqueduto,,silent consonant
+atricto,atrito,,silent consonant
+aucto,auto,,silent consonant
+auctor,autor,,silent consonant
+auctora,autora,,silent consonant
+auctores,autores,,silent consonant
+auctoridade,autoridade,,silent consonant
+auctoridades,autoridades,,silent consonant
+auctoriza,autoriza,,silent consonant
+benedictina,beneditina,,silent consonant
+benedictino,beneditino,,silent consonant
+benedictinos,beneditinos,,silent consonant
+benedicto,benedito,,silent consonant
+captiva,cativa,,silent consonant
+captivante,cativante,,silent consonant
+captivantes,cativantes,,silent consonant
+captivara,cativara,,silent consonant
+captivaram,cativaram,,silent consonant
+captivava,cativava,,silent consonant
+captiveiro,cativeiro,,silent consonant
+captiveiros,cativeiros,,silent consonant
+captivo,cativo,,silent consonant
+captivos,cativos,,silent consonant
+captivou,cativou,,silent consonant
+condicção,condição,,silent consonant
+conducta,conduta,,silent consonant
+conductor,condutor,,silent consonant
+conducção,condução,,silent consonant
+conflicto,conflito,,silent consonant
+conflictos,conflitos,,silent consonant
+conscriptos,conscritos,,silent consonant
+constricção,constrição,,silent consonant
+constricções,constrições,,silent consonant
+constructiva,construtiva,,silent consonant
+constructor,construtor,,silent consonant
+construcção,construção,,silent consonant
+construcções,construções,,silent consonant
+contractados,contratados,,silent consonant
+contractante,contratante,,silent consonant
+contractar,contratar,,silent consonant
+contradictorio,contraditório,,silent consonant
+contradictorios,contraditórios,,silent consonant
+contradicção,contradição,,silent consonant
+contradicções,contradições,,silent consonant
+contrictamente,contritamente,,silent consonant
+contricto,contrito,,silent consonant
+contricção,contrição,,silent consonant
+deductiva,dedutiva,,silent consonant
+deductivamente,dedutivamente,,silent consonant
+deducção,dedução,,silent consonant
+deducções,deduções,,silent consonant
+delicto,delito,,silent consonant
+descriptas,descritas,,silent consonant
+descripção,descrição,,silent consonant
+descripções,descrições,,silent consonant
+desfructa,desfruta,,silent consonant
+destructiva,destrutiva,,silent consonant
+dictadas,ditadas,,silent consonant
+dictado,ditado,,silent consonant
+dictador,ditador,,silent consonant
+dictados,ditados,,silent consonant
+dictadura,ditadura,,silent consonant
+dictame,ditame,,silent consonant
+dictames,ditames,,silent consonant
+dictando,ditando,,silent consonant
+dictar,ditar,,silent consonant
+dicte,dite,,silent consonant
+dictou,ditou,,silent consonant
+districtal,distrital,,silent consonant
+districto,distrito,,silent consonant
+districtos,distritos,,silent consonant
+enluctada,enlutada,,silent consonant
+escripta,escrita,,silent consonant
+escriptas,escritas,,silent consonant
+escripto,escrito,,silent consonant
+escriptor,escritor,,silent consonant
+escriptores,escritores,,silent consonant
+escriptorio,escritório,,silent consonant
+escriptos,escritos,,silent consonant
+escriptura,escritura,,silent consonant
+escripturada,escriturada,,silent consonant
+escripturario,escriturário,,silent consonant
+escripturas,escrituras,,silent consonant
+escripturação,escrituração,,silent consonant
+estrictamente,estritamente,,silent consonant
+estrictas,estritas,,silent consonant
+estrictos,estritos,,silent consonant
+estructura,estrutura,,silent consonant
+extactica,extática,,silent consonant
+extactico,extático,,silent consonant
+fluctuado,flutuado,,silent consonant
+fluctuam,flutuam,,silent consonant
+fluctuando,flutuando,,silent consonant
+fluctuante,flutuante,,silent consonant
+fluctuar,flutuar,,silent consonant
+fluctuaram,flutuaram,,silent consonant
+fluctuasse,flutuasse,,silent consonant
+fluctuava,flutuava,,silent consonant
+fluctuavam,flutuavam,,silent consonant
+fluctuação,flutuação,,silent consonant
+fructa,fruta,,silent consonant
+fructas,frutas,,silent consonant
+fructeiros,fruteiros,,silent consonant
+fructo,fruto,,silent consonant
+fructos,frutos,,silent consonant
+indescriptivel,indescritível,,silent consonant
+indestructivel,indestrutível,,silent consonant
+indiscripção,indiscrição,,silent consonant
+inducções,induções,,silent consonant
+infructiferas,infrutíferas,,silent consonant
+infructiferos,infrutíferos,,silent consonant
+inscripta,inscrita,,silent consonant
+inscriptas,inscritas,,silent consonant
+inscripto,inscrito,,silent consonant
+inscriptos,inscritos,,silent consonant
+inscripção,inscrição,,silent consonant
+inscripções,inscrições,,silent consonant
+instructiva,instrutiva,,silent consonant
+instructivo,instrutivo,,silent consonant
+instrucção,instrução,,silent consonant
+instrucções,instruções,,silent consonant
+interdicta,interdita,,silent consonant
+interdictas,interditas,,silent consonant
+interdicto,interdito,,silent consonant
+introducção,introdução,,silent consonant
+irreductivel,irredutível,,silent consonant
+jurisdicção,jurisdição,,silent consonant
+licção,lição,,silent consonant
+licções,lições,,silent consonant
+lucta,luta,,silent consonant
+luctado,lutado,,silent consonant
+luctador,lutador,,silent consonant
+luctadora,lutadora,,silent consonant
+luctadores,lutadores,,silent consonant
+luctam,lutam,,silent consonant
+luctando,lutando,,silent consonant
+luctar,lutar,,silent consonant
+luctaram,lutaram,,silent consonant
+luctarem,lutarem,,silent consonant
+luctariam,lutariam,,silent consonant
+luctará,lutará,,silent consonant
+luctas,lutas,,silent consonant
+luctasse,lutasse,,silent consonant
+luctava,lutava,,silent consonant
+luctavam,lutavam,,silent consonant
+lucto,luto,,silent consonant
+luctou,lutou,,silent consonant
+luctuoso,lutuoso,,silent consonant
+luctára,lutara,,silent consonant
+maldicto,maldito,,silent consonant
+maldicção,maldição,,silent consonant
+maldicções,maldições,,silent consonant
+manuscripta,manuscrita,,silent consonant
+manuscriptas,manuscritas,,silent consonant
+manuscripto,manuscrito,,silent consonant
+manuscriptos,manuscritos,,silent consonant
+practicando,praticando,,silent consonant
+practicavel,praticável,,silent consonant
+predicção,predição,,silent consonant
+producto,produto,,silent consonant
+productor,produtor,,silent consonant
+productos,produtos,,silent consonant
+producção,produção,,silent consonant
+producções,produções,,silent consonant
+proscripto,proscrito,,silent consonant
+proscriptos,proscritos,,silent consonant
+proscripções,proscrições,,silent consonant
+práctica,prática,,silent consonant
+reconstrucção,reconstrução,,silent consonant
+reconstrucções,reconstruções,,silent consonant
+reducto,reduto,,silent consonant
+reducção,redução,,silent consonant
+reluctancia,relutância,,silent consonant
+reluctando,relutando,,silent consonant
+reproductores,reprodutores,,silent consonant
+reproducção,reprodução,,silent consonant
+restrictamente,restritamente,,silent consonant
+restricto,restrito,,silent consonant
+restricção,restrição,,silent consonant
+restricções,restrições,,silent consonant
+satisfactoriamente,satisfatoriamente,,silent consonant
+satisfacção,satisfação,,silent consonant
+seductor,sedutor,,silent consonant
+seductora,sedutora,,silent consonant
+seductoras,sedutoras,,silent consonant
+seducção,sedução,,silent consonant
+seducções,seduções,,silent consonant
+septembro,setembro,,silent consonant
+septentrional,setentrional,,silent consonant
+septimo,sétimo,,silent consonant
+sobrescriptada,sobrescritada,,silent consonant
+sobrescriptado,sobrescritado,,silent consonant
+sobrescriptar,sobrescritar,,silent consonant
+sobrescripto,sobrescrito,,silent consonant
+sobrescriptos,sobrescritos,,silent consonant
+subscriptadas,subscritadas,,silent consonant
+subscripção,subscrição,,silent consonant
+tracta,trata,,silent consonant
+tractado,tratado,,silent consonant
+tractamento,tratamento,,silent consonant
+tractando,tratando,,silent consonant
+tractantes,tratantes,,silent consonant
+tractar,tratar,,silent consonant
+tractaram,trataram,,silent consonant
+tractava,tratava,,silent consonant
+tractavam,tratavam,,silent consonant
+tractei,tratei,,silent consonant
+tractára,tratara,,silent consonant
+tradicção,tradição,,silent consonant
+tradicções,tradições,,silent consonant
+traductor,tradutor,,silent consonant
+traducção,tradução,,silent consonant
+traducções,traduções,,silent consonant
+transcripto,transcrito,,silent consonant
+transcripções,transcrições,,silent consonant
+victima,vítima,,silent consonant
+victimar,vitimar,,silent consonant
+victoria,vitória,,silent consonant
+victoriar,vitoriar,,silent consonant
+victoriosamente,vitoriosamente,,silent consonant
+victoriosas,vitoriosas,,silent consonant
+victorioso,vitorioso,,silent consonant
+victoriosos,vitoriosos,,silent consonant
+conjecturaes,conjeturais,conjecturais,silent consonant + ae→ai
+septentrionaes,setentrionais,,silent consonant + ae→ai
+auctorisa,autoriza,,silent consonant + s→z
+auctorisado,autorizado,,silent consonant + s→z
+auctorisar,autorizar,,silent consonant + s→z
+baptisa,batiza,,silent consonant + s→z
+baptisado,batizado,,silent consonant + s→z
+baptisados,batizados,,silent consonant + s→z
+baptisar,batizar,,silent consonant + s→z
+baptisei,batizei,,silent consonant + s→z
+baptiso,batizo,,silent consonant + s→z
+baptisou,batizou,,silent consonant + s→z
+baptisára,batizara,,silent consonant + s→z
+desbaptisava,desbatizava,,silent consonant + s→z
+electrisar,eletrizar,,silent consonant + s→z
+caracterisa,caracteriza,,s→z
+caracterisada,caracterizada,,s→z
+caracterisado,caracterizado,,s→z
+caracterisando,caracterizando,,s→z
+caracterisação,caracterização,,s→z
+caracterise,caracterize,,s→z
+indemnisar,indemnizar,indenizar,s→z
+indemnisação,indemnização,indenização,s→z
+magnetisador,magnetizador,,s→z
+macadamisae,macadamizai,,s→z + ae→ai
+absintho,absinto,,th→t
+agatha,ágata,,th→t
+anathema,anátema,,th→t
+anathemas,anátemas,,th→t
+anesthesiado,anestesiado,,th→t
+anthero,antero,,th→t
+anthropologico,antropológico,,th→t
+antipathias,antipatias,,th→t
+antipathica,antipática,,th→t
+antipathico,antipático,,th→t
+antipathicos,antipáticos,,th→t
+apathia,apatia,,th→t
+apathica,apática,,th→t
+apathico,apático,,th→t
+apotheose,apoteose,,th→t
+arithmetica,aritmética,,th→t
+arithmeticas,aritméticas,,th→t
+arithmetico,aritmético,,th→t
+arthemisa,artemisa,,th→t
+atheatrada,ateatrada,,th→t
+atheismo,ateísmo,,th→t
+atheismos,ateísmos,,th→t
+atheniense,ateniense,,th→t
+atheu,ateu,,th→t
+atheus,ateus,,th→t
+athleta,atleta,,th→t
+athletas,atletas,,th→t
+athletica,atlética,,th→t
+athleticas,atléticas,,th→t
+authentico,autêntico,,th→t
+authenticos,autênticos,,th→t
+authomato,autómato,autômato,th→t
+author,autor,,th→t
+authores,autores,,th→t
+authoridade,autoridade,,th→t
+authoridades,autoridades,,th→t
+authoritario,autoritário,,th→t
+authênticas,autênticas,,th→t
+balthasar,baltasar,,th→t
+bartholomeu,bartolomeu,,th→t
+bethania,betânia,,th→t
+bibliotheca,biblioteca,,th→t
+bibliothecas,bibliotecas,,th→t
+bibliothéca,biblioteca,,th→t
+bibliothécas,bibliotecas,,th→t
+cantharida,cantárida,,th→t
+catharina,catarina,,th→t
+catharro,catarro,,th→t
+cathecismo,catecismo,,th→t
+cathegoria,categoria,,th→t
+cathegorica,categórica,,th→t
+cathegoricamente,categoricamente,,th→t
+catholica,católica,,th→t
+catholicas,católicas,,th→t
+catholicismo,catolicismo,,th→t
+catholicos,católicos,,th→t
+corintho,corinto,,th→t
+cothurno,coturno,,th→t
+desthronar,destronar,,th→t
+enthusiasmada,entusiasmada,,th→t
+enthusiasmado,entusiasmado,,th→t
+enthusiasmar,entusiasmar,,th→t
+enthusiasmasse,entusiasmasse,,th→t
+enthusiasmava,entusiasmava,,th→t
+enthusiasmavam,entusiasmavam,,th→t
+enthusiasmei,entusiasmei,,th→t
+enthusiasmo,entusiasmo,,th→t
+enthusiasmos,entusiasmos,,th→t
+enthusiasmou,entusiasmou,,th→t
+enthusiasmára,entusiasmara,,th→t
+enthusiasta,entusiasta,,th→t
+enthusiastas,entusiastas,,th→t
+enthusiastico,entusiástico,,th→t
+epithalamio,epitalâmio,,th→t
+epithalamios,epitalâmios,,th→t
+epithetos,epítetos,,th→t
+esther,ester,,th→t
+esthetica,estética,,th→t
+estheticas,estéticas,,th→t
+esthetico,estético,,th→t
+estheticos,estéticos,,th→t
+ether,éter,,th→t
+etherea,etérea,,th→t
+ethereamente,etereamente,,th→t
+ethereo,etéreo,,th→t
+ethnica,étnica,,th→t
+ethnico,étnico,,th→t
+ethnologicamente,etnologicamente,,th→t
+exauthoravam,exautoravam,,th→t
+golgotha,gólgota,,th→t
+gothica,gótica,,th→t
+gothicas,góticas,,th→t
+gothico,gótico,,th→t
+homeopatha,homeopata,,th→t
+homeopathia,homeopatia,,th→t
+homeopathicas,homeopáticas,,th→t
+isthmicos,ístmicos,,th→t
+isthmo,istmo,,th→t
+ithericia,icterícia,,th→t
+lethal,letal,,th→t
+lethargo,letargo,,th→t
+lutherana,luterana,,th→t
+lutheranos,luteranos,,th→t
+luthero,lutero,,th→t
+luthgarda,lutgarda,,th→t
+martha,marta,,th→t
+mathematica,matemática,,th→t
+mathematicas,matemáticas,,th→t
+matheus,mateus,,th→t
+mathias,matias,,th→t
+mathilde,matilde,,th→t
+megalitho,megálito,,th→t
+methodica,metódica,,th→t
+methodicamente,metodicamente,,th→t
+methodico,metódico,,th→t
+methodo,método,,th→t
+methodos,métodos,,th→t
+misanthropia,misantropia,,th→t
+mithologia,mitologia,,th→t
+monolitho,monólito,,th→t
+monolithos,monólitos,,th→t
+murthal,murtal,,th→t
+onomathopaico,onomatopaico,,th→t
+pantheismo,panteísmo,,th→t
+pantheista,panteísta,,th→t
+parenthesis,parêntesis,,th→t
+parthenon,pártenon,,th→t
+pathetica,patética,,th→t
+patheticas,patéticas,,th→t
+pathetico,patético,,th→t
+patheticos,patéticos,,th→t
+pathologia,patologia,,th→t
+pathologico,patológico,,th→t
+pinacotheca,pinacoteca,,th→t
+posthuma,póstuma,,th→t
+posthumo,póstumo,,th→t
+rithmo,ritmo,,th→t
+rithmos,ritmos,,th→t
+terebinthina,terebintina,,th→t
+thalamo,tálamo,,th→t
+thaumaturgo,taumaturgo,,th→t
+thear,tear,,th→t
+theatral,teatral,,th→t
+theatreco,teatreco,,th→t
+theatros,teatros,,th→t
+thebaidas,tebaidas,,th→t
+thebano,tebano,,th→t
+themas,temas,,th→t
+theocratica,teocrática,,th→t
+theologica,teológica,,th→t
+theologo,teólogo,,th→t
+theologos,teólogos,,th→t
+theor,teor,,th→t
+theorias,teorias,,th→t
+theorico,teórico,,th→t
+theoricos,teóricos,,th→t
+therapeutica,terapêutica,,th→t
+therapeuticos,terapêuticos,,th→t
+therebentina,terebentina,,th→t
+theresa,teresa,,th→t
+theresinha,teresinha,,th→t
+thermas,termas,,th→t
+thesoiro,tesoiro,,th→t
+thesoureiro,tesoureiro,,th→t
+thesouros,tesouros,,th→t
+theutonicos,teutónicos,teutônicos,th→t
+thiago,tiago,,th→t
+thisico,tísico,,th→t
+thomé,tomé,,th→t
+thorax,tórax,,th→t
+threno,treno,,th→t
+thuribulo,turíbulo,,th→t
+thuribulos,turíbulos,,th→t
+viriatho,viriato,,th→t
+zitho,zito,,th→t
+cathedraes,catedrais,,th→t + ae→ai
+theatraes,teatrais,,th→t + ae→ai
+cathechisação,catequização,,th→t + ch→qu + s→z
+bartholomeo,bartolomeu,,th→t + eo→eu
+anthropophagos,antropófagos,,th→t + ph→f
+lithographia,litografia,,th→t + ph→f
+lithographias,litografias,,th→t + ph→f
+lithographica,litográfica,,th→t + ph→f
+theatrophone,teatrofone,,th→t + ph→f
+theophilo,teófilo,,th→t + ph→f
+theosophia,teosofia,,th→t + ph→f
+theosophismo,teosofismo,,th→t + ph→f
+anathematiseis,anatematizeis,,th→t + s→z
+authorisara,autorizara,,th→t + s→z
+authorisava,autorizava,,th→t + s→z
+authorisei,autorizei,,th→t + s→z
+desauthorisar,desautorizar,,th→t + s→z
+enthronisado,entronizado,,th→t + s→z
+enthronisados,entronizados,,th→t + s→z
+enthronisavam,entronizavam,,th→t + s→z
+etherisa,eteriza,,th→t + s→z
+etherisação,eterização,,th→t + s→z
+etherisações,eterizações,,th→t + s→z
+amethysta,ametista,,th→t + y→i
+amethystas,ametistas,,th→t + y→i
+ethymologia,etimologia,,th→t + y→i
+carthaginezas,cartaginesas,,th→t + z→s
+carthaginezes,cartagineses,,th→t + z→s
+thereza,teresa,,th→t + z→s
+thomaz,tomás,,th→t + z→s
+abatteu,abateu,,tt→t
+admitte,admite,,tt→t
+admittem,admitem,,tt→t
+admitti,admiti,,tt→t
+admittia,admitia,,tt→t
+admittiam,admitiam,,tt→t
+admittida,admitida,,tt→t
+admittidas,admitidas,,tt→t
+admittido,admitido,,tt→t
+admittindo,admitindo,,tt→t
+admittir,admitir,,tt→t
+admittiu,admitiu,,tt→t
+admitto,admito,,tt→t
+anchietta,anchieta,,tt→t
+antonietta,antonieta,,tt→t
+arremette,arremete,,tt→t
+arremettera,arremetera,,tt→t
+arremetteram,arremeteram,,tt→t
+arremetteria,arremeteria,,tt→t
+arremetteu,arremeteu,,tt→t
+arremettia,arremetia,,tt→t
+arremettida,arremetida,,tt→t
+arremettidas,arremetidas,,tt→t
+attaca,ataca,,tt→t
+attacar,atacar,,tt→t
+attacára,atacara,,tt→t
+attaques,ataques,,tt→t
+attarracavam,atarracavam,,tt→t
+attasca,atasca,,tt→t
+attencioso,atencioso,,tt→t
+attenciosos,atenciosos,,tt→t
+attenda,atenda,,tt→t
+attendam,atendam,,tt→t
+attendendo,atendendo,,tt→t
+attender,atender,,tt→t
+attendera,atendera,,tt→t
+attendeu,atendeu,,tt→t
+attendi,atendi,,tt→t
+attendia,atendia,,tt→t
+attendido,atendido,,tt→t
+attenta,atenta,,tt→t
+attentado,atentado,,tt→t
+attentados,atentados,,tt→t
+attentamente,atentamente,,tt→t
+attentando,atentando,,tt→t
+attentar,atentar,,tt→t
+attentas,atentas,,tt→t
+attentasse,atentasse,,tt→t
+attentatoria,atentatória,,tt→t
+attentava,atentava,,tt→t
+attentos,atentos,,tt→t
+attentou,atentou,,tt→t
+attentámos,atentámos,,tt→t
+attenua,atenua,,tt→t
+attenuada,atenuada,,tt→t
+attenuadas,atenuadas,,tt→t
+attenuando,atenuando,,tt→t
+attenuante,atenuante,,tt→t
+attenuar,atenuar,,tt→t
+attenuações,atenuações,,tt→t
+attenuou,atenuou,,tt→t
+attenções,atenções,,tt→t
+atterrada,aterrada,,tt→t
+atterrei,aterrei,,tt→t
+attesta,atesta,,tt→t
+attestando,atestando,,tt→t
+attestassem,atestassem,,tt→t
+attestou,atestou,,tt→t
+atticismo,aticismo,,tt→t
+attila,átila,,tt→t
+attinge,atinge,,tt→t
+attingem,atingem,,tt→t
+attingir,atingir,,tt→t
+attingiu,atingiu,,tt→t
+attitude,atitude,,tt→t
+attitudes,atitudes,,tt→t
+attonita,atónita,atônita,tt→t
+attonito,atónito,atônito,tt→t
+attonitos,atónitos,atônitos,tt→t
+attraente,atraente,,tt→t
+attraiam,atraiam,,tt→t
+attraido,atraído,,tt→t
+attraía,atraía,,tt→t
+attreito,atreito,,tt→t
+attrelado,atrelado,,tt→t
+attribuem,atribuem,,tt→t
+attribui,atribui,,tt→t
+attribuia,atribuía,,tt→t
+attribuiam,atribuíam,,tt→t
+attribuido,atribuído,,tt→t
+attribuidos,atribuídos,,tt→t
+attribuindo,atribuindo,,tt→t
+attribuira,atribuíra,,tt→t
+attribuiram,atribuíram,,tt→t
+attribuiu,atribuiu,,tt→t
+attribuições,atribuições,,tt→t
+attribulada,atribulada,,tt→t
+attribulações,atribulações,,tt→t
+attribuo,atribuo,,tt→t
+attributo,atributo,,tt→t
+attributos,atributos,,tt→t
+attrito,atrito,,tt→t
+attritos,atritos,,tt→t
+attrição,atrição,,tt→t
+batter,bater,,tt→t
+bemditto,bendito,,m→n + tt→t
+benditto,bendito,,tt→t
+bottinas,botinas,,tt→t
+cheviotte,cheviote,,tt→t
+combatter,combater,,tt→t
+comettem,cometem,,tt→t
+compromette,compromete,,tt→t
+comprometter,comprometer,,tt→t
+compromettida,comprometida,,tt→t
+compromettidas,comprometidas,,tt→t
+compromettido,comprometido,,tt→t
+compromettidos,comprometidos,,tt→t
+compromettimento,comprometimento,,tt→t
+comprometto,comprometo,,tt→t
+decotte,decote,,tt→t
+demittidas,demitidas,,tt→t
+demittido,demitido,,tt→t
+demittidos,demitidos,,tt→t
+demittir,demitir,,tt→t
+demitto,demito,,tt→t
+desattendendo,desatendendo,,tt→t
+desattender,desatender,,tt→t
+desattendida,desatendida,,tt→t
+desattenta,desatenta,,tt→t
+desattento,desatento,,tt→t
+desattentos,desatentos,,tt→t
+desattenção,desatenção,,tt→t
+dilettantismo,diletantismo,,tt→t
+ditta,dita,,tt→t
+dittas,ditas,,tt→t
+ditto,dito,,tt→t
+dittos,ditos,,tt→t
+duetto,dueto,,tt→t
+emittidas,emitidas,,tt→t
+entremette,entremete,,tt→t
+entremettia,entremetia,,tt→t
+entremettido,entremetido,,tt→t
+entremettidos,entremetidos,,tt→t
+espinetta,espineta,,tt→t
+fettos,fetos,,tt→t
+fitta,fita,,tt→t
+fittas,fitas,,tt→t
+fittos,fitos,,tt→t
+gavotta,gavota,,tt→t
+gazetta,gazeta,,tt→t
+gotta,gota,,tt→t
+gottas,gotas,,tt→t
+gottejante,gotejante,,tt→t
+gottejantes,gotejantes,,tt→t
+gottejava,gotejava,,tt→t
+gottejavam,gotejavam,,tt→t
+gottinhas,gotinhas,,tt→t
+gottoso,gotoso,,tt→t
+guttural,gutural,,tt→t
+gôtta,gota,,tt→t
+intermittencia,intermitência,,tt→t
+intermittencias,intermitências,,tt→t
+intermittente,intermitente,,tt→t
+intrometter,intrometer,,tt→t
+intromettido,intrometido,,tt→t
+intrometto,intrometo,,tt→t
+lettra,letra,,tt→t
+lettrado,letrado,,tt→t
+lettrados,letrados,,tt→t
+lettras,letras,,tt→t
+libretto,libreto,,tt→t
+litteralmente,literalmente,,tt→t
+litteraria,literária,,tt→t
+litterariamente,literariamente,,tt→t
+litterarias,literárias,,tt→t
+litterarios,literários,,tt→t
+litterata,literata,,tt→t
+litteratas,literatas,,tt→t
+litterato,literato,,tt→t
+litteratos,literatos,,tt→t
+litteraturas,literaturas,,tt→t
+littoral,litoral,,tt→t
+malditta,maldita,,tt→t
+malditto,maldito,,tt→t
+matta,mata,,tt→t
+mattagal,matagal,,tt→t
+mattas,matas,,tt→t
+matto,mato,,tt→t
+mattos,matos,,tt→t
+metta,meta,,tt→t
+mettam,metam,,tt→t
+mettamos,metamos,,tt→t
+mette,mete,,tt→t
+mettediço,metediço,,tt→t
+mettem,metem,,tt→t
+mettendo,metendo,,tt→t
+metter,meter,,tt→t
+mettera,metera,,tt→t
+metteram,meteram,,tt→t
+metteras,meteras,,tt→t
+metterem,meterem,,tt→t
+metteremos,meteremos,,tt→t
+mettesse,metesse,,tt→t
+mettessem,metessem,,tt→t
+metteste,meteste,,tt→t
+metteu,meteu,,tt→t
+metti,meti,,tt→t
+mettia,metia,,tt→t
+mettiam,metiam,,tt→t
+mettias,metias,,tt→t
+mettida,metida,,tt→t
+mettidas,metidas,,tt→t
+mettido,metido,,tt→t
+mettidos,metidos,,tt→t
+metto,meto,,tt→t
+mettêra,metera,,tt→t
+omittir,omitir,,tt→t
+omitto,omito,,tt→t
+ottomanas,otomanas,,tt→t
+permitta,permita,,tt→t
+permittam,permitam,,tt→t
+permitte,permite,,tt→t
+permittem,permitem,,tt→t
+permitti,permiti,,tt→t
+permittia,permitia,,tt→t
+permittiam,permitiam,,tt→t
+permittidas,permitidas,,tt→t
+permittido,permitido,,tt→t
+permittidos,permitidos,,tt→t
+permittir,permitir,,tt→t
+permittiria,permitiria,,tt→t
+permittiriam,permitiriam,,tt→t
+permittisse,permitisse,,tt→t
+permittiu,permitiu,,tt→t
+pittoresca,pitoresca,,tt→t
+pittorescamente,pitorescamente,,tt→t
+pittorescas,pitorescas,,tt→t
+pittoresco,pitoresco,,tt→t
+pittorescos,pitorescos,,tt→t
+prometta,prometa,,tt→t
+promette,promete,,tt→t
+promettedor,prometedor,,tt→t
+promettedora,prometedora,,tt→t
+promettedores,prometedores,,tt→t
+promettem,prometem,,tt→t
+promettemos,prometemos,,tt→t
+promettendo,prometendo,,tt→t
+prometter,prometer,,tt→t
+promettera,prometera,,tt→t
+promettesse,prometesse,,tt→t
+prometteste,prometeste,,tt→t
+prometteu,prometeu,,tt→t
+prometti,prometi,,tt→t
+promettia,prometia,,tt→t
+promettiam,prometiam,,tt→t
+promettida,prometida,,tt→t
+promettido,prometido,,tt→t
+prometto,prometo,,tt→t
+promettêra,prometera,,tt→t
+redutto,reduto,,tt→t
+remetta,remeta,,tt→t
+remette,remete,,tt→t
+remettendo,remetendo,,tt→t
+remetter,remeter,,tt→t
+remettera,remetera,,tt→t
+remetteu,remeteu,,tt→t
+remettia,remetia,,tt→t
+remettido,remetido,,tt→t
+remettidos,remetidos,,tt→t
+remetto,remeto,,tt→t
+repettia,repetia,,tt→t
+repettido,repetido,,tt→t
+repettição,repetição,,tt→t
+repitta,repita,,tt→t
+repitto,repito,,tt→t
+retratto,retrato,,tt→t
+rettaguarda,retaguarda,,tt→t
+retter,reter,,tt→t
+retteve,reteve,,tt→t
+roletta,roleta,,tt→t
+setta,seta,,tt→t
+settas,setas,,tt→t
+sette,sete,,tt→t
+setteira,seteira,,tt→t
+settenta,setenta,,tt→t
+sotterrado,soterrado,,tt→t
+submette,submete,,tt→t
+submetter,submeter,,tt→t
+submetterem,submeterem,,tt→t
+submetteu,submeteu,,tt→t
+submettia,submetia,,tt→t
+submettida,submetida,,tt→t
+submettidas,submetidas,,tt→t
+submettidos,submetidos,,tt→t
+tercetto,terceto,,tt→t
+transmitte,transmite,,tt→t
+transmitti,transmiti,,tt→t
+transmittiam,transmitiam,,tt→t
+transmittida,transmitida,,tt→t
+transmittidas,transmitidas,,tt→t
+transmittindo,transmitindo,,tt→t
+transmittir,transmitir,,tt→t
+transmittiram,transmitiram,,tt→t
+transmittirá,transmitirá,,tt→t
+transmittiu,transmitiu,,tt→t
+tratta,trata,,tt→t
+trattam,tratam,,tt→t
+tratto,trato,,tt→t
+trattámos,tratámos,,tt→t
+violetta,violeta,,tt→t
+vittoria,vitória,,tt→t
+áttico,ático,,tt→t
+attendaes,atendais,,tt→t + ae→ai
+attraes,atrais,,tt→t + ae→ai
+attendeo,atendeu,,tt→t + eo→eu
+comprometteo,comprometeu,,tt→t + eo→eu
+attrahem,atraem,,tt→t + h dropped
+attrahente,atraente,,tt→t + h dropped
+attrahia,atraía,,tt→t + h dropped
+attrahiam,atraíam,,tt→t + h dropped
+attrahida,atraída,,tt→t + h dropped
+attrahidas,atraídas,,tt→t + h dropped
+attrahido,atraído,,tt→t + h dropped
+attrahidos,atraídos,,tt→t + h dropped
+attrahindo,atraindo,,tt→t + h dropped
+attrahir,atrair,,tt→t + h dropped
+attrahira,atraíra,,tt→t + h dropped
+attrahiram,atraíram,,tt→t + h dropped
+attrahisse,atraísse,,tt→t + h dropped
+attrahiu,atraiu,,tt→t + h dropped
+admittio,admitiu,,tt→t + io→iu
+permittio,permitiu,,tt→t + io→iu
+attractivos,atrativos,,tt→t + silent consonant
+attracção,atração,,tt→t + silent consonant
+attribue,atribui,,tt→t + ue→ui
+attráe,atrai,,tt→t + áe→ai
+azues,azuis,,ue→ui
+conclue,conclui,,ue→ui
+conclues,concluis,,ue→ui
+constitue,constitui,,ue→ui
+diminue,diminui,,ue→ui
+distribue,distribui,,ue→ui
+influe,influi,,ue→ui
+instrue,instrui,,ue→ui
+possue,possui,,ue→ui
+substitue,substitui,,ue→ui
+landaw,landau,,w→u
+rewolver,revólver,,w→v
+walsa,valsa,,w→v
+walsando,valsando,,w→v
+walsar,valsar,,w→v
+walsas,valsas,,w→v
+abysma,abisma,,y→i
+abysmada,abismada,,y→i
+abysmado,abismado,,y→i
+abysmar,abismar,,y→i
+abysmava,abismava,,y→i
+abysmos,abismos,,y→i
+abysmou,abismou,,y→i
+abysmára,abismara,,y→i
+acrysolado,acrisolado,,y→i
+alypio,alípio,,y→i
+amygdalas,amígdalas,,y→i
+analysam,analisam,,y→i
+analysavamos,analisávamos,,y→i
+analysára,analisara,,y→i
+analysâmos,analisámos,,y→i
+anonyma,anónima,anônima,y→i
+anonymas,anónimas,anônimas,y→i
+anonymos,anónimos,anônimos,y→i
+anályse,análise,,y→i
+aryano,ariano,,y→i
+assyrias,assírias,,y→i
+assyrio,assírio,,y→i
+assyrios,assírios,,y→i
+asylo,asilo,,y→i
+aymaras,aimarás,,y→i
+ayres,aires,,y→i
+babylonicos,babilónicos,babilônicos,y→i
+barytono,barítono,,y→i
+barytonos,barítonos,,y→i
+bayonetas,baionetas,,y→i
+bycicleta,bicicleta,,y→i
+byzantino,bizantino,,y→i
+cataclysmo,cataclismo,,y→i
+cataclysmos,cataclismos,,y→i
+chylo,quilo,,y→i
+colyseu,coliseu,,y→i
+comboyo,comboio,,y→i
+corybante,coribante,,y→i
+crystal,cristal,,y→i
+cyanidrico,cianídrico,,y→i
+cyclicas,cíclicas,,y→i
+cylindras,cilindras,,y→i
+cylindricas,cilíndricas,,y→i
+cylindro,cilindro,,y→i
+cylindros,cilindros,,y→i
+cymba,cimba,,y→i
+cynica,cínica,,y→i
+cynicamente,cinicamente,,y→i
+cynicas,cínicas,,y→i
+cynico,cínico,,y→i
+cynicos,cínicos,,y→i
+cynismo,cinismo,,y→i
+cyprestal,ciprestal,,y→i
+cypreste,cipreste,,y→i
+cyprestes,ciprestes,,y→i
+cyrios,círios,,y→i
+cyro,ciro,,y→i
+cysne,cisne,,y→i
+cysnes,cisnes,,y→i
+cystite,cistite,,y→i
+daguerreotypo,daguerreótipo,,y→i
+dandysmo,dandismo,,y→i
+dionysia,dionísia,,y→i
+dynamica,dinâmica,,y→i
+dynamite,dinamite,,y→i
+dysenteria,disenteria,,y→i
+dyspepsia,dispepsia,,y→i
+egyptologia,egiptologia,,y→i
+elyseu,eliseu,,y→i
+elysia,elísia,,y→i
+elysio,elísio,,y→i
+embryologia,embriologia,,y→i
+embryão,embrião,,y→i
+empyreo,empíreo,,y→i
+encyclica,encíclica,,y→i
+encyclopedia,enciclopédia,,y→i
+encyclopedico,enciclopédico,,y→i
+enygma,enigma,,y→i
+estereotypado,estereotipado,,y→i
+estylava,estilava,,y→i
+estylista,estilista,,y→i
+estylistas,estilistas,,y→i
+estylos,estilos,,y→i
+etymologia,etimologia,,y→i
+eucalypto,eucalipto,,y→i
+eucalyptos,eucaliptos,,y→i
+glycerina,glicerina,,y→i
+gyravam,giravam,,y→i
+gyria,gíria,,y→i
+hegyra,hégira,,y→i
+heteroclyta,heteróclita,,y→i
+homonymo,homónimo,homônimo,y→i
+hyberna,hiberna,,y→i
+hydra,hidra,,y→i
+hydropica,hidrópica,,y→i
+hydropico,hidrópico,,y→i
+hydropisia,hidropisia,,y→i
+hygienica,higiénica,higiênica,y→i
+hygienicas,higiénicas,higiênicas,y→i
+hygienicos,higiénicos,higiênicos,y→i
+hymeneu,himeneu,,y→i
+hyperboles,hipérboles,,y→i
+hypermagicos,hipermágicos,,y→i
+hypocondria,hipocondria,,y→i
+hypocondriaco,hipocondríaco,,y→i
+hypocondriacos,hipocondríacos,,y→i
+hypocrisias,hipocrisias,,y→i
+hypocrita,hipócrita,,y→i
+hypocritas,hipócritas,,y→i
+hypolito,hipólito,,y→i
+hyssope,hissope,,y→i
+hysterica,histérica,,y→i
+hystericamente,histericamente,,y→i
+hystericas,histéricas,,y→i
+hysterico,histérico,,y→i
+hystericos,histéricos,,y→i
+hysterismo,histerismo,,y→i
+inclyto,ínclito,,y→i
+jeronymo,jerónimo,jerônimo,y→i
+jury,júri,,y→i
+labyrinto,labirinto,,y→i
+labyrintos,labirintos,,y→i
+lacrymosa,lacrimosa,,y→i
+lagryma,lágrima,,y→i
+larynge,laringe,,y→i
+libyco,líbico,,y→i
+lybia,líbia,,y→i
+lyceu,liceu,,y→i
+lyceus,liceus,,y→i
+lynce,lince,,y→i
+lyra,lira,,y→i
+lyras,liras,,y→i
+lyrica,lírica,,y→i
+lyrico,lírico,,y→i
+lyricos,líricos,,y→i
+lyrios,lírios,,y→i
+lyrismo,lirismo,,y→i
+lyrismos,lirismos,,y→i
+lys,lis,,y→i
+martyres,mártires,,y→i
+martyrio,martírio,,y→i
+martyrios,martírios,,y→i
+martyrologio,martirológio,,y→i
+metempsycose,metempsicose,,y→i
+moysés,moisés,,y→i
+myope,míope,,y→i
+myopia,miopia,,y→i
+myosotis,miosótis,,y→i
+myriadas,miríadas,,y→i
+myriades,miríades,,y→i
+myrtos,mirtos,,y→i
+myríadas,miríadas,,y→i
+mysantropia,misantropia,,y→i
+mysterios,mistérios,,y→i
+mysteriosa,misteriosa,,y→i
+mysteriosamente,misteriosamente,,y→i
+mysteriosas,misteriosas,,y→i
+mysterioso,misterioso,,y→i
+mysteriosos,misteriosos,,y→i
+mystica,mística,,y→i
+mysticas,místicas,,y→i
+mysticos,místicos,,y→i
+mystificados,mistificados,,y→i
+nayade,náiade,,y→i
+olympica,olímpica,,y→i
+olympicamente,olimpicamente,,y→i
+olympico,olímpico,,y→i
+olympicos,olímpicos,,y→i
+olympio,olímpio,,y→i
+olympo,olimpo,,y→i
+oxygenada,oxigenada,,y→i
+panegyrico,panegírico,,y→i
+panegyristas,panegiristas,,y→i
+paralysa,paralisa,,y→i
+paralysado,paralisado,,y→i
+paralysados,paralisados,,y→i
+paralysava,paralisava,,y→i
+paralysia,paralisia,,y→i
+paralysias,paralisias,,y→i
+paralytica,paralítica,,y→i
+paralytico,paralítico,,y→i
+paralyticos,paralíticos,,y→i
+parasyta,parasita,,y→i
+paroxysmo,paroxismo,,y→i
+payo,paio,,y→i
+peristylo,peristilo,,y→i
+perystilo,peristilo,,y→i
+polynesias,polinésias,,y→i
+poney,pónei,pônei,y→i
+presbyteriana,presbiteriana,,y→i
+presbyterio,presbitério,,y→i
+presbytero,presbítero,,y→i
+prototypo,protótipo,,y→i
+psycologicos,psicológicos,,y→i
+pyjamas,pijamas,,y→i
+pyndarica,pindárica,,y→i
+pyra,pira,,y→i
+pyramide,pirâmide,,y→i
+pyramides,pirâmides,,y→i
+pyrilampos,pirilampos,,y→i
+raymundo,raimundo,,y→i
+reynaldo,reinaldo,,y→i
+ruy,rui,,y→i
+saboya,saboia,,y→i
+satyra,sátira,,y→i
+satyras,sátiras,,y→i
+satyrico,satírico,,y→i
+satyro,sátiro,,y→i
+sybaritismo,sibaritismo,,y→i
+sylva,silva,,y→i
+sylvas,silvas,,y→i
+sylvestres,silvestres,,y→i
+sylvio,sílvio,,y→i
+symbolia,simbolia,,y→i
+symbolica,simbólica,,y→i
+symbolicas,simbólicas,,y→i
+symbolicos,simbólicos,,y→i
+symbolismo,simbolismo,,y→i
+symbolista,simbolista,,y→i
+symbolizada,simbolizada,,y→i
+symbolizar,simbolizar,,y→i
+symbolos,símbolos,,y→i
+symetria,simetria,,y→i
+symetrica,simétrica,,y→i
+symetricamente,simetricamente,,y→i
+symetricas,simétricas,,y→i
+symetrico,simétrico,,y→i
+sympatias,simpatias,,y→i
+syncreticas,sincréticas,,y→i
+syndicato,sindicato,,y→i
+syndicatos,sindicatos,,y→i
+synodo,sínodo,,y→i
+synonimia,sinonímia,,y→i
+synonimos,sinónimos,sinônimos,y→i
+synonymas,sinónimas,sinônimas,y→i
+synonymos,sinónimos,sinônimos,y→i
+syria,síria,,y→i
+syrias,sírias,,y→i
+syrtes,sirtes,,y→i
+systemas,sistemas,,y→i
+systematica,sistemática,,y→i
+tilbury,tílburi,,y→i
+troya,troia,,y→i
+tylburi,tílburi,,y→i
+tympanico,timpânico,,y→i
+tympano,tímpano,,y→i
+typa,tipa,,y→i
+typicas,típicas,,y→i
+typico,típico,,y→i
+typicos,típicos,,y→i
+typos,tipos,,y→i
+tyrio,tírio,,y→i
+tyrolesa,tirolesa,,y→i
+tyrso,tirso,,y→i
+tysico,tísico,,y→i
+ulysses,ulisses,,y→i
+ulyssiponense,ulissiponense,,y→i
+yayá,iaiá,,y→i
+crystaes,cristais,,y→i + ae→ai
+pyramidaes,piramidais,,y→i + ae→ai
+psychologo,psicólogo,,y→i + ch→c
+hemystichio,hemistíquio,,y→i + ch→qu
+gyneceo,gineceu,,y→i + eo→eu
+hypogeo,hipogeu,,y→i + eo→eu
+lyceos,liceus,,y→i + eo→eu
+crystallina,cristalina,,y→i + ll→l
+crystallinas,cristalinas,,y→i + ll→l
+crystallinidade,cristalinidade,,y→i + ll→l
+crystallino,cristalino,,y→i + ll→l
+idyllica,idílica,,y→i + ll→l
+idyllico,idílico,,y→i + ll→l
+idyllio,idílio,,y→i + ll→l
+idyllios,idílios,,y→i + ll→l
+monossyllabos,monossílabos,,y→i + ll→l
+peristyllo,peristilo,,y→i + ll→l
+perystillo,peristilo,,y→i + ll→l
+perystillos,peristilos,,y→i + ll→l
+sybillinas,sibilinas,,y→i + ll→l
+syllabadas,silabadas,,y→i + ll→l
+syllabado,silabado,,y→i + ll→l
+syllabando,silabando,,y→i + ll→l
+tyrollesa,tirolesa,,y→i + ll→l
+crystallographia,cristalografia,,y→i + ll→l + ph→f
+epygramma,epigrama,,y→i + mm→m
+gymnasta,ginasta,,y→i + mn→n
+gymnasticos,ginásticos,,y→i + mn→n
+hymnos,hinos,,y→i + mn→n
+symptomas,sintomas,,y→i + mp→n
+lymphatico,linfático,,y→i + m→n + ph→f
+lymphaticos,linfáticos,,y→i + m→n + ph→f
+nymphas,ninfas,,y→i + m→n + ph→f
+tyranna,tirana,,y→i + nn→n
+tyrannia,tirania,,y→i + nn→n
+tyrannias,tiranias,,y→i + nn→n
+tyrannica,tirânica,,y→i + nn→n
+tyrannicamente,tiranicamente,,y→i + nn→n
+tyrannicidas,tiranicidas,,y→i + nn→n
+tyrannico,tirânico,,y→i + nn→n
+tyrannizam,tiranizam,,y→i + nn→n
+tyrannos,tiranos,,y→i + nn→n
+cryptographico,criptográfico,,y→i + ph→f
+hieroglyphos,hieróglifos,,y→i + ph→f
+hydrophobia,hidrofobia,,y→i + ph→f
+sylphide,sílfide,,y→i + ph→f
+sylphos,silfos,,y→i + ph→f
+syphilis,sífilis,,y→i + ph→f
+sysipho,sísifo,,y→i + ph→f
+typhoide,tifoide,,y→i + ph→f
+typographias,tipografias,,y→i + ph→f
+typographica,tipográfica,,y→i + ph→f
+typographicamente,tipograficamente,,y→i + ph→f
+typographo,tipógrafo,,y→i + ph→f
+typographos,tipógrafos,,y→i + ph→f
+hyppodromo,hipódromo,,y→i + pp→p
+myrhados,mirados,,y→i + rh→r
+myrrha,mirra,,y→i + rh→r
+myrrhar,mirrar,,y→i + rh→r
+tyrrheno,tirreno,,y→i + rh→r
+tyrrhenos,tirrenos,,y→i + rh→r
+martyrisado,martirizado,,y→i + s→z
+martyrisar,martirizar,,y→i + s→z
+martyrisasse,martirizasse,,y→i + s→z
+martyrises,martirizes,,y→i + s→z
+symbolisa,simboliza,,y→i + s→z
+symbolisada,simbolizada,,y→i + s→z
+symbolisado,simbolizado,,y→i + s→z
+symbolisando,simbolizando,,y→i + s→z
+symbolisasse,simbolizasse,,y→i + s→z
+symbolisava,simbolizava,,y→i + s→z
+symbolisou,simbolizou,,y→i + s→z
+absyntho,absinto,,y→i + th→t
+acolythos,acólitos,,y→i + th→t
+coryntho,corinto,,y→i + th→t
+dythirambos,ditirambos,,y→i + th→t
+hypotheca,hipoteca,,y→i + th→t
+hypothecada,hipotecada,,y→i + th→t
+hypothecado,hipotecado,,y→i + th→t
+hypothecados,hipotecados,,y→i + th→t
+hypothecario,hipotecário,,y→i + th→t
+hypothecas,hipotecas,,y→i + th→t
+hypothecou,hipotecou,,y→i + th→t
+hypothecára,hipotecara,,y→i + th→t
+hypotheses,hipóteses,,y→i + th→t
+hypothetico,hipotético,,y→i + th→t
+labyrintho,labirinto,,y→i + th→t
+mythicas,míticas,,y→i + th→t
+mythico,mítico,,y→i + th→t
+mythologica,mitológica,,y→i + th→t
+mythologicas,mitológicas,,y→i + th→t
+mythologico,mitológico,,y→i + th→t
+mythologicos,mitológicos,,y→i + th→t
+mythos,mitos,,y→i + th→t
+pythonissa,pitonissa,,y→i + th→t
+rythmadas,ritmadas,,y→i + th→t
+rythmado,ritmado,,y→i + th→t
+rythmico,rítmico,,y→i + th→t
+rythmo,ritmo,,y→i + th→t
+rythmos,ritmos,,y→i + th→t
+sympathia,simpatia,,y→i + th→t
+sympathias,simpatias,,y→i + th→t
+sympathica,simpática,,y→i + th→t
+sympathicamente,simpaticamente,,y→i + th→t
+sympathico,simpático,,y→i + th→t
+sympathicos,simpáticos,,y→i + th→t
+sympathizar,simpatizar,,y→i + th→t
+syntheses,sínteses,,y→i + th→t
+synthetico,sintético,,y→i + th→t
+zytho,zito,,y→i + th→t
+sympathisa,simpatiza,,y→i + th→t + s→z
+sympathisar,simpatizar,,y→i + th→t + s→z
+sympathisara,simpatizara,,y→i + th→t + s→z
+sympathisava,simpatizava,,y→i + th→t + s→z
+sympathisei,simpatizei,,y→i + th→t + s→z
+sympathiso,simpatizo,,y→i + th→t + s→z
+sympathisou,simpatizou,,y→i + th→t + s→z
+synthetisa,sintetiza,,y→i + th→t + s→z
+synthetisada,sintetizada,,y→i + th→t + s→z
+synthetisando,sintetizando,,y→i + th→t + s→z
+tyrolez,tirolês,,y→i + z→s
+abraza,abrasa,,z→s
+ananaz,ananás,,z→s
+ananazes,ananases,,z→s
+apoz,após,,z→s
+arnez,arnês,,z→s
+arnezes,arneses,,z→s
+arraza,arrasa,,z→s
+atravez,através,,z→s
+atravéz,através,,z→s
+atraz,atrás,,z→s
+atraza,atrasa,,z→s
+atráz,atrás,,z→s
+aza,asa,,z→s
+azas,asas,,z→s
+baroneza,baronesa,,z→s
+baronezas,baronesas,,z→s
+bazes,bases,,z→s
+braganceza,bragancesa,,z→s
+braguez,braguês,,z→s
+braz,brás,,z→s
+braza,brasa,,z→s
+brazas,brasas,,z→s
+burguez,burguês,,z→s
+burgueza,burguesa,,z→s
+burguezes,burgueses,,z→s
+camiza,camisa,,z→s
+camizas,camisas,,z→s
+camoeza,camoesa,,z→s
+camoezas,camoesas,,z→s
+camponez,camponês,,z→s
+camponeza,camponesa,,z→s
+camponezas,camponesas,,z→s
+camponezes,camponeses,,z→s
+cauzas,causas,,z→s
+caza,casa,,z→s
+cazas,casas,,z→s
+chinez,chinês,,z→s
+chinezas,chinesas,,z→s
+chinezes,chineses,,z→s
+cingaleza,cingalesa,,z→s
+coizas,coisas,,z→s
+compoz,compôs,,z→s
+compuz,compus,,z→s
+cortez,cortês,,z→s
+cortezes,corteses,,z→s
+coz,cós,,z→s
+defeza,defesa,,z→s
+depoz,depôs,,z→s
+depuz,depus,,z→s
+descompoz,descompôs,,z→s
+despeza,despesa,,z→s
+despezas,despesas,,z→s
+detraz,detrás,,z→s
+diniz,dinis,,z→s
+dispoz,dispôs,,z→s
+dispuz,dispus,,z→s
+dispôz,dispôs,,z→s
+duqueza,duquesa,,z→s
+duquezas,duquesas,,z→s
+empreza,empresa,,z→s
+emprezas,empresas,,z→s
+escocez,escocês,,z→s
+escoceza,escocesa,,z→s
+escocezes,escoceses,,z→s
+expoz,expôs,,z→s
+expuz,expus,,z→s
+expôz,expôs,,z→s
+francez,francês,,z→s
+franceza,francesa,,z→s
+francezas,francesas,,z→s
+francezes,franceses,,z→s
+freguez,freguês,,z→s
+freguezas,freguesas,,z→s
+freguezes,fregueses,,z→s
+friza,frisa,,z→s
+frizas,frisas,,z→s
+gaulez,gaulês,,z→s
+gaulezas,gaulesas,,z→s
+genovez,genovês,,z→s
+genovezes,genoveses,,z→s
+grozas,grosas,,z→s
+impoz,impôs,,z→s
+impôz,impôs,,z→s
+indefezas,indefesas,,z→s
+inglez,inglês,,z→s
+ingleza,inglesa,,z→s
+inglezas,inglesas,,z→s
+inglezes,ingleses,,z→s
+interpoz,interpôs,,z→s
+interpreza,interpresa,,z→s
+irlandez,irlandês,,z→s
+irlandeza,irlandesa,,z→s
+irlandezes,irlandeses,,z→s
+japonez,japonês,,z→s
+japoneza,japonesa,,z→s
+japonezas,japonesas,,z→s
+lapiz,lápis,,z→s
+leonez,leonês,,z→s
+leonezes,leoneses,,z→s
+lez,lés,,z→s
+leza,lesa,,z→s
+lilaz,lilás,,z→s
+lilazes,lilases,,z→s
+liza,lisa,,z→s
+lizas,lisas,,z→s
+luiz,luís,,z→s
+luiza,luísa,,z→s
+maltez,maltês,,z→s
+marquez,marquês,,z→s
+marqueza,marquesa,,z→s
+marquezes,marqueses,,z→s
+marselhez,marselhês,,z→s
+marselheza,marselhesa,,z→s
+mez,mês,,z→s
+meza,mesa,,z→s
+mezas,mesas,,z→s
+mezes,meses,,z→s
+mirandeza,mirandesa,,z→s
+montanhez,montanhês,,z→s
+montanhezes,montanheses,,z→s
+montez,montês,,z→s
+narciza,narcisa,,z→s
+paiz,país,,z→s
+paizes,países,,z→s
+pesquiza,pesquisa,,z→s
+pesquizas,pesquisas,,z→s
+peza,pesa,,z→s
+portuguez,português,,z→s
+portugueza,portuguesa,,z→s
+portuguezas,portuguesas,,z→s
+portuguezes,portugueses,,z→s
+poz,pôs,,z→s
+preciza,precisa,,z→s
+precizas,precisas,,z→s
+princeza,princesa,,z→s
+princezas,princesas,,z→s
+profuzas,profusas,,z→s
+propoz,propôs,,z→s
+propuz,propus,,z→s
+propôz,propôs,,z→s
+proza,prosa,,z→s
+prozas,prosas,,z→s
+prêza,presa,,z→s
+puz,pus,,z→s
+pêza,pesa,,z→s
+pòz,pôs,,z→s
+pôz,pôs,,z→s
+raza,rasa,,z→s
+recompoz,recompôs,,z→s
+repôz,repôs,,z→s
+roza,rosa,,z→s
+rêz,rês,,z→s
+satanaz,satanás,,z→s
+sobremeza,sobremesa,,z→s
+sorpreza,sorpresa,,z→s
+surpreza,surpresa,,z→s
+surprezas,surpresas,,z→s
+tenebroza,tenebrosa,,z→s
+teza,tesa,,z→s
+transpoz,transpôs,,z→s
+transpuz,transpus,,z→s
+travez,través,,z→s
+trez,três,,z→s
+cáe,cai,,áe→ai
+distráe,distrai,,áe→ai
+sáe,sai,,áe→ai
+bordéos,bordéus,,éo→éu
+chapéo,chapéu,,éo→éu
+chapéos,chapéus,,éo→éu
+chichisbéo,chichisbéu,,éo→éu
+céo,céu,,éo→éu
+céos,céus,,éo→éu
+escarcéo,escarcéu,,éo→éu
+mantéo,mantéu,,éo→éu
+mausoléo,mausoléu,,éo→éu
+réo,réu,,éo→éu
+réos,réus,,éo→éu
+véo,véu,,éo→éu
+véos,véus,,éo→éu
+alemtejana,alentejana,,m→n
+alemtejanos,alentejanos,,m→n
+bemdita,bendita,,m→n
+bemditas,benditas,,m→n
+bemdito,bendito,,m→n
+bemditos,benditos,,m→n
+bemdizem,bendizem,,m→n
+bemdizer,bendizer,,m→n
+bemdiziam,bendiziam,,m→n
+bemfazeja,benfazeja,,m→n
+bemfazejas,benfazejas,,m→n
+bemfeitor,benfeitor,,m→n
+bemfeitora,benfeitora,,m→n
+bemfeitores,benfeitores,,m→n
+bemfeitorias,benfeitorias,,m→n
+bemquerença,benquerença,,m→n
+bemquista,benquista,,m→n
+circumda,circunda,,m→n
+circumdado,circundado,,m→n
+circumdará,circundará,,m→n
+circumdava,circundava,,m→n
+circumdavam,circundavam,,m→n
+circumdou,circundou,,m→n
+circumferencia,circunferência,,m→n
+circumflexos,circunflexos,,m→n
+circumflexões,circunflexões,,m→n
+circumgirou,circungirou,,m→n
+circumjacentes,circunjacentes,,m→n
+circumloquio,circunlóquio,,m→n
+circumspecta,circunspecta,,m→n
+circumspectamente,circunspectamente,,m→n
+circumspecto,circunspecto,,m→n
+circumspectos,circunspectos,,m→n
+circumstancia,circunstância,,m→n
+circumstancias,circunstâncias,,m→n
+circumstantes,circunstantes,,m→n
+circumvagando,circunvagando,,m→n
+circumvagou,circunvagou,,m→n
+comquanto,conquanto,,m→n
+comsigo,consigo,,m→n
+comtanto,contanto,,m→n
+comtempla,contempla,,m→n
+comtempladas,contempladas,,m→n
+comtemplava,contemplava,,m→n
+comtigo,contigo,,m→n
+comtudo,contudo,,m→n
+comvosco,convosco,,m→n
+emfim,enfim,,m→n
+emquanto,enquanto,,m→n
+emtanto,entanto,,m→n
+homemzarrão,homenzarrão,,m→n
+homemzinho,homenzinho,,m→n
+semsabor,sensabor,,m→n
+semsabores,sensabores,,m→n
+semsaboria,sensaboria,,m→n
+semsaborias,sensaborias,,m→n
+semsaborona,sensaborona,,m→n
+semsaborão,sensaborão,,m→n
+semsaborões,sensaborões,,m→n
+triumvirato,triunvirato,,m→n
+circumvallava,circunvalava,,m→n + ll→l
+circumvallação,circunvalação,,m→n + ll→l
+circumvallo,circunvalo,,m→n + ll→l
+circumvisinhas,circunvizinhas,,m→n + s→z
+circumvisinhos,circunvizinhos,,m→n + s→z
+homemsinho,homenzinho,,m→n + s→z
+bemdittas,benditas,,m→n + tt→t
+septemtrional,setentrional,,silent consonant + m→n
