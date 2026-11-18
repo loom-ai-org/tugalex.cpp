@@ -3,7 +3,7 @@
 This library is held at byte parity with the Python `tugalex` release named in
 `kPythonReference` (`include/tugalex/tugalex.hpp`). The test `parity` checks that
 claim. It repeats every call recorded in `tests/goldens/lexicon.jsonl.gz` and
-compares the bytes of each result. The file holds 599,558 calls.
+compares the bytes of each result. The file holds 599,957 calls.
 
 ## Public surface
 
@@ -171,8 +171,8 @@ sample alone is not sufficient.
 | --- | ---: | --- |
 | tables | 114 | each small table, the region orders, `ipa`, `syllables`, `get_wordlist` and `get_ipa_map` for every region and every POS, hashed |
 | sweeps | 78 | `get_phonemes` and `get_syllables` for all 70,744 sweep words in each region and POS, hashed, and the gender and AO1990 functions over the same words |
-| tests | 29,343 | every string literal in tugalex `tests/` |
-| homographs | 242,728 | every homograph, archaism and AO1990 entry through each method, and the dictionary words written with capitals |
+| tests | 29,784 | every string literal in tugalex `tests/` |
+| homographs | 242,686 | every homograph, archaism and AO1990 entry through each method, and the dictionary words written with capitals |
 | genders | 235,899 | every noun-gender exception and given name as written, lowercased and uppercased, and each suffix rule in context |
 | sample | 33,920 | seeded random lookups, case and whitespace variants, and sentences |
 | unicode | 31,110 | every code point with a lowercase mapping, whitespace status or category Mn/Lt, in context |
